@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/site/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "destination": "/site/styles.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/site/script.js"
+    },
+    {
+      "source": "/report_payload.json",
+      "destination": "/site/report_payload.json"
+    }
+  ]
+}
