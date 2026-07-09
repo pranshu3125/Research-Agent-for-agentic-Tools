@@ -276,6 +276,10 @@ main {
   gap: 16px;
 }
 
+.compact-split {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .overview-grid {
   grid-template-columns: 1.35fr 1fr;
 }
@@ -304,7 +308,8 @@ main {
 .metric-card,
 .mini-card,
 .list-card,
-.expand-card {
+.expand-card,
+.mini-panel {
   border: 1px solid var(--panel-border);
   border-radius: 24px;
   background: var(--panel);
@@ -320,6 +325,10 @@ main {
 .mini-card,
 .list-card,
 .expand-card {
+  padding: 18px;
+}
+
+.mini-panel {
   padding: 18px;
 }
 
@@ -371,6 +380,15 @@ main {
   gap: 12px;
 }
 
+.compact-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .workflow {
   margin: 0;
   padding-left: 20px;
@@ -396,11 +414,22 @@ main {
   font-size: 14px;
 }
 
+.narrative-meta {
+  align-items: start;
+}
+
 .distribution-label {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 700;
+}
+
+.narrative-label {
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.45;
+  max-width: 88%;
 }
 
 .distribution-track {
@@ -512,6 +541,11 @@ select:focus-visible {
 .expand-chevron {
   transition: transform 180ms ease;
   color: var(--muted);
+  font-size: 0;
+}
+
+.expand-chevron::before {
+  content: "v";
   font-size: 18px;
 }
 

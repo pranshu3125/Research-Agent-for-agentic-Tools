@@ -76,7 +76,8 @@
       "checked_fields": 5,
       "corrected_fields": 1,
       "evidence_rechecked": [
-        "https://developers.facebook.com/docs/whatsapp"
+        "https://developers.facebook.com/docs/whatsapp",
+        "https://developers.facebook.com/docs/development/release/app-review"
       ],
       "corrections": [
         {
@@ -115,7 +116,7 @@
       "corrected_fields": 0,
       "evidence_rechecked": [
         "https://help.otter.ai/",
-        "https://otter.ai/"
+        "https://otter.ai/enterprise"
       ],
       "corrections": [],
       "reviewer_note": "Follow-up review confirmed MCP support rather than leaving it inferred from broader product language."
@@ -127,7 +128,8 @@
       "checked_fields": 5,
       "corrected_fields": 1,
       "evidence_rechecked": [
-        "https://www.clay.com/"
+        "https://www.clay.com/",
+        "https://www.clay.com/university"
       ],
       "corrections": [
         {
@@ -146,7 +148,8 @@
       "checked_fields": 5,
       "corrected_fields": 1,
       "evidence_rechecked": [
-        "https://cloud.google.com/gemini"
+        "https://cloud.google.com/gemini",
+        "https://notebooklm.google/"
       ],
       "corrections": [
         {

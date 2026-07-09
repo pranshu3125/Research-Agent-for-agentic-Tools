@@ -240,21 +240,53 @@ def build_site_payload(
         if result.low_confidence or result.uncertain_fields:
             low_confidence.append(result.dict())
 
-    corrections = [
-        {
-            "app_name": record.app_name,
-            "category": record.category,
-            "corrections": [item.dict() for item in record.corrections],
-            "reviewer_note": record.reviewer_note,
-        }
-        for record in verification.records
-        if record.corrections
+    corrections = []
+    for record in verification.records:
+        record_payload = record if isinstance(record, dict) else record.dict()
+        record_corrections = record_payload.get("corrections", [])
+        if not record_corrections:
+            continue
+        corrections.append(
+            {
+                "app_name": record_payload["app_name"],
+                "category": record_payload["category"],
+                "corrections": [
+                    item if isinstance(item, dict) else item.dict() for item in record_corrections
+                ],
+                "reviewer_note": record_payload["reviewer_note"],
+            }
+        )
+
+    executive_summary = [
+        f"{insights.total_apps} apps were researched from the assignment inventory and summarized into one evidence-linked readiness view.",
+        f"{insights.buildable_today} apps look buildable today, while {insights.buildable_with_limitations} more are technically reachable with normal implementation constraints.",
+        f"{insights.needs_outreach} apps are primarily blocked by partner approval, enterprise setup, or commercial gating rather than missing APIs.",
+        f"{humanize_label(insights.dominant_auth_method)} is the dominant auth pattern, which means delegated user auth is the default integration shape for this portfolio.",
+        f"The most common blocker is: {insights.most_common_blocker}",
+        "The strongest easy-win categories are the ones with public docs, self-serve credentials, and broad REST or GraphQL coverage.",
+    ]
+
+    agent_did = [
+        "Loaded the exact 100-app inventory from apps.csv.",
+        "Gathered or replayed official-doc evidence and cached source links.",
+        "Extracted structured fields for auth, API surface, MCP status, gating, blockers, and buildability.",
+        "Clustered results into portfolio patterns and generated machine-readable outputs plus the static HTML page.",
+        "Flagged low-confidence rows instead of forcing certainty.",
+    ]
+    human_did = [
+        "Spot-checked official docs for a category-balanced verification sample.",
+        "Resolved ambiguous gated vs partially gated cases where public docs were not enough.",
+        "Confirmed edge cases around partner access, enterprise approval, and unofficial MCP claims.",
+        "Applied verified corrections back into the final table and kept the original misses visible in the verification section.",
     ]
 
     return {
         "metadata": metadata.dict(),
         "insights": insights.dict(),
         "verification": verification.dict(),
+        "executive_summary": executive_summary,
+        "agent_did": agent_did,
+        "human_did": human_did,
         "category_matrix": dict(category_matrix),
         "auth_patterns": dict(auth_patterns),
         "buildability_patterns": dict(buildability_patterns),
@@ -269,7 +301,11 @@ def build_site_payload(
         )[:12],
         "corrections": corrections[:10],
         "results": [result.dict() for result in results],
-    }
+}
+
+
+def humanize_label(value: str) -> str:
+    return value.replace("_", " ")
 
 
 def render_html(payload: Dict[str, object]) -> str:
@@ -327,6 +363,23 @@ def render_html(payload: Dict[str, object]) -> str:
         </section>
       </section>
 
+      <section class="split">
+        <div class="panel">
+          <div class="section-heading">
+            <h2>Executive Summary</h2>
+            <p>The 2-minute narrative version of the findings.</p>
+          </div>
+          <div id="executive-summary" class="stack-list"></div>
+        </div>
+        <div class="panel">
+          <div class="section-heading">
+            <h2>What Agent Did vs Human Did</h2>
+            <p>Automation handled the portfolio scan; human review handled edge-case QA.</p>
+          </div>
+          <div class="split compact-split" id="work-split"></div>
+        </div>
+      </section>
+
       <section class="panel section-anchor" id="insights">
         <div class="section-heading">
           <h2>Headline Insights</h2>
@@ -365,17 +418,34 @@ def render_html(payload: Dict[str, object]) -> str:
       <section class="split">
         <div class="panel">
           <div class="section-heading">
+            <h2>Blocker Patterns</h2>
+            <p>The main operational reasons apps were not immediate toolkit wins.</p>
+          </div>
+          <div id="blocker-patterns"></div>
+        </div>
+        <div class="panel">
+          <div class="section-heading">
             <h2>MCP Pattern</h2>
             <p>Official MCP support is rare; community MCP signal is directional, not production proof.</p>
           </div>
           <div id="mcp-patterns"></div>
         </div>
+      </section>
+
+      <section class="split">
         <div class="panel section-anchor" id="easy-wins-section">
           <div class="section-heading">
             <h2>Easy Wins</h2>
             <p>Likely buildable now with public docs, self-serve auth, and usable evidence.</p>
           </div>
           <div id="easy-wins" class="stack-list"></div>
+        </div>
+        <div class="panel">
+          <div class="section-heading">
+            <h2>Buildability Buckets</h2>
+            <p>Use this with the category matrix to see where Composio can move fastest.</p>
+          </div>
+          <div id="buildability-buckets"></div>
         </div>
       </section>
 
@@ -494,7 +564,7 @@ def main() -> None:
         results_path=args.results,
         verification_path=args.verification,
         site_path=str(Path(args.site_dir) / "index.html"),
-        repo_link_placeholder="https://github.com/pranshu3125/Research-Agent-for-agentic-Tools.git",
+        repo_link_placeholder="https://github.com/pranshu3125/Research-Tool-for-agents.git",
         deployed_link_placeholder="https://research-agent-for-agentic-tools-seven.vercel.app/",
         live_search_enabled=(results[0].research_mode == "live_search" if results else False),
         mode_summary=(

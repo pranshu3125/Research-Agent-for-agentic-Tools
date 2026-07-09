@@ -5,7 +5,7 @@
   "results_path": "data/results.json",
   "verification_path": "data/verification_sample.json",
   "site_path": "site/index.html",
-  "repo_link_placeholder": "https://github.com/pranshu3125/Research-Agent-for-agentic-Tools.git",
+  "repo_link_placeholder": "https://github.com/pranshu3125/Research-Tool-for-agents.git",
   "deployed_link_placeholder": "https://research-agent-for-agentic-tools-seven.vercel.app/",
   "live_search_enabled": false,
   "mode_summary": "This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run."

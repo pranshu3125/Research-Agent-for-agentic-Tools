@@ -94,7 +94,7 @@ def main() -> None:
         results_path=str(results_json_path),
         verification_path=str(output_dir / "verification_sample.json"),
         site_path=str(Path("site") / "index.html"),
-        repo_link_placeholder="https://github.com/pranshu3125/Research-Agent-for-agentic-Tools.git",
+        repo_link_placeholder="https://github.com/pranshu3125/Research-Tool-for-agents.git",
         deployed_link_placeholder="https://research-agent-for-agentic-tools-seven.vercel.app/",
         live_search_enabled=(agent.resolved_mode == "live_search"),
         mode_summary=(

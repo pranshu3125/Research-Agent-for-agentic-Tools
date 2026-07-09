@@ -103,6 +103,34 @@ function renderInsightCards() {
     .join("");
 }
 
+function renderExecutiveSummary() {
+  document.getElementById("executive-summary").innerHTML = payload.executive_summary
+    .map(
+      (item) => `
+        <article class="list-card">
+          <p>${item}</p>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderWorkSplit() {
+  const card = (title, rows) => `
+    <article class="mini-panel">
+      <h3>${title}</h3>
+      <ul class="compact-list">
+        ${rows.map((item) => `<li>${item}</li>`).join("")}
+      </ul>
+    </article>
+  `;
+
+  document.getElementById("work-split").innerHTML = [
+    card("Agent / pipeline handled", payload.agent_did),
+    card("Human review handled", payload.human_did),
+  ].join("");
+}
+
 function renderHeadlineInsights() {
   document.getElementById("headline-insights").innerHTML = payload.insights.headline_insights
     .map(
@@ -171,6 +199,28 @@ function renderDistributionBars(targetId, data) {
           </div>
           <div class="distribution-track">
             <div class="distribution-fill ${distributionTone(label)}" style="width:${pct}%"></div>
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+  document.getElementById(targetId).innerHTML = `<div class="distribution-list">${html}</div>`;
+}
+
+function renderNarrativeBars(targetId, data) {
+  const total = Object.values(data).reduce((sum, count) => sum + count, 0) || 1;
+  const html = Object.entries(data)
+    .sort((a, b) => b[1] - a[1])
+    .map(([label, count]) => {
+      const pct = Math.round((count / total) * 100);
+      return `
+        <div class="distribution-row">
+          <div class="distribution-meta narrative-meta">
+            <div class="narrative-label">${label}</div>
+            <div>${count} <span class="meta-token">(${pct}%)</span></div>
+          </div>
+          <div class="distribution-track">
+            <div class="distribution-fill fill-blue" style="width:${pct}%"></div>
           </div>
         </div>
       `;
@@ -351,6 +401,10 @@ function renderVerification() {
     .join("");
 }
 
+function renderBuildabilityBuckets() {
+  renderDistributionBars("buildability-buckets", payload.buildability_patterns);
+}
+
 function renderProof() {
   const metadata = payload.metadata;
   document.getElementById("proof-section").innerHTML = `
@@ -359,6 +413,7 @@ function renderProof() {
         <p><strong>Submitted run note:</strong> This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run.</p>
         <p><strong>Run real mode:</strong> <code>python src/run_research.py --mode real --limit 100</code></p>
         <p><strong>Run demo mode:</strong> <code>python src/run_research.py --mode demo</code></p>
+        <p><strong>Run optional Composio live mode:</strong> <code>python src/composio_research_agent.py --limit 5</code></p>
         <p><strong>Run verification:</strong> <code>python src/verify.py --sample-size 15</code></p>
         <p><strong>Generate report:</strong> <code>python src/generate_report.py</code></p>
         <p><strong>Results saved to:</strong> ${metadata.results_path}</p>
@@ -527,11 +582,15 @@ renderModeBanner();
 renderHeroMeta();
 renderReadingCard();
 renderInsightCards();
+renderExecutiveSummary();
+renderWorkSplit();
 renderHeadlineInsights();
 renderMatrix();
 renderDistributionBars("auth-patterns", payload.auth_patterns);
 renderDistributionBars("buildability-patterns", payload.buildability_patterns);
+renderNarrativeBars("blocker-patterns", payload.blocker_patterns);
 renderDistributionBars("mcp-patterns", payload.mcp_patterns);
+renderBuildabilityBuckets();
 renderQueue("build-queue", payload.easy_wins, "build");
 renderQueue("outreach-queue", payload.outreach_needed, "outreach");
 renderLowConfidenceQueue();

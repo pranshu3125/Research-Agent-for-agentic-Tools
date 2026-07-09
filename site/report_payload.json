@@ -5,8 +5,8 @@
     "generated_at": "2026-07-09",
     "results_path": "data/results.json",
     "verification_path": "data/verification_sample.json",
-    "site_path": "site/index.html",
-    "repo_link_placeholder": "https://github.com/pranshu3125/Research-Agent-for-agentic-Tools.git",
+    "site_path": "site\\index.html",
+    "repo_link_placeholder": "https://github.com/pranshu3125/Research-Tool-for-agents.git",
     "deployed_link_placeholder": "https://research-agent-for-agentic-tools-seven.vercel.app/",
     "live_search_enabled": false,
     "mode_summary": "This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run."
@@ -110,7 +110,8 @@
         "checked_fields": 5,
         "corrected_fields": 1,
         "evidence_rechecked": [
-          "https://developers.facebook.com/docs/whatsapp"
+          "https://developers.facebook.com/docs/whatsapp",
+          "https://developers.facebook.com/docs/development/release/app-review"
         ],
         "corrections": [
           {
@@ -149,7 +150,7 @@
         "corrected_fields": 0,
         "evidence_rechecked": [
           "https://help.otter.ai/",
-          "https://otter.ai/"
+          "https://otter.ai/enterprise"
         ],
         "corrections": [],
         "reviewer_note": "Follow-up review confirmed MCP support rather than leaving it inferred from broader product language."
@@ -161,7 +162,8 @@
         "checked_fields": 5,
         "corrected_fields": 1,
         "evidence_rechecked": [
-          "https://www.clay.com/"
+          "https://www.clay.com/",
+          "https://www.clay.com/university"
         ],
         "corrections": [
           {
@@ -180,7 +182,8 @@
         "checked_fields": 5,
         "corrected_fields": 1,
         "evidence_rechecked": [
-          "https://cloud.google.com/gemini"
+          "https://cloud.google.com/gemini",
+          "https://notebooklm.google/"
         ],
         "corrections": [
           {
@@ -326,6 +329,27 @@
       "MCP availability is especially volatile and should be re-checked before packaging a production toolkit."
     ]
   },
+  "executive_summary": [
+    "100 apps were researched from the assignment inventory and summarized into one evidence-linked readiness view.",
+    "46 apps look buildable today, while 33 more are technically reachable with normal implementation constraints.",
+    "16 apps are primarily blocked by partner approval, enterprise setup, or commercial gating rather than missing APIs.",
+    "oauth2 is the dominant auth pattern, which means delegated user auth is the default integration shape for this portfolio.",
+    "The most common blocker is: Developer docs are public, but customer org setup, org permissions, and admin approval slow practical onboarding.",
+    "The strongest easy-win categories are the ones with public docs, self-serve credentials, and broad REST or GraphQL coverage."
+  ],
+  "agent_did": [
+    "Loaded the exact 100-app inventory from apps.csv.",
+    "Gathered or replayed official-doc evidence and cached source links.",
+    "Extracted structured fields for auth, API surface, MCP status, gating, blockers, and buildability.",
+    "Clustered results into portfolio patterns and generated machine-readable outputs plus the static HTML page.",
+    "Flagged low-confidence rows instead of forcing certainty."
+  ],
+  "human_did": [
+    "Spot-checked official docs for a category-balanced verification sample.",
+    "Resolved ambiguous gated vs partially gated cases where public docs were not enough.",
+    "Confirmed edge cases around partner access, enterprise approval, and unofficial MCP claims.",
+    "Applied verified corrections back into the final table and kept the original misses visible in the verification section."
+  ],
   "category_matrix": {
     "CRM": {
       "self_serve": 8,

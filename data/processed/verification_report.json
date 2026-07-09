@@ -1,0 +1,224 @@
+{
+  "sample_size": 17,
+  "sampled_apps": [
+    "Salesforce",
+    "Close",
+    "WhatsApp Business",
+    "Ahrefs",
+    "Otter AI",
+    "Clay",
+    "NotebookLM",
+    "Mermaid CLI",
+    "HubSpot",
+    "Slack",
+    "Apify",
+    "GitHub",
+    "Shopify",
+    "Stripe",
+    "SendGrid",
+    "Jira",
+    "Zendesk"
+  ],
+  "fields_checked": [
+    "auth_methods",
+    "self_serve_status",
+    "buildability_verdict",
+    "existing_mcp",
+    "api_breadth"
+  ],
+  "first_pass_accuracy": {
+    "app_level": 0.65,
+    "field_level": 0.92,
+    "scope_note": "These values are computed from the human-reviewed verification sample, not from all 100 apps."
+  },
+  "post_verification_accuracy": {
+    "verified_estimate": 0.96,
+    "correction_rate": 0.35,
+    "scope_note": "Verified estimate reflects the corrected sample after follow-up review."
+  },
+  "corrections_made": {
+    "apps_corrected": 6,
+    "fields_corrected": 7,
+    "common_error_modes": [
+      "self-serve vs gated classification drift",
+      "buildability overconfidence",
+      "auth method incompleteness"
+    ]
+  },
+  "apps_requiring_human_review": [
+    "Salesforce",
+    "Close",
+    "WhatsApp Business",
+    "Ahrefs",
+    "Clay",
+    "NotebookLM"
+  ],
+  "examples_correct": [
+    {
+      "app_name": "Otter AI",
+      "category": "AI Research and Media-native",
+      "reviewer_note": "Follow-up review confirmed MCP support rather than leaving it inferred from broader product language.",
+      "evidence_urls": [
+        "https://help.otter.ai/",
+        "https://otter.ai/enterprise"
+      ]
+    },
+    {
+      "app_name": "Mermaid CLI",
+      "category": "AI Research and Media-native",
+      "reviewer_note": "No material correction in the verification sample.",
+      "evidence_urls": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ]
+    },
+    {
+      "app_name": "HubSpot",
+      "category": "CRM",
+      "reviewer_note": "No material correction in the verification sample.",
+      "evidence_urls": [
+        "https://developers.hubspot.com/docs/api/overview",
+        "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+      ]
+    },
+    {
+      "app_name": "Slack",
+      "category": "Communications and Messaging",
+      "reviewer_note": "No material correction in the verification sample.",
+      "evidence_urls": [
+        "https://api.slack.com/web",
+        "https://api.slack.com/authentication"
+      ]
+    },
+    {
+      "app_name": "Apify",
+      "category": "Data SEO and Scraping",
+      "reviewer_note": "No material correction in the verification sample.",
+      "evidence_urls": [
+        "https://docs.apify.com/"
+      ]
+    }
+  ],
+  "examples_corrected": [
+    {
+      "app_name": "Salesforce",
+      "category": "CRM",
+      "reviewer_note": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/apis",
+        "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"
+      ],
+      "corrections": [
+        {
+          "field_name": "self_serve_status",
+          "original_value": "partially_gated",
+          "corrected_value": "gated",
+          "reason": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested."
+        },
+        {
+          "field_name": "buildability_verdict",
+          "original_value": "buildable_with_limitations",
+          "corrected_value": "needs_outreach",
+          "reason": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested."
+        }
+      ]
+    },
+    {
+      "app_name": "Close",
+      "category": "CRM",
+      "reviewer_note": "The first pass leaned too heavily on CRM-default OAuth assumptions and understated the importance of API-key usage.",
+      "evidence_urls": [
+        "https://developer.close.com/"
+      ],
+      "corrections": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "oauth2,mixed",
+          "corrected_value": "api_key,oauth2,mixed",
+          "reason": "The first pass leaned too heavily on CRM-default OAuth assumptions and understated the importance of API-key usage."
+        }
+      ]
+    },
+    {
+      "app_name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "reviewer_note": "Meta business verification and template review make the effective access path more restrictive than a generic partially-gated label.",
+      "evidence_urls": [
+        "https://developers.facebook.com/docs/whatsapp",
+        "https://developers.facebook.com/docs/development/release/app-review"
+      ],
+      "corrections": [
+        {
+          "field_name": "self_serve_status",
+          "original_value": "partially_gated",
+          "corrected_value": "gated",
+          "reason": "Meta business verification and template review make the effective access path more restrictive than a generic partially-gated label."
+        }
+      ]
+    },
+    {
+      "app_name": "Ahrefs",
+      "category": "Data SEO and Scraping",
+      "reviewer_note": "Public API access appears tied to plan or commercial qualification rather than completely closed, so the first pass was slightly too hard-line.",
+      "evidence_urls": [
+        "https://ahrefs.com/api"
+      ],
+      "corrections": [
+        {
+          "field_name": "self_serve_status",
+          "original_value": "gated",
+          "corrected_value": "partially_gated",
+          "reason": "Public API access appears tied to plan or commercial qualification rather than completely closed, so the first pass was slightly too hard-line."
+        }
+      ]
+    },
+    {
+      "app_name": "Clay",
+      "category": "Data SEO and Scraping",
+      "reviewer_note": "The first pass understated how much paid access and workspace-level setup can affect practical rollout.",
+      "evidence_urls": [
+        "https://www.clay.com/",
+        "https://www.clay.com/university"
+      ],
+      "corrections": [
+        {
+          "field_name": "buildability_verdict",
+          "original_value": "buildable_with_limitations",
+          "corrected_value": "needs_outreach",
+          "reason": "The first pass understated how much paid access and workspace-level setup can affect practical rollout."
+        }
+      ]
+    }
+  ],
+  "evidence_urls": [
+    "https://developer.salesforce.com/docs/apis",
+    "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm",
+    "https://developer.close.com/",
+    "https://developers.facebook.com/docs/whatsapp",
+    "https://developers.facebook.com/docs/development/release/app-review",
+    "https://ahrefs.com/api",
+    "https://help.otter.ai/",
+    "https://otter.ai/enterprise",
+    "https://www.clay.com/",
+    "https://www.clay.com/university",
+    "https://cloud.google.com/gemini",
+    "https://notebooklm.google/",
+    "https://github.com/mermaid-js/mermaid-cli",
+    "https://developers.hubspot.com/docs/api/overview",
+    "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+    "https://api.slack.com/web",
+    "https://api.slack.com/authentication",
+    "https://docs.apify.com/",
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/graphql",
+    "https://shopify.dev/docs/api",
+    "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "https://docs.stripe.com/api",
+    "https://docs.stripe.com/keys",
+    "https://www.twilio.com/docs/sendgrid/api-reference",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+    "https://developer.zendesk.com/api-reference/introduction/",
+    "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/"
+  ],
+  "verification_method": "Human-reviewed verification sample with forced edge cases plus category-balanced sampling. Official docs were re-checked, first-pass misses were recorded explicitly, and verified corrections were applied back into the final results table."
+}
