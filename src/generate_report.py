@@ -416,7 +416,7 @@ def render_html(payload: Dict[str, object]) -> str:
 
     <footer class="footer">
       <span>Methodology and trade-offs live in the repository docs.</span>
-      <span>Repo link placeholder and deployed link placeholder are included in the Proof section.</span>
+      <span>Source repo and live deployment are included in the Proof section.</span>
     </footer>
   </div>
   <script id="report-data" type="application/json">{app_json}</script>
