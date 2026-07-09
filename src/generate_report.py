@@ -911,9 +911,11 @@ def render_html(payload: Dict[str, object]) -> str:
                 <select id="confidence-filter" aria-label="Filter by confidence"></select>
               </div>
               <div class="filters-actions">
+                <button id="clear-search" class="utility-button" type="button">Clear search</button>
                 <button id="clear-filters" class="utility-button" type="button">Clear filters</button>
                 <span id="result-count" class="result-count">Showing {len(payload['results'])} of {len(payload['results'])} apps</span>
               </div>
+              <div id="active-constraints" class="active-constraints">Search: none. Filters: none.</div>
             </div>
             <div>
               <div id="app-explorer-grid" class="explorer-grid">{explorer_cards_markup}</div>
