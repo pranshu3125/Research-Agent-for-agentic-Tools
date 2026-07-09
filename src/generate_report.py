@@ -331,6 +331,7 @@ def build_site_payload(
         "agent_did": agent_did,
         "human_did": human_did,
         "correction_apps": correction_apps,
+        "corrected_app_names": [item["app_name"] for item in correction_apps],
         "category_matrix": dict(category_matrix),
         "auth_patterns": dict(auth_patterns),
         "buildability_patterns": dict(buildability_patterns),
@@ -366,231 +367,243 @@ def render_html(payload: Dict[str, object]) -> str:
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <div class="top-nav" id="top-nav"></div>
-    <header class="hero">
-      <div class="hero-grid">
-        <div class="hero-main">
+  <div class="dashboard-shell">
+    <aside class="sidebar glass-panel">
+      <div class="sidebar-top">
+        <div>
           <p class="eyebrow">Composio Take-Home</p>
-          <h1>Agent Toolkit Readiness Study: 100 Apps</h1>
-          <p class="subtitle">This evaluates 100 requested apps for API, auth, access friction, and practical buildability for AI-agent toolkits, then turns the findings into a static case study for product decisions.</p>
-          <div class="mode-banner" id="mode-banner"></div>
-          <div class="hero-meta">
-            <span>Patterns first</span>
-            <span>Evidence-linked</span>
-            <span>Verification-aware</span>
-            <span>Deploy-ready static report</span>
-          </div>
-          <div class="hero-actions" id="hero-actions"></div>
+          <h2>Research Ops</h2>
         </div>
-        <div class="hero-side">
-          <div class="reading-card" id="reading-card"></div>
-        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">Theme</button>
       </div>
-    </header>
+      <div class="sidebar-copy">
+        <p>Evidence-first product dashboard for 100 candidate tool integrations.</p>
+      </div>
+      <nav class="sidebar-nav" id="top-nav"></nav>
+      <div class="sidebar-note">
+        <p><strong>Run mode:</strong> real_cached submitted run</p>
+        <p><strong>Live mode:</strong> Optional Composio SDK/MCP-ready adapter exists, but no live autonomous run is claimed here.</p>
+      </div>
+    </aside>
 
-    <main id="app">
-      <section class="section-anchor overview-grid" id="overview">
-        <section class="panel">
-          <div class="section-heading">
-            <h2>Decision Snapshot</h2>
-            <p>Concrete KPIs from the submitted run so the reviewer can scan the portfolio in under two minutes.</p>
+    <div class="page-shell">
+      <header class="hero glass-panel section-anchor" id="snapshot">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <p class="eyebrow">Agent Toolkit Readiness Study</p>
+            <h1>100 apps, one product-ops view of what Composio can build now.</h1>
+            <p class="subtitle">This dashboard evaluates API surface, auth friction, MCP signal, and practical buildability for the exact assignment inventory, then exposes the findings through searchable evidence-first app views.</p>
+            <div class="mode-banner" id="mode-banner"></div>
+            <div class="hero-actions" id="hero-actions"></div>
           </div>
-          <div class="card-grid" id="insight-cards"></div>
+          <div class="hero-side">
+            <div class="reading-card glass-panel" id="reading-card"></div>
+          </div>
+        </div>
+        <div class="card-grid hero-kpis" id="insight-cards"></div>
+      </header>
+
+      <main id="app">
+        <section class="section-anchor top-dual" id="build-queue">
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Best Build Queue</h2>
+              <p>High-confidence buildable apps with public docs and clean onboarding paths.</p>
+            </div>
+            <div class="queue-grid" id="build-queue-list"></div>
+          </section>
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Verification Snapshot</h2>
+              <p>Trust-building sample review surfaced before the deeper portfolio scan.</p>
+            </div>
+            <div class="verification-grid" id="verification-summary"></div>
+            <div id="verification-note" class="stack-list"></div>
+          </section>
         </section>
-        <section class="panel">
-          <div class="section-heading">
-            <h2>Best Build Queue</h2>
-            <p>Top easy-win apps from the existing results payload, sorted by confidence and practical readiness.</p>
-          </div>
-          <div class="queue-grid" id="build-queue"></div>
+
+        <section class="section-anchor split" id="patterns">
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Executive Summary</h2>
+              <p>What a reviewer should understand in roughly two minutes.</p>
+            </div>
+            <div id="executive-summary" class="stack-list"></div>
+          </section>
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Corrections Made</h2>
+              <p>Human-reviewed fixes already applied back into the final table.</p>
+            </div>
+            <div id="correction-apps" class="stack-list"></div>
+          </section>
         </section>
-      </section>
 
-      <section class="split">
-        <div class="panel">
+        <section class="panel glass-panel section-anchor" id="insights">
           <div class="section-heading">
-            <h2>Executive Summary</h2>
-            <p>The 2-minute narrative version of the findings.</p>
+            <h2>Headline Insights</h2>
+            <p>Portfolio-level findings before app-by-app exploration.</p>
           </div>
-          <div id="executive-summary" class="stack-list"></div>
-        </div>
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Verification Snapshot</h2>
-            <p>Sample-based QA is surfaced before the long table so the trust level is clear up front.</p>
-          </div>
-          <div class="verification-grid" id="verification-summary"></div>
-          <div id="verification-note" class="stack-list"></div>
-        </div>
-      </section>
+          <div id="headline-insights" class="insight-list"></div>
+        </section>
 
-      <section class="split">
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Corrections Made</h2>
-            <p>Known first-pass misses that were verified and applied back into the final table.</p>
-          </div>
-          <div id="correction-apps" class="stack-list"></div>
-        </div>
-        <div class="panel">
-          <div class="section-heading">
-            <h2>What Agent Did vs Human Did</h2>
-            <p>Automation handled the portfolio scan; human review handled edge-case QA.</p>
-          </div>
-          <div class="split compact-split" id="work-split"></div>
-        </div>
-      </section>
+        <section class="split">
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Auth Distribution</h2>
+              <p>Delegated auth dominates this inventory.</p>
+            </div>
+            <div id="auth-patterns"></div>
+          </section>
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Buildability Buckets</h2>
+              <p>Where Composio can move fast versus where sales or partner motions matter.</p>
+            </div>
+            <div id="buildability-patterns"></div>
+          </section>
+        </section>
 
-      <section class="panel section-anchor" id="insights">
-        <div class="section-heading">
-          <h2>Headline Insights</h2>
-          <p>The reviewer should understand the topline patterns before reading the full table.</p>
-        </div>
-        <div id="headline-insights" class="insight-list"></div>
-      </section>
+        <section class="split">
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Category Readiness Matrix</h2>
+              <p>Readiness by assignment category.</p>
+            </div>
+            <div class="table-wrap compact-table">
+              <table id="matrix-table"></table>
+            </div>
+          </section>
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Blocker Distribution</h2>
+              <p>Most common reasons an app is not an immediate build win.</p>
+            </div>
+            <div id="blocker-patterns"></div>
+            <div class="subsection">
+              <div class="section-heading mini-heading">
+                <h3>MCP Signal</h3>
+                <p>Official versus community MCP presence.</p>
+              </div>
+              <div id="mcp-patterns"></div>
+            </div>
+          </section>
+        </section>
 
-      <section class="panel section-anchor" id="matrix">
-        <div class="section-heading">
-          <h2>Category Readiness Matrix</h2>
-          <p>Each of the 10 assignment categories summarized by access friction and buildability.</p>
-        </div>
-        <div class="table-wrap">
-          <table id="matrix-table"></table>
-        </div>
-      </section>
+        <section class="section-anchor split" id="outreach">
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Outreach Queue</h2>
+              <p>Strong examples where partner access, enterprise setup, or approval is the real blocker.</p>
+            </div>
+            <div class="queue-grid" id="outreach-queue"></div>
+          </section>
+          <section class="panel glass-panel">
+            <div class="section-heading">
+              <h2>Human Review Queue</h2>
+              <p>Apps that should not be auto-prioritized without a second look.</p>
+            </div>
+            <div id="low-confidence" class="stack-list"></div>
+          </section>
+        </section>
 
-      <section class="split">
-        <div class="panel">
+        <section class="panel glass-panel section-anchor" id="verification">
           <div class="section-heading">
-            <h2>Auth Patterns</h2>
-            <p>Distribution of auth approaches across the 100-app inventory.</p>
+            <h2>Verification Details</h2>
+            <p>Human-reviewed edge cases, first-pass misses, and the corrected before/after trail.</p>
           </div>
-          <div id="auth-patterns"></div>
-        </div>
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Buildability Patterns</h2>
-            <p>Distribution of portfolio readiness states.</p>
-          </div>
-          <div id="buildability-patterns"></div>
-        </div>
-      </section>
+          <div id="corrections" class="correction-grid"></div>
+        </section>
 
-      <section class="split">
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Blocker Patterns</h2>
-            <p>The main operational reasons apps were not immediate toolkit wins.</p>
-          </div>
-          <div id="blocker-patterns"></div>
-        </div>
-        <div class="panel">
-          <div class="section-heading">
-            <h2>MCP Pattern</h2>
-            <p>Official MCP support is rare; community MCP signal is directional, not production proof.</p>
-          </div>
-          <div id="mcp-patterns"></div>
-        </div>
-      </section>
-
-      <section class="split">
-        <div class="panel section-anchor" id="easy-wins-section">
-          <div class="section-heading">
-            <h2>Easy Wins</h2>
-            <p>Likely buildable now with public docs, self-serve auth, and usable evidence.</p>
-          </div>
-          <div id="easy-wins" class="stack-list"></div>
-        </div>
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Buildability Buckets</h2>
-            <p>Use this with the category matrix to see where Composio can move fastest.</p>
-          </div>
-          <div id="buildability-buckets"></div>
-        </div>
-      </section>
-
-      <section class="panel section-anchor" id="outreach-section">
-        <div class="section-heading">
-          <h2>Outreach Queue</h2>
-          <p>Apps where partnership, approval, or enterprise setup is the real blocker.</p>
-        </div>
-        <div class="queue-grid" id="outreach-queue"></div>
-      </section>
-
-      <section class="split">
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Human Review Queue</h2>
-            <p>Low-confidence or partially unclear cases that should not be auto-prioritized.</p>
-          </div>
-          <div id="low-confidence" class="stack-list"></div>
-        </div>
-        <div class="panel">
+        <section class="panel glass-panel section-anchor" id="agent-workflow">
           <div class="section-heading">
             <h2>Agent Workflow</h2>
-            <p>How the app research agent turns an inventory into a case-study artifact.</p>
+            <p>What was automated, what was human-reviewed, and how the final HTML report was generated.</p>
           </div>
-          <ol class="workflow">
-            <li>Load `apps.csv` as the source-of-truth inventory.</li>
-            <li>Search official docs, auth docs, pricing docs, and MCP signals.</li>
-            <li>Rank evidence with official sources first.</li>
-            <li>Extract structured fields into enums plus notes and blocker text.</li>
-            <li>Classify buildability and flag uncertainty instead of forcing certainty.</li>
-            <li>Re-check a sample, record corrections, and estimate first-pass accuracy.</li>
-            <li>Export results and generate the static HTML case study.</li>
-          </ol>
-        </div>
-      </section>
+          <div class="pipeline-strip" id="workflow-pipeline"></div>
+          <div class="split compact-split" id="work-split"></div>
+        </section>
 
-      <section class="panel">
-        <div class="section-heading">
-          <h2>Explore Apps</h2>
-          <p>Collapsed cards for quick scanning before diving into the full table.</p>
-        </div>
-        <div class="explore-grid" id="explore-apps"></div>
-      </section>
+        <section class="panel glass-panel section-anchor" id="explore-apps">
+          <div class="section-heading">
+            <div>
+              <h2>Explore Apps</h2>
+              <p>Search, filter, and inspect evidence-backed app records interactively.</p>
+            </div>
+            <div class="control-actions">
+              <button id="filter-toggle" class="utility-button mobile-only" type="button">Filters</button>
+              <button id="export-csv" class="utility-button" type="button">Export filtered CSV</button>
+            </div>
+          </div>
+          <div class="explorer-layout">
+            <div class="filters-panel glass-panel" id="filters-panel">
+              <div class="search-wrap">
+                <input id="search-input" type="search" placeholder="Search app, category, auth, API surface, blocker, notes..." />
+              </div>
+              <div class="quick-toggle-row">
+                <button id="toggle-high-confidence" class="chip-button" type="button">Show only high-confidence apps</button>
+                <button id="toggle-corrected" class="chip-button" type="button">Show corrected apps</button>
+              </div>
+              <div class="filters-grid">
+                <select id="category-filter"></select>
+                <select id="auth-filter"></select>
+                <select id="buildability-filter"></select>
+                <select id="gating-filter"></select>
+                <select id="mcp-filter"></select>
+                <select id="review-filter"></select>
+                <select id="confidence-filter"></select>
+              </div>
+              <div class="filters-actions">
+                <button id="clear-filters" class="utility-button" type="button">Clear filters</button>
+                <span id="result-count" class="result-count"></span>
+              </div>
+            </div>
+            <div>
+              <div id="app-explorer-grid" class="explorer-grid"></div>
+              <div id="empty-state" class="empty-state" hidden>
+                <h3>No apps match these filters.</h3>
+                <p>Clear filters or broaden the search to restore the full 100-app view.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <section class="panel section-anchor" id="verification">
-        <div class="section-heading">
-          <h2>Verification</h2>
-          <p>Sample-based QA with honest misses surfaced explicitly rather than hidden.</p>
-        </div>
-        <div id="corrections" class="correction-grid"></div>
-      </section>
+        <section class="panel glass-panel section-anchor" id="proof">
+          <div class="section-heading">
+            <h2>Proof</h2>
+            <p>Exact honesty wording, run commands, and source/deployment links.</p>
+          </div>
+          <div id="proof-section" class="stack-list"></div>
+        </section>
 
-      <section class="panel section-anchor" id="proof">
-        <div class="section-heading">
-          <h2>Proof</h2>
-          <p>How to run the agent, where the outputs land, and what mode produced this page.</p>
-        </div>
-        <div id="proof-section" class="stack-list"></div>
-      </section>
+        <section class="panel glass-panel section-anchor" id="full-table">
+          <div class="section-heading">
+            <h2>Full Table</h2>
+            <p>The same filtered app set rendered in dense table form for spreadsheet-style scanning.</p>
+          </div>
+          <div class="table-wrap">
+            <table id="results-table"></table>
+          </div>
+        </section>
+      </main>
 
-      <section class="panel section-anchor" id="full-table">
-        <div class="section-heading">
-          <h2>Full 100-App Table</h2>
-          <p>Searchable and filterable details for the full inventory.</p>
-        </div>
-        <div class="filters">
-          <input id="text-filter" type="search" placeholder="Search app, category, blocker..." />
-          <select id="category-filter"></select>
-          <select id="buildability-filter"></select>
-          <select id="gating-filter"></select>
-          <select id="confidence-filter"></select>
-        </div>
-        <div class="table-wrap">
-          <table id="results-table"></table>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span>Methodology and trade-offs live in the repository docs.</span>
-      <span>Source repo and live deployment are included in the Proof section.</span>
-    </footer>
+      <footer class="footer">
+        <span>Submitted run is real_cached and includes human-reviewed corrections in the final table.</span>
+        <span>Optional Composio SDK/MCP live mode exists, but no fully autonomous live research run is claimed here.</span>
+      </footer>
+    </div>
   </div>
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="detail-drawer" id="detail-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">App Detail</p>
+        <h2 id="drawer-title">App</h2>
+      </div>
+      <button id="drawer-close" class="theme-toggle" type="button" aria-label="Close detail panel">Close</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
   <script id="report-data" type="application/json">{app_json}</script>
   <script src="script.js"></script>
 </body>

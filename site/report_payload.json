@@ -449,6 +449,14 @@
       "reviewer_note": "The blocker is less 'impossible now' and more 'requires a different Google enterprise surface than a direct public NotebookLM app API'."
     }
   ],
+  "corrected_app_names": [
+    "Salesforce",
+    "Close",
+    "WhatsApp Business",
+    "Ahrefs",
+    "Clay",
+    "NotebookLM"
+  ],
   "category_matrix": {
     "CRM": {
       "self_serve": 8,

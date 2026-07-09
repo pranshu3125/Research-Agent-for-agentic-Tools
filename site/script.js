@@ -1,12 +1,40 @@
 const payload = JSON.parse(document.getElementById("report-data").textContent);
 const results = payload.results;
+const correctedApps = new Set(payload.corrected_app_names || []);
+const correctionMap = new Map((payload.corrections || []).map((item) => [item.app_name, item]));
+const workflowSteps = [
+  "apps.csv",
+  "evidence retrieval",
+  "extraction",
+  "classification",
+  "clustering",
+  "verification",
+  "HTML report",
+];
+
+const state = {
+  theme: localStorage.getItem("dashboard-theme") || "dark",
+  filters: {
+    search: "",
+    category: "all",
+    auth: "all",
+    buildability: "all",
+    gating: "all",
+    mcp: "all",
+    review: "all",
+    confidence: "all",
+    highConfidenceOnly: false,
+    correctedOnly: false,
+  },
+  activeDrawerApp: null,
+};
 
 function humanize(value) {
-  return String(value).replaceAll("_", " ");
+  return String(value || "").replaceAll("_", " ");
 }
 
-function statusTag(value) {
-  return `<span class="status ${value}">${humanize(value)}</span>`;
+function safeId(value) {
+  return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
 }
 
 function confidenceBand(score) {
@@ -15,66 +43,105 @@ function confidenceBand(score) {
   return "low";
 }
 
-function confidenceLabel(score) {
-  return `${score.toFixed(2)} ${statusTag(confidenceBand(score))}`;
+function statusTag(value) {
+  return `<span class="status ${value}">${humanize(value)}</span>`;
 }
 
-function uniqueAnchorLinks() {
+function formatMetric(value) {
+  return typeof value === "number" && value < 1 ? value.toFixed(2) : value;
+}
+
+function getReviewStatus(app) {
+  return app.low_confidence || (app.uncertain_fields || []).length > 0 ? "required" : "not_required";
+}
+
+function getAppSearchText(app) {
   return [
-    ["overview", "Overview"],
-    ["insights", "Insights"],
-    ["matrix", "Matrix"],
-    ["easy-wins-section", "Easy Wins"],
-    ["outreach-section", "Outreach"],
+    app.app_name,
+    app.category,
+    app.one_line_description,
+    app.auth_methods.join(" "),
+    app.self_serve_status,
+    app.api_surface,
+    app.buildability_verdict,
+    app.main_blocker,
+    app.notes,
+    app.evidence_urls.join(" "),
+  ]
+    .join(" ")
+    .toLowerCase();
+}
+
+function navLinks() {
+  return [
+    ["snapshot", "Snapshot"],
+    ["build-queue", "Build Queue"],
+    ["patterns", "Patterns"],
     ["verification", "Verification"],
-    ["full-table", "Full Table"],
+    ["agent-workflow", "Agent Workflow"],
+    ["explore-apps", "Explore Apps"],
     ["proof", "Proof"],
+    ["full-table", "Full Table"],
   ];
 }
 
 function renderNav() {
   const nav = document.getElementById("top-nav");
-  nav.innerHTML = `
-    <div class="nav-inner">
-      <div class="nav-brand">Composio Case Study</div>
-      <div class="nav-links">
-        ${uniqueAnchorLinks()
-          .map(([id, label]) => `<a class="nav-link" href="#${id}" data-target="${id}">${label}</a>`)
-          .join("")}
-      </div>
-    </div>
-  `;
+  nav.innerHTML = navLinks()
+    .map(
+      ([id, label]) => `
+        <a class="nav-link" href="#${id}" data-target="${id}">
+          <span>${label}</span>
+        </a>
+      `
+    )
+    .join("");
+}
+
+function applyTheme() {
+  document.documentElement.setAttribute("data-theme", state.theme);
+  localStorage.setItem("dashboard-theme", state.theme);
+  const toggle = document.getElementById("theme-toggle");
+  if (toggle) {
+    toggle.textContent = state.theme === "dark" ? "Light mode" : "Dark mode";
+  }
+}
+
+function initTheme() {
+  applyTheme();
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    state.theme = state.theme === "dark" ? "light" : "dark";
+    applyTheme();
+  });
 }
 
 function renderModeBanner() {
   const metadata = payload.metadata;
   document.getElementById("mode-banner").innerHTML = `
-    <div class="mode-panel">
-      <div class="mini-tags">
-        <span class="mode-chip">${humanize(metadata.mode_resolved)}</span>
-        <span class="helper-chip">${metadata.live_search_enabled ? "live provider" : "submission run"}</span>
-      </div>
-      <p>${metadata.mode_summary}</p>
+    <div class="badge-row">
+      <span class="mode-badge primary">real_cached submitted run</span>
+      <span class="mode-badge secondary">Composio SDK/MCP-ready</span>
+      <span class="mode-badge secondary">${metadata.live_search_enabled ? "live provider configured" : "live search not executed"}</span>
     </div>
+    <p class="mode-copy">${metadata.mode_summary}</p>
   `;
 }
 
 function renderHeroMeta() {
   const metadata = payload.metadata;
-  const target = document.getElementById("hero-actions");
-  target.innerHTML = `
-    <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">Open Live Site</a>
-    <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">View Source Repo</a>
+  document.getElementById("hero-actions").innerHTML = `
+    <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">Open deployment</a>
+    <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">Source repo</a>
   `;
 }
 
 function renderReadingCard() {
   document.getElementById("reading-card").innerHTML = `
-    <h3>How to read this report</h3>
+    <h3>How to use this dashboard</h3>
     <ul>
-      <li>Start with the insight cards and headline findings for the portfolio view.</li>
-      <li>Use the recommended build queue and outreach queue to see where Composio should act first.</li>
-      <li>Use the verification section to understand where the first pass was wrong and how corrections were applied.</li>
+      <li>Scan the KPI strip and verification snapshot first.</li>
+      <li>Use Build Queue and Outreach Queue to understand product actionability.</li>
+      <li>Search or filter the 100 apps, then open the detail drawer to inspect evidence and reasoning.</li>
     </ul>
   `;
 }
@@ -84,9 +151,8 @@ function renderInsightCards() {
     .map(
       (card) => `
         <article class="metric-card kpi-card ${card.tone}">
-          <h3>${card.label}</h3>
-          <div class="value">${typeof card.value === "number" && card.value < 1 ? card.value.toFixed(2) : card.value}</div>
-          <div class="kpi-label">${card.label}</div>
+          <div class="metric-label">${card.label}</div>
+          <div class="metric-value">${formatMetric(card.value)}</div>
         </article>
       `
     )
@@ -95,10 +161,89 @@ function renderInsightCards() {
 
 function renderExecutiveSummary() {
   document.getElementById("executive-summary").innerHTML = payload.executive_summary
+    .map((item) => `<article class="mini-card"><p>${item}</p></article>`)
+    .join("");
+}
+
+function renderVerification() {
+  const verification = payload.verification;
+  const cards = [
+    ["Sample size", verification.sample_size],
+    ["First-pass app accuracy", verification.first_pass_app_accuracy],
+    ["First-pass field accuracy", verification.first_pass_field_accuracy],
+    ["Post-verification accuracy", verification.verified_accuracy_estimate],
+    ["Corrections made", payload.correction_apps.length],
+  ];
+  document.getElementById("verification-summary").innerHTML = cards
+    .map(
+      ([label, value]) => `
+        <article class="mini-card verification-card">
+          <div class="metric-label">${label}</div>
+          <div class="metric-value">${formatMetric(value)}</div>
+        </article>
+      `
+    )
+    .join("");
+
+  document.getElementById("verification-note").innerHTML = `
+    <article class="mini-card">
+      <p><strong>Selection strategy:</strong> ${verification.selection_strategy}</p>
+      <p><strong>Corrected apps:</strong> ${(payload.corrected_app_names || []).join(", ") || "not available"}</p>
+      <p><strong>Honesty note:</strong> Final table includes human-reviewed corrections. The submitted run remains real_cached and does not claim a fully autonomous live research pass.</p>
+    </article>
+  `;
+
+  document.getElementById("corrections").innerHTML = (payload.corrections || [])
+    .map(
+      (entry) => `
+        <article class="mini-card correction-detail-card">
+          <div class="card-topline">
+            <div>
+              <h3>${entry.app_name}</h3>
+              <div class="meta-row">
+                <span class="pill">${entry.category}</span>
+                <span class="pill">Corrected</span>
+              </div>
+            </div>
+          </div>
+          <p>${entry.reviewer_note}</p>
+          <div class="before-after-grid">
+            ${entry.corrections
+              .map(
+                (corr) => `
+                  <div class="before-after-row">
+                    <div class="before-after-label">${humanize(corr.field_name)}</div>
+                    <div class="before-after-values">
+                      <span class="before-chip">Before: ${corr.original_value}</span>
+                      <span class="after-chip">After: ${corr.corrected_value}</span>
+                    </div>
+                  </div>
+                `
+              )
+              .join("")}
+          </div>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderCorrectionApps() {
+  document.getElementById("correction-apps").innerHTML = (payload.correction_apps || [])
     .map(
       (item) => `
-        <article class="list-card">
-          <p>${item}</p>
+        <article class="mini-card correction-summary-card">
+          <div class="card-topline">
+            <div>
+              <h3>${item.app_name}</h3>
+              <div class="meta-row">
+                <span class="pill">${item.category}</span>
+                <span class="pill">${item.field_count} corrected field${item.field_count === 1 ? "" : "s"}</span>
+              </div>
+            </div>
+          </div>
+          <p><strong>Fields:</strong> ${item.fields.map((field) => humanize(field)).join(", ")}</p>
+          <p>${item.reviewer_note}</p>
         </article>
       `
     )
@@ -107,29 +252,66 @@ function renderExecutiveSummary() {
 
 function renderWorkSplit() {
   const card = (title, rows) => `
-    <article class="mini-panel">
+    <article class="mini-card">
       <h3>${title}</h3>
       <ul class="compact-list">
         ${rows.map((item) => `<li>${item}</li>`).join("")}
       </ul>
     </article>
   `;
-
   document.getElementById("work-split").innerHTML = [
-    card("Agent / pipeline handled", payload.agent_did),
-    card("Human review handled", payload.human_did),
+    card("Agent / pipeline did", payload.agent_did),
+    card("Human did", payload.human_did),
   ].join("");
+}
+
+function renderWorkflowPipeline() {
+  document.getElementById("workflow-pipeline").innerHTML = workflowSteps
+    .map(
+      (step, index) => `
+        <div class="pipeline-step">
+          <div class="pipeline-index">${index + 1}</div>
+          <div class="pipeline-label">${step}</div>
+        </div>
+      `
+    )
+    .join('<div class="pipeline-arrow">→</div>');
 }
 
 function renderHeadlineInsights() {
   document.getElementById("headline-insights").innerHTML = payload.insights.headline_insights
-    .map(
-      (item) => `
-        <article class="list-card">
-          <p>${item}</p>
-        </article>
-      `
-    )
+    .map((item) => `<article class="mini-card"><p>${item}</p></article>`)
+    .join("");
+}
+
+function distributionTone(label) {
+  if (["buildable_today", "self_serve", "official", "oauth2", "high"].includes(label)) return "fill-green";
+  if (["buildable_with_limitations", "partially_gated", "unofficial", "api_key", "token", "medium"].includes(label)) return "fill-amber";
+  if (["needs_outreach", "gated", "not_buildable_now", "required"].includes(label)) return "fill-orange";
+  if (["unclear", "none_found", "low", "not_required"].includes(label)) return "fill-gray";
+  return "fill-blue";
+}
+
+function renderDistributionBars(targetId, data, chipLabels = true) {
+  const total = Object.values(data).reduce((sum, count) => sum + count, 0) || 1;
+  const target = document.getElementById(targetId);
+  target.innerHTML = Object.entries(data)
+    .sort((a, b) => b[1] - a[1])
+    .map(([label, count]) => {
+      const pct = Math.round((count / total) * 100);
+      const labelHtml = chipLabels ? statusTag(label) : `<span class="bar-label">${label}</span>`;
+      return `
+        <div class="distribution-row">
+          <div class="distribution-meta">
+            <div class="distribution-label">${labelHtml}</div>
+            <div class="meta-token">${count} (${pct}%)</div>
+          </div>
+          <div class="distribution-track">
+            <div class="distribution-fill ${distributionTone(label)}" style="width:${pct}%"></div>
+          </div>
+        </div>
+      `;
+    })
     .join("");
 }
 
@@ -149,84 +331,36 @@ function renderMatrix() {
       `
     )
     .join("");
-
   document.getElementById("matrix-table").innerHTML = `
     <thead>
       <tr>
         <th>Category</th>
         <th>Self-serve</th>
-        <th>Gated / partially gated</th>
+        <th>Gated</th>
         <th>Buildable today</th>
         <th>Needs outreach</th>
-        <th>Unclear / low confidence</th>
+        <th>Human review</th>
       </tr>
     </thead>
     <tbody>${rows}</tbody>
   `;
 }
 
-function distributionTone(label) {
-  if (["buildable_today", "self_serve", "official", "oauth2"].includes(label)) return "fill-green";
-  if (["buildable_with_limitations", "partially_gated", "unofficial", "api_key", "token"].includes(label)) return "fill-amber";
-  if (["needs_outreach", "gated", "not_buildable_now"].includes(label)) return "fill-orange";
-  if (["unclear", "none_found"].includes(label)) return "fill-gray";
-  return "fill-blue";
-}
-
-function renderDistributionBars(targetId, data) {
-  const total = Object.values(data).reduce((sum, count) => sum + count, 0) || 1;
-  const html = Object.entries(data)
-    .sort((a, b) => b[1] - a[1])
-    .map(([label, count]) => {
-      const pct = Math.round((count / total) * 100);
-      return `
-        <div class="distribution-row">
-          <div class="distribution-meta">
-            <div class="distribution-label">
-              ${statusTag(label)}
-            </div>
-            <div>${count} <span class="meta-token">(${pct}%)</span></div>
-          </div>
-          <div class="distribution-track">
-            <div class="distribution-fill ${distributionTone(label)}" style="width:${pct}%"></div>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
-  document.getElementById(targetId).innerHTML = `<div class="distribution-list">${html}</div>`;
-}
-
-function renderNarrativeBars(targetId, data) {
-  const total = Object.values(data).reduce((sum, count) => sum + count, 0) || 1;
-  const html = Object.entries(data)
-    .sort((a, b) => b[1] - a[1])
-    .map(([label, count]) => {
-      const pct = Math.round((count / total) * 100);
-      return `
-        <div class="distribution-row">
-          <div class="distribution-meta narrative-meta">
-            <div class="narrative-label">${label}</div>
-            <div>${count} <span class="meta-token">(${pct}%)</span></div>
-          </div>
-          <div class="distribution-track">
-            <div class="distribution-fill fill-blue" style="width:${pct}%"></div>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
-  document.getElementById(targetId).innerHTML = `<div class="distribution-list">${html}</div>`;
-}
-
-function evidenceLinks(urls) {
+function evidenceLinkGroup(urls, includeCopy = false) {
   return `
     <div class="evidence-row">
       ${urls
-        .map(
-          (url, index) =>
-            `<a class="evidence-link" href="${url}" target="_blank" rel="noreferrer">Evidence ${index + 1}</a>`
-        )
+        .map((url, index) => {
+          const copyButton = includeCopy
+            ? `<button class="tiny-button copy-link" type="button" data-copy="${url}">Copy</button>`
+            : "";
+          return `
+            <div class="evidence-item">
+              <a class="evidence-link" href="${url}" target="_blank" rel="noreferrer">Evidence ${index + 1}</a>
+              ${copyButton}
+            </div>
+          `;
+        })
         .join("")}
     </div>
   `;
@@ -234,308 +368,205 @@ function evidenceLinks(urls) {
 
 function renderQueue(targetId, rows, kind) {
   document.getElementById(targetId).innerHTML = rows
-    .map((item) => {
-      const whyLine =
-        kind === "build"
-          ? "Public docs, clear auth, and a relatively direct integration path make this a strong candidate for an early toolkit."
-          : "This app looks strategically relevant, but access or approval friction makes outreach the practical next step.";
-      const nextAction =
-        kind === "build"
-          ? "Prototype scoped CRUD flows and validate permission boundaries."
-          : "Validate partner access, plan gating, or enterprise approval path before committing build time.";
-      return `
-        <article class="expand-card queue-card">
-          <div class="queue-header">
+    .map(
+      (item) => `
+        <article class="queue-card mini-card" data-app-card="${item.app_name}">
+          <div class="card-topline">
             <div>
               <h3>${item.app_name}</h3>
-              <div class="queue-meta">
-                <span class="meta-token">${item.category}</span>
+              <div class="meta-row">
+                <span class="pill">${item.category}</span>
                 ${statusTag(item.buildability_verdict)}
                 ${statusTag(item.self_serve_status)}
               </div>
             </div>
-            <div class="confidence-wrap">
-              <div class="confidence-line">
-                ${statusTag(confidenceBand(item.confidence_score))}
-                <span class="meta-token">${item.confidence_score.toFixed(2)}</span>
-              </div>
-            </div>
+            <div class="confidence-pill ${confidenceBand(item.confidence_score)}">${item.confidence_score.toFixed(2)}</div>
           </div>
-          <p><strong>Why this matters:</strong> ${whyLine}</p>
+          <p>${item.one_line_description}</p>
+          <p><strong>${
+            kind === "build"
+              ? "Why it is attractive:"
+              : kind === "review"
+                ? "Why it needs human review:"
+                : "Why outreach matters:"
+          }</strong> ${item.main_blocker}</p>
           <p><strong>Auth:</strong> ${item.auth_methods.join(", ")}</p>
-          <p><strong>Main blocker:</strong> ${item.main_blocker}</p>
-          <p><strong>Suggested next action:</strong> ${nextAction}</p>
-          ${evidenceLinks(item.evidence_urls)}
-        </article>
-      `;
-    })
-    .join("");
-}
-
-function renderLowConfidenceQueue() {
-  const rows = payload.low_confidence.map(
-    (item) => `
-      <article class="expand-card queue-card">
-        <div class="queue-header">
-          <div>
-            <h3>${item.app_name}</h3>
-            <div class="queue-meta">
-              <span class="meta-token">${item.category}</span>
-              ${statusTag(item.buildability_verdict)}
-            </div>
-          </div>
-          <div class="confidence-wrap">
-            <div class="confidence-line">
-              ${statusTag(confidenceBand(item.confidence_score))}
-              <span class="meta-token">${item.confidence_score.toFixed(2)}</span>
-            </div>
-          </div>
-        </div>
-        <p>${item.one_line_description}</p>
-        <p><strong>Uncertain fields:</strong> ${(item.uncertain_fields || []).join(", ") || "none"}</p>
-        <p><strong>Blocker:</strong> ${item.main_blocker}</p>
-        ${evidenceLinks(item.evidence_urls)}
-      </article>
-    `
-  );
-  document.getElementById("low-confidence").innerHTML = rows.join("");
-}
-
-function renderExploreCards() {
-  document.getElementById("explore-apps").innerHTML = results
-    .map(
-      (item, index) => `
-        <article class="expand-card" data-expand-card>
-          <button class="expand-toggle" type="button" aria-expanded="false" aria-controls="expand-${index}">
-            <div class="expand-summary">
-              <div>
-                <h3>${item.app_name}</h3>
-                <div class="expand-meta">
-                  <span>${item.category}</span>
-                  ${statusTag(item.buildability_verdict)}
-                  <span>Confidence ${item.confidence_score.toFixed(2)}</span>
-                </div>
-              </div>
-              <span class="expand-chevron">⌄</span>
-            </div>
-          </button>
-          <div class="expand-content" id="expand-${index}">
-            <p>${item.one_line_description}</p>
-            <p><strong>Auth:</strong> ${item.auth_methods.join(", ")}</p>
-            <p><strong>Self-serve status:</strong> ${humanize(item.self_serve_status)}</p>
-            <p><strong>API surface:</strong> ${humanize(item.api_surface)}</p>
-            <p><strong>MCP status:</strong> ${humanize(item.existing_mcp)}</p>
-            <p><strong>Main blocker:</strong> ${item.main_blocker}</p>
-            <p><strong>Notes:</strong> ${item.notes}</p>
-            <p><strong>Uncertain fields:</strong> ${(item.uncertain_fields || []).join(", ") || "none"}</p>
-            ${evidenceLinks(item.evidence_urls)}
-          </div>
+          ${evidenceLinkGroup(item.evidence_urls)}
         </article>
       `
     )
     .join("");
 }
 
-function renderVerification() {
-  const verification = payload.verification;
-  const cards = [
-    ["Sample size", verification.sample_size],
-    ["First-pass app accuracy", verification.first_pass_app_accuracy],
-    ["First-pass field accuracy", verification.first_pass_field_accuracy],
-    ["Verified estimate", verification.verified_accuracy_estimate],
-    ["Correction rate", verification.correction_rate],
-  ];
-  document.getElementById("verification-summary").innerHTML = cards
-    .map(
-      ([label, value]) => `
-        <article class="mini-card">
-          <h3>${label}</h3>
-          <div class="value">${value}</div>
-        </article>
-      `
-    )
-    .join("");
-
-  document.getElementById("verification-note").innerHTML = `
-    <article class="list-card">
-      <p><strong>Selection strategy:</strong> ${verification.selection_strategy}</p>
-      <p><strong>Correction policy:</strong> Verified corrections were applied back into the final results table, while this section preserves the original first-pass misses for transparency.</p>
-      <p><strong>Accuracy note:</strong> First-pass app accuracy was ${verification.first_pass_app_accuracy.toFixed(2)} and the post-verification estimate is ${verification.verified_accuracy_estimate.toFixed(2)} for the sampled set.</p>
-    </article>
-  `;
-
-  document.getElementById("corrections").innerHTML = payload.corrections
-    .map(
-      (entry) => `
-        <article class="expand-card correction-card">
-          <div class="section-heading">
-            <h3>${entry.app_name}</h3>
-            <span class="pill">${entry.category}</span>
-          </div>
-          <p>${entry.reviewer_note}</p>
-          <div class="before-after">
-            ${entry.corrections
-              .map(
-                (corr) => `
-                  <div class="before-after-row">
-                    <strong>${humanize(corr.field_name)}</strong>
-                    <span>Before: ${corr.original_value}</span>
-                    <span>After: ${corr.corrected_value}</span>
-                  </div>
-                `
-              )
-              .join("")}
-          </div>
-        </article>
-      `
-    )
-    .join("");
+function getFilterOptions() {
+  return {
+    categories: ["all", ...new Set(results.map((item) => item.category))],
+    authMethods: ["all", ...new Set(results.flatMap((item) => item.auth_methods))],
+    buildability: ["all", ...new Set(results.map((item) => item.buildability_verdict))],
+    gating: ["all", ...new Set(results.map((item) => item.self_serve_status))],
+    mcp: ["all", ...new Set(results.map((item) => item.existing_mcp))],
+    review: ["all", "required", "not_required"],
+    confidence: ["all", "high", "medium", "low"],
+  };
 }
 
-function renderCorrectionApps() {
-  document.getElementById("correction-apps").innerHTML = payload.correction_apps
-    .map(
-      (item) => `
-        <article class="list-card correction-summary-card">
-          <div class="card-topline">
-            <div>
-              <h3>${item.app_name}</h3>
-              <div class="queue-meta">
-                <span class="meta-token">${item.category}</span>
-                <span class="meta-token">${item.field_count} corrected field${item.field_count === 1 ? "" : "s"}</span>
-              </div>
-            </div>
-            <div class="status buildable_with_limitations">${item.fields.map((field) => humanize(field)).join(", ")}</div>
-          </div>
-          <p>${item.reviewer_note}</p>
-        </article>
-      `
-    )
+function fillSelect(selectId, options, labelPrefix) {
+  const select = document.getElementById(selectId);
+  select.innerHTML = options
+    .map((value) => `<option value="${value}">${value === "all" ? labelPrefix : humanize(value)}</option>`)
     .join("");
-}
-
-function renderBuildabilityBuckets() {
-  renderDistributionBars("buildability-buckets", payload.buildability_patterns);
-}
-
-function renderProof() {
-  const metadata = payload.metadata;
-  document.getElementById("proof-section").innerHTML = `
-    <article class="list-card">
-      <div class="proof-list">
-        <p><strong>Submitted run note:</strong> This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run.</p>
-        <p><strong>Run real mode:</strong> <code>python src/run_research.py --mode real --limit 100</code></p>
-        <p><strong>Run demo mode:</strong> <code>python src/run_research.py --mode demo</code></p>
-        <p><strong>Run optional Composio live mode:</strong> <code>python src/composio_research_agent.py --limit 5</code></p>
-        <p><strong>Run verification:</strong> <code>python src/verify.py --sample-size 15</code></p>
-        <p><strong>Generate report:</strong> <code>python src/generate_report.py</code></p>
-        <p><strong>Results saved to:</strong> ${metadata.results_path}</p>
-        <p><strong>Verification saved to:</strong> ${metadata.verification_path}</p>
-        <p><strong>Static page:</strong> ${metadata.site_path}</p>
-        <p><strong>Repository:</strong> <a href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">${metadata.repo_link_placeholder}</a></p>
-        <p><strong>Deployment:</strong> <a href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">${metadata.deployed_link_placeholder}</a></p>
-      </div>
-    </article>
-  `;
 }
 
 function initFilters() {
-  const categories = ["all", ...new Set(results.map((item) => item.category))];
-  const categoryFilter = document.getElementById("category-filter");
-  const buildabilityFilter = document.getElementById("buildability-filter");
-  const gatingFilter = document.getElementById("gating-filter");
-  const confidenceFilter = document.getElementById("confidence-filter");
+  const options = getFilterOptions();
+  fillSelect("category-filter", options.categories, "All categories");
+  fillSelect("auth-filter", options.authMethods, "All auth methods");
+  fillSelect("buildability-filter", options.buildability, "All buildability");
+  fillSelect("gating-filter", options.gating, "All access types");
+  fillSelect("mcp-filter", options.mcp, "All MCP states");
+  fillSelect("review-filter", options.review, "All review states");
+  fillSelect("confidence-filter", options.confidence, "All confidence");
 
-  categoryFilter.innerHTML = categories
-    .map((category) => `<option value="${category}">${category}</option>`)
-    .join("");
+  document.getElementById("search-input").addEventListener("input", (event) => {
+    state.filters.search = event.target.value.trim().toLowerCase();
+    renderFilteredViews();
+  });
 
-  buildabilityFilter.innerHTML = [
-    "all",
-    "buildable_today",
-    "buildable_with_limitations",
-    "needs_outreach",
-    "not_buildable_now",
-    "unclear",
-  ]
-    .map((value) => `<option value="${value}">${humanize(value)}</option>`)
-    .join("");
+  [
+    ["category-filter", "category"],
+    ["auth-filter", "auth"],
+    ["buildability-filter", "buildability"],
+    ["gating-filter", "gating"],
+    ["mcp-filter", "mcp"],
+    ["review-filter", "review"],
+    ["confidence-filter", "confidence"],
+  ].forEach(([id, key]) => {
+    document.getElementById(id).addEventListener("change", (event) => {
+      state.filters[key] = event.target.value;
+      renderFilteredViews();
+    });
+  });
 
-  gatingFilter.innerHTML = ["all", "self_serve", "partially_gated", "gated", "unclear"]
-    .map((value) => `<option value="${value}">${humanize(value)}</option>`)
-    .join("");
+  document.getElementById("clear-filters").addEventListener("click", () => {
+    state.filters = {
+      search: "",
+      category: "all",
+      auth: "all",
+      buildability: "all",
+      gating: "all",
+      mcp: "all",
+      review: "all",
+      confidence: "all",
+      highConfidenceOnly: false,
+      correctedOnly: false,
+    };
+    document.getElementById("search-input").value = "";
+    initFilterControlState();
+    renderFilteredViews();
+  });
 
-  confidenceFilter.innerHTML = ["all", "high", "medium", "low"]
-    .map((value) => `<option value="${value}">${humanize(value)}</option>`)
-    .join("");
+  document.getElementById("toggle-high-confidence").addEventListener("click", () => {
+    state.filters.highConfidenceOnly = !state.filters.highConfidenceOnly;
+    syncToggleStates();
+    renderFilteredViews();
+  });
 
-  ["text-filter", "category-filter", "buildability-filter", "gating-filter", "confidence-filter"].forEach(
-    (id) => {
-      document.getElementById(id).addEventListener("input", renderResultsTable);
-      document.getElementById(id).addEventListener("change", renderResultsTable);
-    }
-  );
+  document.getElementById("toggle-corrected").addEventListener("click", () => {
+    state.filters.correctedOnly = !state.filters.correctedOnly;
+    syncToggleStates();
+    renderFilteredViews();
+  });
+
+  document.getElementById("filter-toggle").addEventListener("click", () => {
+    document.getElementById("filters-panel").classList.toggle("open");
+  });
+
+  document.getElementById("export-csv").addEventListener("click", exportFilteredCsv);
+  initFilterControlState();
+}
+
+function initFilterControlState() {
+  document.getElementById("category-filter").value = state.filters.category;
+  document.getElementById("auth-filter").value = state.filters.auth;
+  document.getElementById("buildability-filter").value = state.filters.buildability;
+  document.getElementById("gating-filter").value = state.filters.gating;
+  document.getElementById("mcp-filter").value = state.filters.mcp;
+  document.getElementById("review-filter").value = state.filters.review;
+  document.getElementById("confidence-filter").value = state.filters.confidence;
+  syncToggleStates();
+}
+
+function syncToggleStates() {
+  document.getElementById("toggle-high-confidence").classList.toggle("active", state.filters.highConfidenceOnly);
+  document.getElementById("toggle-corrected").classList.toggle("active", state.filters.correctedOnly);
 }
 
 function getFilteredResults() {
-  const text = document.getElementById("text-filter").value.trim().toLowerCase();
-  const category = document.getElementById("category-filter").value;
-  const buildability = document.getElementById("buildability-filter").value;
-  const gating = document.getElementById("gating-filter").value;
-  const confidence = document.getElementById("confidence-filter").value;
-
-  return results.filter((item) => {
-    const haystack = [
-      item.app_name,
-      item.category,
-      item.one_line_description,
-      item.main_blocker,
-      item.notes,
-    ]
-      .join(" ")
-      .toLowerCase();
-
-    if (text && !haystack.includes(text)) return false;
-    if (category !== "all" && item.category !== category) return false;
-    if (buildability !== "all" && item.buildability_verdict !== buildability) return false;
-    if (gating !== "all" && item.self_serve_status !== gating) return false;
-    if (confidence !== "all" && confidenceBand(item.confidence_score) !== confidence) return false;
+  return results.filter((app) => {
+    if (state.filters.search && !getAppSearchText(app).includes(state.filters.search)) return false;
+    if (state.filters.category !== "all" && app.category !== state.filters.category) return false;
+    if (state.filters.auth !== "all" && !app.auth_methods.includes(state.filters.auth)) return false;
+    if (state.filters.buildability !== "all" && app.buildability_verdict !== state.filters.buildability) return false;
+    if (state.filters.gating !== "all" && app.self_serve_status !== state.filters.gating) return false;
+    if (state.filters.mcp !== "all" && app.existing_mcp !== state.filters.mcp) return false;
+    if (state.filters.review !== "all" && getReviewStatus(app) !== state.filters.review) return false;
+    if (state.filters.confidence !== "all" && confidenceBand(app.confidence_score) !== state.filters.confidence) return false;
+    if (state.filters.highConfidenceOnly && app.confidence_score < 0.8) return false;
+    if (state.filters.correctedOnly && !correctedApps.has(app.app_name)) return false;
     return true;
   });
 }
 
-function renderResultsTable() {
-  const filtered = getFilteredResults();
-  const rows = filtered
+function renderExploreCards(filtered) {
+  document.getElementById("app-explorer-grid").innerHTML = filtered
     .map(
-      (item) => `
-        <tr>
-          <td><strong>${item.app_name}</strong></td>
-          <td>${item.category}</td>
-          <td>${item.one_line_description}</td>
-          <td>${item.auth_methods.map((method) => statusTag(method)).join(" ")}</td>
-          <td>${statusTag(item.self_serve_status)}</td>
-          <td>${statusTag(item.api_surface)}</td>
-          <td>${statusTag(item.existing_mcp)}</td>
-          <td>${statusTag(item.buildability_verdict)}</td>
-          <td>${item.main_blocker}</td>
-          <td>
-            <div class="confidence-wrap">
-              <div class="confidence-line">
-                <span>${item.confidence_score.toFixed(2)}</span>
-                ${statusTag(confidenceBand(item.confidence_score))}
-              </div>
-              <div class="confidence-track">
-                <div class="confidence-fill" style="width:${Math.round(item.confidence_score * 100)}%"></div>
+      (app) => `
+        <article class="app-card mini-card" data-app-card="${app.app_name}">
+          <div class="card-topline">
+            <div>
+              <h3>${app.app_name}</h3>
+              <div class="meta-row">
+                <span class="pill">${app.category}</span>
+                ${statusTag(app.buildability_verdict)}
+                ${statusTag(app.self_serve_status)}
               </div>
             </div>
-          </td>
-          <td>${item.evidence_urls.map((url, index) => `<a class="evidence-link" href="${url}" target="_blank" rel="noreferrer">Source ${index + 1}</a>`).join(" ")}</td>
+            <div class="confidence-pill ${confidenceBand(app.confidence_score)}">${app.confidence_score.toFixed(2)}</div>
+          </div>
+          <p>${app.one_line_description}</p>
+          <div class="meta-row">
+            ${app.auth_methods.map((method) => statusTag(method)).join("")}
+          </div>
+          <p><strong>Blocker:</strong> ${app.main_blocker}</p>
+          <div class="meta-row">
+            ${correctedApps.has(app.app_name) ? '<span class="pill">Corrected</span>' : ""}
+            ${getReviewStatus(app) === "required" ? '<span class="pill warning">Human review</span>' : ""}
+          </div>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderResultsTable(filtered) {
+  const rows = filtered
+    .map(
+      (app) => `
+        <tr data-app-row="${app.app_name}">
+          <td><button class="table-app-button" type="button" data-app-open="${app.app_name}">${app.app_name}</button></td>
+          <td>${app.category}</td>
+          <td>${app.one_line_description}</td>
+          <td>${app.auth_methods.map((method) => statusTag(method)).join(" ")}</td>
+          <td>${statusTag(app.self_serve_status)}</td>
+          <td>${statusTag(app.api_surface)}</td>
+          <td>${statusTag(app.existing_mcp)}</td>
+          <td>${statusTag(app.buildability_verdict)}</td>
+          <td>${app.main_blocker}</td>
+          <td><span class="confidence-pill ${confidenceBand(app.confidence_score)}">${app.confidence_score.toFixed(2)}</span></td>
         </tr>
       `
     )
     .join("");
-
   document.getElementById("results-table").innerHTML = `
     <thead>
       <tr>
@@ -549,48 +580,223 @@ function renderResultsTable() {
         <th>Buildability</th>
         <th>Blocker</th>
         <th>Confidence</th>
-        <th>Evidence</th>
       </tr>
     </thead>
     <tbody>${rows}</tbody>
   `;
 }
 
-function initExpandCards() {
-  document.querySelectorAll("[data-expand-card]").forEach((card) => {
-    const button = card.querySelector(".expand-toggle");
-    const content = card.querySelector(".expand-content");
-    if (!button || !content) return;
-    button.addEventListener("click", () => {
-      const open = card.classList.toggle("open");
-      button.setAttribute("aria-expanded", open ? "true" : "false");
+function updateResultCount(filtered) {
+  document.getElementById("result-count").textContent = `Showing ${filtered.length} of ${results.length} apps`;
+  document.getElementById("empty-state").hidden = filtered.length !== 0;
+}
+
+function renderFilteredViews() {
+  const filtered = getFilteredResults();
+  renderExploreCards(filtered);
+  renderResultsTable(filtered);
+  updateResultCount(filtered);
+  bindAppOpeners();
+}
+
+function buildHumanReviewNote(app) {
+  if (correctionMap.has(app.app_name)) {
+    return correctionMap.get(app.app_name).reviewer_note;
+  }
+  if (getReviewStatus(app) === "required") {
+    return "This app was flagged for human review because confidence is lower or some fields remain partially unclear.";
+  }
+  return "No extra human review note recorded for this app.";
+}
+
+function drawerSection(label, content) {
+  return `
+    <div class="drawer-section">
+      <div class="drawer-label">${label}</div>
+      <div class="drawer-content">${content}</div>
+    </div>
+  `;
+}
+
+function openDrawer(appName) {
+  const app = results.find((item) => item.app_name === appName);
+  if (!app) return;
+  state.activeDrawerApp = appName;
+  const correctionEntry = correctionMap.get(app.app_name);
+  document.getElementById("drawer-title").textContent = app.app_name;
+  document.getElementById("drawer-body").innerHTML = `
+    <div class="drawer-summary">
+      <div class="meta-row">
+        <span class="pill">${app.category}</span>
+        ${statusTag(app.buildability_verdict)}
+        ${statusTag(app.self_serve_status)}
+        <span class="confidence-pill ${confidenceBand(app.confidence_score)}">${app.confidence_score.toFixed(2)}</span>
+      </div>
+      <p>${app.one_line_description}</p>
+    </div>
+    ${drawerSection("Auth methods", app.auth_methods.map((method) => statusTag(method)).join(" "))}
+    ${drawerSection("API surface", `${statusTag(app.api_surface)} ${statusTag(app.existing_mcp)}`)}
+    ${drawerSection("Main blocker", `<p>${app.main_blocker}</p>`)}
+    ${drawerSection("Notes", `<p>${app.notes}</p>`)}
+    ${drawerSection("Human review note", `<p>${buildHumanReviewNote(app)}</p>`)}
+    ${drawerSection("Evidence URLs", evidenceLinkGroup(app.evidence_urls, true))}
+    ${
+      correctionEntry
+        ? drawerSection(
+            "Corrections",
+            correctionEntry.corrections
+              .map(
+                (corr) => `
+                  <div class="before-after-row">
+                    <div class="before-after-label">${humanize(corr.field_name)}</div>
+                    <div class="before-after-values">
+                      <span class="before-chip">Before: ${corr.original_value}</span>
+                      <span class="after-chip">After: ${corr.corrected_value}</span>
+                    </div>
+                  </div>
+                `
+              )
+              .join("")
+          )
+        : ""
+    }
+  `;
+  document.getElementById("detail-drawer").classList.add("open");
+  document.getElementById("detail-drawer").setAttribute("aria-hidden", "false");
+  document.getElementById("drawer-backdrop").hidden = false;
+  bindCopyButtons();
+}
+
+function closeDrawer() {
+  document.getElementById("detail-drawer").classList.remove("open");
+  document.getElementById("detail-drawer").setAttribute("aria-hidden", "true");
+  document.getElementById("drawer-backdrop").hidden = true;
+  state.activeDrawerApp = null;
+}
+
+function bindCopyButtons() {
+  document.querySelectorAll(".copy-link").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const text = button.dataset.copy || "";
+      try {
+        await navigator.clipboard.writeText(text);
+        button.textContent = "Copied";
+        window.setTimeout(() => {
+          button.textContent = "Copy";
+        }, 1200);
+      } catch (_error) {
+        button.textContent = "Failed";
+      }
     });
   });
 }
 
+function bindAppOpeners() {
+  document.querySelectorAll("[data-app-card], [data-app-open]").forEach((node) => {
+    node.addEventListener("click", (event) => {
+      if (event.target.closest("a") || event.target.closest(".copy-link") || event.target.closest(".tiny-button")) {
+        return;
+      }
+      openDrawer(node.dataset.appCard || node.dataset.appOpen);
+    });
+  });
+}
+
+function initDrawer() {
+  document.getElementById("drawer-close").addEventListener("click", closeDrawer);
+  document.getElementById("drawer-backdrop").addEventListener("click", closeDrawer);
+}
+
+function exportFilteredCsv() {
+  const filtered = getFilteredResults();
+  const rows = [
+    [
+      "app_name",
+      "category",
+      "auth_methods",
+      "self_serve_status",
+      "api_surface",
+      "existing_mcp",
+      "buildability_verdict",
+      "main_blocker",
+      "confidence_score",
+    ],
+    ...filtered.map((app) => [
+      app.app_name,
+      app.category,
+      app.auth_methods.join("|"),
+      app.self_serve_status,
+      app.api_surface,
+      app.existing_mcp,
+      app.buildability_verdict,
+      app.main_blocker,
+      app.confidence_score,
+    ]),
+  ];
+  const csv = rows
+    .map((row) =>
+      row
+        .map((value) => `"${String(value).replaceAll('"', '""')}"`)
+        .join(",")
+    )
+    .join("\n");
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "filtered_results.csv";
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+function renderProof() {
+  const metadata = payload.metadata;
+  document.getElementById("proof-section").innerHTML = `
+    <article class="mini-card">
+      <p><strong>Submitted run:</strong> This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility.</p>
+      <p><strong>Live mode honesty:</strong> The repo supports optional Composio SDK/MCP-ready live mode plus Tavily/SerpAPI adapters, but live HTTP research was not executed in this submitted run.</p>
+      <p><strong>Correction policy:</strong> Final table includes human-reviewed corrections from the verification sample.</p>
+      <p><strong>Do not overclaim:</strong> This dashboard does not claim a fully autonomous live research run.</p>
+      <div class="proof-actions">
+        <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">Deployment</a>
+        <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">Repository</a>
+      </div>
+      <div class="proof-grid">
+        <div><strong>Generate report:</strong> <code>python src/generate_report.py</code></div>
+        <div><strong>Smoke check:</strong> <code>python src/smoke_check.py</code></div>
+        <div><strong>Results path:</strong> ${metadata.results_path}</div>
+        <div><strong>Verification path:</strong> ${metadata.verification_path}</div>
+      </div>
+    </article>
+  `;
+}
+
 function initActiveNav() {
-  const sections = uniqueAnchorLinks()
+  const sections = navLinks()
     .map(([id]) => document.getElementById(id))
     .filter(Boolean);
   const links = Array.from(document.querySelectorAll(".nav-link"));
-
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          links.forEach((link) => {
-            link.classList.toggle("active", link.dataset.target === entry.target.id);
-          });
+          links.forEach((link) => link.classList.toggle("active", link.dataset.target === entry.target.id));
         }
       });
     },
-    { rootMargin: "-40% 0px -45% 0px", threshold: 0.05 }
+    { rootMargin: "-35% 0px -50% 0px", threshold: 0.08 }
   );
-
   sections.forEach((section) => observer.observe(section));
 }
 
+function initEscapeKey() {
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && state.activeDrawerApp) closeDrawer();
+  });
+}
+
 renderNav();
+initTheme();
 renderModeBanner();
 renderHeroMeta();
 renderReadingCard();
@@ -599,19 +805,19 @@ renderExecutiveSummary();
 renderVerification();
 renderCorrectionApps();
 renderWorkSplit();
-renderQueue("build-queue", payload.easy_wins, "build");
-renderQueue("outreach-queue", payload.outreach_needed, "outreach");
+renderWorkflowPipeline();
 renderHeadlineInsights();
-renderMatrix();
 renderDistributionBars("auth-patterns", payload.auth_patterns);
 renderDistributionBars("buildability-patterns", payload.buildability_patterns);
-renderNarrativeBars("blocker-patterns", payload.blocker_patterns);
 renderDistributionBars("mcp-patterns", payload.mcp_patterns);
-renderBuildabilityBuckets();
-renderLowConfidenceQueue();
-renderExploreCards();
-renderProof();
+renderDistributionBars("blocker-patterns", payload.blocker_patterns, false);
+renderMatrix();
+renderQueue("build-queue-list", payload.easy_wins, "build");
+renderQueue("outreach-queue", payload.outreach_needed, "outreach");
+renderQueue("low-confidence", payload.low_confidence, "review");
 initFilters();
-renderResultsTable();
-initExpandCards();
+renderFilteredViews();
+renderProof();
+initDrawer();
 initActiveNav();
+initEscapeKey();
