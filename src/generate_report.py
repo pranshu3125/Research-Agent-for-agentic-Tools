@@ -287,23 +287,47 @@ def render_html(payload: Dict[str, object]) -> str:
 </head>
 <body>
   <div class="page-shell">
+    <div class="top-nav" id="top-nav"></div>
     <header class="hero">
-      <p class="eyebrow">Composio Take-Home</p>
-      <h1>Agent Toolkit Readiness Study: 100 Apps</h1>
-      <p class="subtitle">This evaluates 100 requested apps for API, auth, access friction, and practical buildability for AI-agent toolkits, then turns the findings into a static case study for product decisions.</p>
-      <div class="mode-banner" id="mode-banner"></div>
-      <div class="hero-meta">
-        <span>Patterns first</span>
-        <span>Evidence-linked</span>
-        <span>Verification-aware</span>
-        <span>Deploy-ready static report</span>
+      <div class="hero-grid">
+        <div class="hero-main">
+          <p class="eyebrow">Composio Take-Home</p>
+          <h1>Agent Toolkit Readiness Study: 100 Apps</h1>
+          <p class="subtitle">This evaluates 100 requested apps for API, auth, access friction, and practical buildability for AI-agent toolkits, then turns the findings into a static case study for product decisions.</p>
+          <div class="mode-banner" id="mode-banner"></div>
+          <div class="hero-meta">
+            <span>Patterns first</span>
+            <span>Evidence-linked</span>
+            <span>Verification-aware</span>
+            <span>Deploy-ready static report</span>
+          </div>
+          <div class="hero-actions" id="hero-actions"></div>
+        </div>
+        <div class="hero-side">
+          <div class="reading-card" id="reading-card"></div>
+        </div>
       </div>
     </header>
 
     <main id="app">
-      <section class="card-grid" id="insight-cards"></section>
+      <section class="section-anchor overview-grid" id="overview">
+        <section class="panel">
+          <div class="section-heading">
+            <h2>Overview</h2>
+            <p>Fast portfolio snapshot for product prioritization.</p>
+          </div>
+          <div class="card-grid" id="insight-cards"></div>
+        </section>
+        <section class="panel">
+          <div class="section-heading">
+            <h2>Recommended Build Queue</h2>
+            <p>High-confidence easy wins worth prototyping first.</p>
+          </div>
+          <div class="queue-grid" id="build-queue"></div>
+        </section>
+      </section>
 
-      <section class="panel">
+      <section class="panel section-anchor" id="insights">
         <div class="section-heading">
           <h2>Headline Insights</h2>
           <p>The reviewer should understand the topline patterns before reading the full table.</p>
@@ -311,7 +335,7 @@ def render_html(payload: Dict[str, object]) -> str:
         <div id="headline-insights" class="insight-list"></div>
       </section>
 
-      <section class="panel">
+      <section class="panel section-anchor" id="matrix">
         <div class="section-heading">
           <h2>Category Readiness Matrix</h2>
           <p>Each of the 10 assignment categories summarized by access friction and buildability.</p>
@@ -331,28 +355,36 @@ def render_html(payload: Dict[str, object]) -> str:
         </div>
         <div class="panel">
           <div class="section-heading">
-            <h2>MCP Pattern</h2>
-            <p>Official MCP support is rare; community MCP signal is directional, not production proof.</p>
+            <h2>Buildability Patterns</h2>
+            <p>Distribution of portfolio readiness states.</p>
           </div>
-          <div id="mcp-patterns"></div>
+          <div id="buildability-patterns"></div>
         </div>
       </section>
 
       <section class="split">
         <div class="panel">
           <div class="section-heading">
+            <h2>MCP Pattern</h2>
+            <p>Official MCP support is rare; community MCP signal is directional, not production proof.</p>
+          </div>
+          <div id="mcp-patterns"></div>
+        </div>
+        <div class="panel section-anchor" id="easy-wins-section">
+          <div class="section-heading">
             <h2>Easy Wins</h2>
-            <p>Likely buildable today with public docs, self-serve auth, and usable evidence.</p>
+            <p>Likely buildable now with public docs, self-serve auth, and usable evidence.</p>
           </div>
           <div id="easy-wins" class="stack-list"></div>
         </div>
-        <div class="panel">
-          <div class="section-heading">
-            <h2>Outreach Needed</h2>
-            <p>Apps where partnership, approval, or enterprise setup is the real blocker.</p>
-          </div>
-          <div id="outreach-needed" class="stack-list"></div>
+      </section>
+
+      <section class="panel section-anchor" id="outreach-section">
+        <div class="section-heading">
+          <h2>Outreach Queue</h2>
+          <p>Apps where partnership, approval, or enterprise setup is the real blocker.</p>
         </div>
+        <div class="queue-grid" id="outreach-queue"></div>
       </section>
 
       <section class="split">
@@ -382,14 +414,23 @@ def render_html(payload: Dict[str, object]) -> str:
 
       <section class="panel">
         <div class="section-heading">
+          <h2>Explore Apps</h2>
+          <p>Collapsed cards for quick scanning before diving into the full table.</p>
+        </div>
+        <div class="explore-grid" id="explore-apps"></div>
+      </section>
+
+      <section class="panel section-anchor" id="verification">
+        <div class="section-heading">
           <h2>Verification</h2>
           <p>Sample-based QA with honest misses surfaced explicitly rather than hidden.</p>
         </div>
         <div class="verification-grid" id="verification-summary"></div>
-        <div id="corrections" class="stack-list"></div>
+        <div id="verification-note" class="stack-list"></div>
+        <div id="corrections" class="correction-grid"></div>
       </section>
 
-      <section class="panel">
+      <section class="panel section-anchor" id="proof">
         <div class="section-heading">
           <h2>Proof</h2>
           <p>How to run the agent, where the outputs land, and what mode produced this page.</p>
@@ -397,7 +438,7 @@ def render_html(payload: Dict[str, object]) -> str:
         <div id="proof-section" class="stack-list"></div>
       </section>
 
-      <section class="panel">
+      <section class="panel section-anchor" id="full-table">
         <div class="section-heading">
           <h2>Full 100-App Table</h2>
           <p>Searchable and filterable details for the full inventory.</p>
@@ -407,6 +448,7 @@ def render_html(payload: Dict[str, object]) -> str:
           <select id="category-filter"></select>
           <select id="buildability-filter"></select>
           <select id="gating-filter"></select>
+          <select id="confidence-filter"></select>
         </div>
         <div class="table-wrap">
           <table id="results-table"></table>
