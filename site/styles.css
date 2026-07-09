@@ -348,6 +348,33 @@ main {
   font-weight: 800;
 }
 
+.kpi-card .value {
+  margin-bottom: 8px;
+}
+
+.kpi-label {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.kpi-card.buildable_today {
+  background: linear-gradient(180deg, rgba(223, 244, 232, 0.96), rgba(255, 255, 255, 0.9));
+}
+
+.kpi-card.buildable_with_limitations {
+  background: linear-gradient(180deg, rgba(248, 239, 208, 0.96), rgba(255, 255, 255, 0.9));
+}
+
+.kpi-card.needs_outreach {
+  background: linear-gradient(180deg, rgba(248, 227, 212, 0.96), rgba(255, 255, 255, 0.9));
+}
+
+.kpi-card.unclear {
+  background: linear-gradient(180deg, rgba(235, 231, 225, 0.96), rgba(255, 255, 255, 0.9));
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -454,6 +481,11 @@ main {
 .queue-card {
   display: grid;
   gap: 12px;
+}
+
+.correction-summary-card {
+  display: grid;
+  gap: 10px;
 }
 
 .queue-header,

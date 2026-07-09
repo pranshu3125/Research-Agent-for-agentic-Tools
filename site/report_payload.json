@@ -329,6 +329,48 @@
       "MCP availability is especially volatile and should be re-checked before packaging a production toolkit."
     ]
   },
+  "kpi_cards": [
+    {
+      "label": "Total apps",
+      "value": 100,
+      "tone": "neutral"
+    },
+    {
+      "label": "Buildable today",
+      "value": 46,
+      "tone": "buildable_today"
+    },
+    {
+      "label": "Buildable with limitations",
+      "value": 33,
+      "tone": "buildable_with_limitations"
+    },
+    {
+      "label": "Outreach / gated",
+      "value": 36,
+      "tone": "needs_outreach"
+    },
+    {
+      "label": "Human review queue",
+      "value": 11,
+      "tone": "unclear"
+    },
+    {
+      "label": "Verification sample",
+      "value": 17,
+      "tone": "neutral"
+    },
+    {
+      "label": "First-pass accuracy",
+      "value": 0.65,
+      "tone": "buildable_with_limitations"
+    },
+    {
+      "label": "Post-verification accuracy",
+      "value": 0.96,
+      "tone": "buildable_today"
+    }
+  ],
   "executive_summary": [
     "100 apps were researched from the assignment inventory and summarized into one evidence-linked readiness view.",
     "46 apps look buildable today, while 33 more are technically reachable with normal implementation constraints.",
@@ -349,6 +391,63 @@
     "Resolved ambiguous gated vs partially gated cases where public docs were not enough.",
     "Confirmed edge cases around partner access, enterprise approval, and unofficial MCP claims.",
     "Applied verified corrections back into the final table and kept the original misses visible in the verification section."
+  ],
+  "correction_apps": [
+    {
+      "app_name": "Salesforce",
+      "category": "CRM",
+      "field_count": 2,
+      "fields": [
+        "self_serve_status",
+        "buildability_verdict"
+      ],
+      "reviewer_note": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested."
+    },
+    {
+      "app_name": "Close",
+      "category": "CRM",
+      "field_count": 1,
+      "fields": [
+        "auth_methods"
+      ],
+      "reviewer_note": "The first pass leaned too heavily on CRM-default OAuth assumptions and understated the importance of API-key usage."
+    },
+    {
+      "app_name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "field_count": 1,
+      "fields": [
+        "self_serve_status"
+      ],
+      "reviewer_note": "Meta business verification and template review make the effective access path more restrictive than a generic partially-gated label."
+    },
+    {
+      "app_name": "Ahrefs",
+      "category": "Data SEO and Scraping",
+      "field_count": 1,
+      "fields": [
+        "self_serve_status"
+      ],
+      "reviewer_note": "Public API access appears tied to plan or commercial qualification rather than completely closed, so the first pass was slightly too hard-line."
+    },
+    {
+      "app_name": "Clay",
+      "category": "Data SEO and Scraping",
+      "field_count": 1,
+      "fields": [
+        "buildability_verdict"
+      ],
+      "reviewer_note": "The first pass understated how much paid access and workspace-level setup can affect practical rollout."
+    },
+    {
+      "app_name": "NotebookLM",
+      "category": "AI Research and Media-native",
+      "field_count": 1,
+      "fields": [
+        "buildability_verdict"
+      ],
+      "reviewer_note": "The blocker is less 'impossible now' and more 'requires a different Google enterprise surface than a direct public NotebookLM app API'."
+    }
   ],
   "category_matrix": {
     "CRM": {

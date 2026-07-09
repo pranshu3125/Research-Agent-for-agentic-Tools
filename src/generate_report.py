@@ -280,13 +280,57 @@ def build_site_payload(
         "Applied verified corrections back into the final table and kept the original misses visible in the verification section.",
     ]
 
+    kpi_cards = [
+        {"label": "Total apps", "value": insights.total_apps, "tone": "neutral"},
+        {"label": "Buildable today", "value": insights.buildable_today, "tone": "buildable_today"},
+        {
+            "label": "Buildable with limitations",
+            "value": insights.buildable_with_limitations,
+            "tone": "buildable_with_limitations",
+        },
+        {
+            "label": "Outreach / gated",
+            "value": insights.partially_or_fully_gated,
+            "tone": "needs_outreach",
+        },
+        {
+            "label": "Human review queue",
+            "value": len(low_confidence),
+            "tone": "unclear",
+        },
+        {"label": "Verification sample", "value": verification.sample_size, "tone": "neutral"},
+        {
+            "label": "First-pass accuracy",
+            "value": verification.first_pass_app_accuracy,
+            "tone": "buildable_with_limitations",
+        },
+        {
+            "label": "Post-verification accuracy",
+            "value": verification.verified_accuracy_estimate,
+            "tone": "buildable_today",
+        },
+    ]
+
+    correction_apps = [
+        {
+            "app_name": entry["app_name"],
+            "category": entry["category"],
+            "field_count": len(entry["corrections"]),
+            "fields": [item["field_name"] for item in entry["corrections"]],
+            "reviewer_note": entry["reviewer_note"],
+        }
+        for entry in corrections
+    ]
+
     return {
         "metadata": metadata.dict(),
         "insights": insights.dict(),
         "verification": verification.dict(),
+        "kpi_cards": kpi_cards,
         "executive_summary": executive_summary,
         "agent_did": agent_did,
         "human_did": human_did,
+        "correction_apps": correction_apps,
         "category_matrix": dict(category_matrix),
         "auth_patterns": dict(auth_patterns),
         "buildability_patterns": dict(buildability_patterns),
@@ -349,15 +393,15 @@ def render_html(payload: Dict[str, object]) -> str:
       <section class="section-anchor overview-grid" id="overview">
         <section class="panel">
           <div class="section-heading">
-            <h2>Overview</h2>
-            <p>Fast portfolio snapshot for product prioritization.</p>
+            <h2>Decision Snapshot</h2>
+            <p>Concrete KPIs from the submitted run so the reviewer can scan the portfolio in under two minutes.</p>
           </div>
           <div class="card-grid" id="insight-cards"></div>
         </section>
         <section class="panel">
           <div class="section-heading">
-            <h2>Recommended Build Queue</h2>
-            <p>High-confidence easy wins worth prototyping first.</p>
+            <h2>Best Build Queue</h2>
+            <p>Top easy-win apps from the existing results payload, sorted by confidence and practical readiness.</p>
           </div>
           <div class="queue-grid" id="build-queue"></div>
         </section>
@@ -370,6 +414,24 @@ def render_html(payload: Dict[str, object]) -> str:
             <p>The 2-minute narrative version of the findings.</p>
           </div>
           <div id="executive-summary" class="stack-list"></div>
+        </div>
+        <div class="panel">
+          <div class="section-heading">
+            <h2>Verification Snapshot</h2>
+            <p>Sample-based QA is surfaced before the long table so the trust level is clear up front.</p>
+          </div>
+          <div class="verification-grid" id="verification-summary"></div>
+          <div id="verification-note" class="stack-list"></div>
+        </div>
+      </section>
+
+      <section class="split">
+        <div class="panel">
+          <div class="section-heading">
+            <h2>Corrections Made</h2>
+            <p>Known first-pass misses that were verified and applied back into the final table.</p>
+          </div>
+          <div id="correction-apps" class="stack-list"></div>
         </div>
         <div class="panel">
           <div class="section-heading">
@@ -495,8 +557,6 @@ def render_html(payload: Dict[str, object]) -> str:
           <h2>Verification</h2>
           <p>Sample-based QA with honest misses surfaced explicitly rather than hidden.</p>
         </div>
-        <div class="verification-grid" id="verification-summary"></div>
-        <div id="verification-note" class="stack-list"></div>
         <div id="corrections" class="correction-grid"></div>
       </section>
 

@@ -80,23 +80,13 @@ function renderReadingCard() {
 }
 
 function renderInsightCards() {
-  const insights = payload.insights;
-  const cards = [
-    ["Total apps researched", insights.total_apps],
-    ["Buildable today", insights.buildable_today],
-    ["Buildable with limitations", insights.buildable_with_limitations],
-    ["Needs outreach", insights.needs_outreach],
-    ["Unclear or low-confidence", insights.unclear_count],
-    ["Dominant auth", insights.dominant_auth_method],
-    ["Most common blocker", insights.most_common_blocker],
-    ["Verification estimate", insights.verification_accuracy],
-  ];
-  document.getElementById("insight-cards").innerHTML = cards
+  document.getElementById("insight-cards").innerHTML = payload.kpi_cards
     .map(
-      ([label, value]) => `
-        <article class="metric-card">
-          <h3>${label}</h3>
-          <div class="value">${value}</div>
+      (card) => `
+        <article class="metric-card kpi-card ${card.tone}">
+          <h3>${card.label}</h3>
+          <div class="value">${typeof card.value === "number" && card.value < 1 ? card.value.toFixed(2) : card.value}</div>
+          <div class="kpi-label">${card.label}</div>
         </article>
       `
     )
@@ -370,6 +360,7 @@ function renderVerification() {
     <article class="list-card">
       <p><strong>Selection strategy:</strong> ${verification.selection_strategy}</p>
       <p><strong>Correction policy:</strong> Verified corrections were applied back into the final results table, while this section preserves the original first-pass misses for transparency.</p>
+      <p><strong>Accuracy note:</strong> First-pass app accuracy was ${verification.first_pass_app_accuracy.toFixed(2)} and the post-verification estimate is ${verification.verified_accuracy_estimate.toFixed(2)} for the sampled set.</p>
     </article>
   `;
 
@@ -395,6 +386,28 @@ function renderVerification() {
               )
               .join("")}
           </div>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderCorrectionApps() {
+  document.getElementById("correction-apps").innerHTML = payload.correction_apps
+    .map(
+      (item) => `
+        <article class="list-card correction-summary-card">
+          <div class="card-topline">
+            <div>
+              <h3>${item.app_name}</h3>
+              <div class="queue-meta">
+                <span class="meta-token">${item.category}</span>
+                <span class="meta-token">${item.field_count} corrected field${item.field_count === 1 ? "" : "s"}</span>
+              </div>
+            </div>
+            <div class="status buildable_with_limitations">${item.fields.map((field) => humanize(field)).join(", ")}</div>
+          </div>
+          <p>${item.reviewer_note}</p>
         </article>
       `
     )
@@ -583,7 +596,11 @@ renderHeroMeta();
 renderReadingCard();
 renderInsightCards();
 renderExecutiveSummary();
+renderVerification();
+renderCorrectionApps();
 renderWorkSplit();
+renderQueue("build-queue", payload.easy_wins, "build");
+renderQueue("outreach-queue", payload.outreach_needed, "outreach");
 renderHeadlineInsights();
 renderMatrix();
 renderDistributionBars("auth-patterns", payload.auth_patterns);
@@ -591,11 +608,8 @@ renderDistributionBars("buildability-patterns", payload.buildability_patterns);
 renderNarrativeBars("blocker-patterns", payload.blocker_patterns);
 renderDistributionBars("mcp-patterns", payload.mcp_patterns);
 renderBuildabilityBuckets();
-renderQueue("build-queue", payload.easy_wins, "build");
-renderQueue("outreach-queue", payload.outreach_needed, "outreach");
 renderLowConfidenceQueue();
 renderExploreCards();
-renderVerification();
 renderProof();
 initFilters();
 renderResultsTable();
