@@ -73,6 +73,20 @@
       "snippet": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "WhatsApp Business source 2",
+      "url": "https://developers.facebook.com/docs/development/release/app-review",
+      "snippet": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "WhatsApp Business source 2",
+      "url": "https://developers.facebook.com/docs/development/release/app-review",
+      "snippet": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -82,16 +96,17 @@
       "token",
       "mixed"
     ],
-    "self_serve_status": "partially_gated",
+    "self_serve_status": "gated",
     "api_surface": "rest",
     "api_breadth": "medium",
     "existing_mcp": "none_found",
     "buildability_verdict": "needs_outreach",
     "main_blocker": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
-    "confidence_score": 0.86,
+    "confidence_score": 0.83,
     "notes": "Classification is based on public communications API docs and standard partner app flows.",
     "evidence_urls": [
-      "https://developers.facebook.com/docs/whatsapp"
+      "https://developers.facebook.com/docs/whatsapp",
+      "https://developers.facebook.com/docs/development/release/app-review"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -106,16 +121,17 @@
       "token",
       "mixed"
     ],
-    "self_serve_status": "partially_gated",
+    "self_serve_status": "gated",
     "api_surface": "rest",
     "api_breadth": "medium",
     "existing_mcp": "none_found",
     "buildability_verdict": "needs_outreach",
     "main_blocker": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
     "evidence_urls": [
-      "https://developers.facebook.com/docs/whatsapp"
+      "https://developers.facebook.com/docs/whatsapp",
+      "https://developers.facebook.com/docs/development/release/app-review"
     ],
-    "confidence_score": 0.92,
+    "confidence_score": 0.89,
     "notes": "Classification is based on public communications API docs and standard partner app flows.",
     "last_checked_date": "2026-07-09",
     "research_mode": "real_cached",

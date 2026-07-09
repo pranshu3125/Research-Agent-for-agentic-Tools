@@ -20,56 +20,56 @@
   "documents": [
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Bright Data source 1",
-      "url": "https://brightdata.com/",
+      "url": "https://docs.brightdata.com/",
       "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
       "source_type": "official_docs",
       "score": 0.95
@@ -88,10 +88,10 @@
     "existing_mcp": "none_found",
     "buildability_verdict": "buildable_with_limitations",
     "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
-    "confidence_score": 0.81,
+    "confidence_score": 0.68,
     "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
     "evidence_urls": [
-      "https://brightdata.com/"
+      "https://docs.brightdata.com/"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,9 +113,9 @@
     "buildability_verdict": "buildable_with_limitations",
     "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
     "evidence_urls": [
-      "https://brightdata.com/"
+      "https://docs.brightdata.com/"
     ],
-    "confidence_score": 0.87,
+    "confidence_score": 0.74,
     "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
     "last_checked_date": "2026-07-09",
     "research_mode": "real_cached",

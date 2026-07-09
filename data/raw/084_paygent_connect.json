@@ -73,6 +73,20 @@
       "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 2",
+      "url": "https://www.paygent.co.jp/service/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Paygent Connect source 2",
+      "url": "https://www.paygent.co.jp/service/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -91,7 +105,8 @@
     "confidence_score": 0.42,
     "notes": "Classification is based on official financial-platform docs and typical production access controls.",
     "evidence_urls": [
-      "https://www.paygent.co.jp/"
+      "https://www.paygent.co.jp/",
+      "https://www.paygent.co.jp/service/"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,7 +128,8 @@
     "buildability_verdict": "needs_outreach",
     "main_blocker": "Public developer access is not obvious enough to assume self-serve financial integration access.",
     "evidence_urls": [
-      "https://www.paygent.co.jp/"
+      "https://www.paygent.co.jp/",
+      "https://www.paygent.co.jp/service/"
     ],
     "confidence_score": 0.43,
     "notes": "Classification is based on official financial-platform docs and typical production access controls.",

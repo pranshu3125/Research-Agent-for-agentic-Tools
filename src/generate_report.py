@@ -452,10 +452,14 @@ def main() -> None:
         results_path=args.results,
         verification_path=args.verification,
         site_path=str(Path(args.site_dir) / "index.html"),
-        repo_link_placeholder="REPO_LINK_HERE",
-        deployed_link_placeholder="DEPLOYED_LINK_HERE",
+        repo_link_placeholder="https://github.com/pranshu3125/Research-Agent-for-agentic-Tools.git",
+        deployed_link_placeholder="https://research-agent-for-agentic-tools-seven.vercel.app/",
         live_search_enabled=(results[0].research_mode == "live_search" if results else False),
-        mode_summary="Generated from live provider" if results and results[0].research_mode == "live_search" else "Generated from bundled official-doc cache",
+        mode_summary=(
+            "Generated from live provider"
+            if results and results[0].research_mode == "live_search"
+            else "This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run."
+        ),
     )
     generate_site(results, verification, site_dir=args.site_dir, metadata=metadata)
 

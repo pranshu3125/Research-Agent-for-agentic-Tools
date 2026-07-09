@@ -130,13 +130,13 @@ CATEGORY_DEFAULTS: Dict[str, dict] = {
 APP_OVERRIDES: Dict[str, dict] = {
     "Salesforce": {
         "one_line_description": "Enterprise CRM with expansive APIs but heavier org-specific setup and admin coordination.",
-        "self_serve_status": "partially_gated",
+        "self_serve_status": "gated",
         "api_surface": "rest_and_graphql",
         "api_breadth": "broad",
         "existing_mcp": "unofficial",
-        "buildability_verdict": "buildable_with_limitations",
-        "main_blocker": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
-        "confidence_score": 0.87,
+        "buildability_verdict": "needs_outreach",
+        "main_blocker": "Developer docs are public, but customer org setup, org permissions, and admin approval slow practical onboarding.",
+        "confidence_score": 0.83,
         "evidence_urls": [
             "https://developer.salesforce.com/docs/apis",
             "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm",
@@ -161,7 +161,7 @@ APP_OVERRIDES: Dict[str, dict] = {
         "buildability_verdict": "buildable_with_limitations",
         "confidence_score": 0.66,
         "notes": "Public docs exist, but the platform is newer and requires deeper endpoint-by-endpoint validation before roadmap commitment.",
-        "evidence_urls": ["https://attio.com"],
+        "evidence_urls": ["https://docs.attio.com/"],
     },
     "Twenty": {
         "one_line_description": "Open-source CRM with developer-friendly positioning and a lower access barrier for toolkit experimentation.",
@@ -170,14 +170,14 @@ APP_OVERRIDES: Dict[str, dict] = {
         "api_surface": "rest",
         "api_breadth": "medium",
         "buildability_verdict": "buildable_today",
-        "confidence_score": 0.7,
-        "notes": "Open-source positioning lowers partnership risk, though production-hardening still needs code-level review.",
-        "evidence_urls": ["https://twenty.com"],
+        "confidence_score": 0.68,
+        "notes": "Open-source positioning lowers partnership risk, though production-hardening and public API clarity still need code-level review.",
+        "evidence_urls": ["https://twenty.com", "https://github.com/twentyhq/twenty"],
     },
     "Podio": {
         "buildability_verdict": "buildable_with_limitations",
-        "confidence_score": 0.72,
-        "evidence_urls": ["https://podio.com"],
+        "confidence_score": 0.66,
+        "evidence_urls": ["https://developers.podio.com/"],
     },
     "Zoho CRM": {
         "buildability_verdict": "buildable_with_limitations",
@@ -185,7 +185,7 @@ APP_OVERRIDES: Dict[str, dict] = {
         "evidence_urls": ["https://www.zoho.com/crm/developer/docs/api/v8/overview.html"],
     },
     "Close": {
-        "auth_methods": ["oauth2", "mixed"],
+        "auth_methods": ["api_key", "oauth2", "mixed"],
         "confidence_score": 0.78,
         "evidence_urls": ["https://developer.close.com/"],
     },
@@ -289,7 +289,7 @@ APP_OVERRIDES: Dict[str, dict] = {
         "main_blocker": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
         "confidence_score": 0.45,
         "notes": "This is a genuine low-confidence result after reviewing the public product and developer visibility.",
-        "evidence_urls": ["https://pumble.com"],
+        "evidence_urls": ["https://pumble.com", "https://help.pumble.com/"],
     },
     "Discord": {
         "auth_methods": ["oauth2", "token", "mixed"],
@@ -301,15 +301,18 @@ APP_OVERRIDES: Dict[str, dict] = {
         "auth_methods": ["api_key", "token", "mixed"],
         "api_breadth": "medium",
         "confidence_score": 0.88,
-        "evidence_urls": ["https://core.telegram.org/"],
+        "evidence_urls": ["https://core.telegram.org/bots/api", "https://core.telegram.org/api"],
     },
     "WhatsApp Business": {
         "auth_methods": ["oauth2", "token", "mixed"],
-        "self_serve_status": "partially_gated",
+        "self_serve_status": "gated",
         "buildability_verdict": "needs_outreach",
         "main_blocker": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
-        "confidence_score": 0.86,
-        "evidence_urls": ["https://developers.facebook.com/docs/whatsapp"],
+        "confidence_score": 0.83,
+        "evidence_urls": [
+            "https://developers.facebook.com/docs/whatsapp",
+            "https://developers.facebook.com/docs/development/release/app-review",
+        ],
     },
     "Aircall": {
         "buildability_verdict": "buildable_with_limitations",
@@ -467,7 +470,7 @@ APP_OVERRIDES: Dict[str, dict] = {
         "evidence_urls": ["https://seranking.com/api.html"],
     },
     "Ahrefs": {
-        "self_serve_status": "gated",
+        "self_serve_status": "partially_gated",
         "buildability_verdict": "needs_outreach",
         "main_blocker": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
         "confidence_score": 0.7,
@@ -490,8 +493,8 @@ APP_OVERRIDES: Dict[str, dict] = {
     "Bright Data": {
         "auth_methods": ["api_key", "token", "mixed"],
         "buildability_verdict": "buildable_with_limitations",
-        "confidence_score": 0.81,
-        "evidence_urls": ["https://brightdata.com/"],
+        "confidence_score": 0.68,
+        "evidence_urls": ["https://docs.brightdata.com/"],
     },
     "Sherlock": {
         "one_line_description": "Open-source OSINT tooling exposed as a CLI/codebase rather than a classic hosted SaaS API.",
@@ -514,9 +517,11 @@ APP_OVERRIDES: Dict[str, dict] = {
     },
     "Clay": {
         "self_serve_status": "partially_gated",
-        "buildability_verdict": "buildable_with_limitations",
-        "confidence_score": 0.72,
-        "evidence_urls": ["https://www.clay.com/"],
+        "buildability_verdict": "needs_outreach",
+        "confidence_score": 0.69,
+        "main_blocker": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
+        "evidence_urls": ["https://www.clay.com/", "https://www.clay.com/university"],
+        "notes": "Clay is compelling, but workspace setup, paid access, and unclear public developer boundaries make outreach the safer product-ops classification.",
     },
     "GitHub": {
         "api_surface": "rest_and_graphql",
@@ -655,7 +660,7 @@ APP_OVERRIDES: Dict[str, dict] = {
         "buildability_verdict": "needs_outreach",
         "main_blocker": "Public developer access is not obvious enough to assume self-serve financial integration access.",
         "confidence_score": 0.42,
-        "evidence_urls": ["https://www.paygent.co.jp/"],
+        "evidence_urls": ["https://www.paygent.co.jp/", "https://www.paygent.co.jp/service/"],
     },
     "iPayX": {
         "self_serve_status": "partially_gated",
@@ -700,40 +705,40 @@ APP_OVERRIDES: Dict[str, dict] = {
         "api_surface": "undocumented",
         "api_breadth": "narrow",
         "existing_mcp": "none_found",
-        "buildability_verdict": "not_buildable_now",
-        "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+        "buildability_verdict": "needs_outreach",
+        "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
         "confidence_score": 0.72,
-        "evidence_urls": ["https://cloud.google.com/gemini"],
+        "evidence_urls": ["https://cloud.google.com/gemini", "https://notebooklm.google/"],
     },
     "Otter AI": {
         "existing_mcp": "official",
         "buildability_verdict": "buildable_with_limitations",
         "confidence_score": 0.73,
-        "evidence_urls": ["https://help.otter.ai/", "https://otter.ai/"],
+        "evidence_urls": ["https://help.otter.ai/", "https://otter.ai/enterprise"],
     },
     "Fathom": {
         "buildability_verdict": "buildable_with_limitations",
         "confidence_score": 0.58,
-        "evidence_urls": ["https://fathom.video/"],
+        "evidence_urls": ["https://fathom.video/", "https://help.fathom.video/"],
     },
     "Consensus": {
         "self_serve_status": "gated",
         "buildability_verdict": "needs_outreach",
         "main_blocker": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
         "confidence_score": 0.61,
-        "evidence_urls": ["https://consensus.app/"],
+        "evidence_urls": ["https://consensus.app/", "https://consensus.app/api"],
     },
     "Reducto": {
         "auth_methods": ["api_key"],
         "buildability_verdict": "buildable_today",
-        "confidence_score": 0.76,
+        "confidence_score": 0.68,
         "evidence_urls": ["https://reducto.ai/"],
     },
     "Devin": {
         "existing_mcp": "official",
         "buildability_verdict": "buildable_with_limitations",
         "confidence_score": 0.75,
-        "evidence_urls": ["https://docs.devin.ai/"],
+        "evidence_urls": ["https://docs.devin.ai/", "https://docs.devin.ai/work-with-devin/deepwiki-mcp"],
     },
     "higgsfield": {
         "self_serve_status": "unclear",
@@ -766,7 +771,7 @@ APP_OVERRIDES: Dict[str, dict] = {
     "Grain": {
         "buildability_verdict": "buildable_with_limitations",
         "confidence_score": 0.6,
-        "evidence_urls": ["https://grain.com/"],
+        "evidence_urls": ["https://grain.com/", "https://help.grain.com/"],
     },
 }
 

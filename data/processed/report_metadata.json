@@ -2,11 +2,11 @@
   "mode_requested": "real",
   "mode_resolved": "real_cached",
   "generated_at": "2026-07-09",
-  "results_path": "data\\results.json",
-  "verification_path": "data\\verification_sample.json",
-  "site_path": "site\\index.html",
-  "repo_link_placeholder": "REPO_LINK_HERE",
-  "deployed_link_placeholder": "DEPLOYED_LINK_HERE",
+  "results_path": "data/results.json",
+  "verification_path": "data/verification_sample.json",
+  "site_path": "site/index.html",
+  "repo_link_placeholder": "https://github.com/pranshu3125/Research-Agent-for-agentic-Tools.git",
+  "deployed_link_placeholder": "https://research-agent-for-agentic-tools-seven.vercel.app/",
   "live_search_enabled": false,
-  "mode_summary": "Generated from the bundled official-doc research cache because no live search provider/API key was configured."
+  "mode_summary": "This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run."
 }

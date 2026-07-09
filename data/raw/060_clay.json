@@ -21,58 +21,72 @@
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Clay source 1",
       "url": "https://www.clay.com/",
-      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "Clay source 2",
+      "url": "https://www.clay.com/university",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Clay source 2",
+      "url": "https://www.clay.com/university",
+      "snippet": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -86,12 +100,13 @@
     "api_surface": "rest",
     "api_breadth": "medium",
     "existing_mcp": "none_found",
-    "buildability_verdict": "buildable_with_limitations",
-    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
-    "confidence_score": 0.72,
-    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
+    "confidence_score": 0.69,
+    "notes": "Clay is compelling, but workspace setup, paid access, and unclear public developer boundaries make outreach the safer product-ops classification.",
     "evidence_urls": [
-      "https://www.clay.com/"
+      "https://www.clay.com/",
+      "https://www.clay.com/university"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -110,13 +125,14 @@
     "api_surface": "rest",
     "api_breadth": "medium",
     "existing_mcp": "none_found",
-    "buildability_verdict": "buildable_with_limitations",
-    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Paid workspace setup and unclear public developer boundaries make outreach the safer path than assuming self-serve buildability.",
     "evidence_urls": [
-      "https://www.clay.com/"
+      "https://www.clay.com/",
+      "https://www.clay.com/university"
     ],
-    "confidence_score": 0.78,
-    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "confidence_score": 0.75,
+    "notes": "Clay is compelling, but workspace setup, paid access, and unclear public developer boundaries make outreach the safer product-ops classification.",
     "last_checked_date": "2026-07-09",
     "research_mode": "real_cached",
     "source_quality": "official_docs_cached",

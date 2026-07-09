@@ -73,6 +73,20 @@
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "Twenty source 2",
+      "url": "https://github.com/twentyhq/twenty",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Twenty source 2",
+      "url": "https://github.com/twentyhq/twenty",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -86,10 +100,11 @@
     "existing_mcp": "none_found",
     "buildability_verdict": "buildable_today",
     "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
-    "confidence_score": 0.7,
-    "notes": "Open-source positioning lowers partnership risk, though production-hardening still needs code-level review.",
+    "confidence_score": 0.68,
+    "notes": "Open-source positioning lowers partnership risk, though production-hardening and public API clarity still need code-level review.",
     "evidence_urls": [
-      "https://twenty.com"
+      "https://twenty.com",
+      "https://github.com/twentyhq/twenty"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -109,10 +124,11 @@
     "buildability_verdict": "buildable_today",
     "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
     "evidence_urls": [
-      "https://twenty.com"
+      "https://twenty.com",
+      "https://github.com/twentyhq/twenty"
     ],
-    "confidence_score": 0.76,
-    "notes": "Open-source positioning lowers partnership risk, though production-hardening still needs code-level review.",
+    "confidence_score": 0.74,
+    "notes": "Open-source positioning lowers partnership risk, though production-hardening and public API clarity still need code-level review.",
     "last_checked_date": "2026-07-09",
     "research_mode": "real_cached",
     "source_quality": "official_docs_cached",

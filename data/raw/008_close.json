@@ -78,6 +78,7 @@
   "classification_profile": {
     "one_line_description": "Close is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
     "auth_methods": [
+      "api_key",
       "oauth2",
       "mixed"
     ],
@@ -101,6 +102,7 @@
     "website_hint": "close.com",
     "one_line_description": "Close is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
     "auth_methods": [
+      "api_key",
       "oauth2",
       "mixed"
     ],

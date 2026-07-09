@@ -21,58 +21,72 @@
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "NotebookLM source 1",
       "url": "https://cloud.google.com/gemini",
-      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "NotebookLM source 2",
+      "url": "https://notebooklm.google/",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "NotebookLM source 2",
+      "url": "https://notebooklm.google/",
+      "snippet": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -84,12 +98,13 @@
     "api_surface": "undocumented",
     "api_breadth": "narrow",
     "existing_mcp": "none_found",
-    "buildability_verdict": "not_buildable_now",
-    "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
     "confidence_score": 0.72,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
     "evidence_urls": [
-      "https://cloud.google.com/gemini"
+      "https://cloud.google.com/gemini",
+      "https://notebooklm.google/"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -106,10 +121,11 @@
     "api_surface": "undocumented",
     "api_breadth": "narrow",
     "existing_mcp": "none_found",
-    "buildability_verdict": "not_buildable_now",
-    "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API, so access likely depends on broader Google enterprise surfaces.",
     "evidence_urls": [
-      "https://cloud.google.com/gemini"
+      "https://cloud.google.com/gemini",
+      "https://notebooklm.google/"
     ],
     "confidence_score": 0.78,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",

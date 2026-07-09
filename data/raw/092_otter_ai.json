@@ -76,14 +76,14 @@
     },
     {
       "title": "Otter AI source 2",
-      "url": "https://otter.ai/",
+      "url": "https://otter.ai/enterprise",
       "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
       "source_type": "auth_docs",
       "score": 0.87
     },
     {
       "title": "Otter AI source 2",
-      "url": "https://otter.ai/",
+      "url": "https://otter.ai/enterprise",
       "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
       "source_type": "auth_docs",
       "score": 0.87
@@ -106,7 +106,7 @@
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
     "evidence_urls": [
       "https://help.otter.ai/",
-      "https://otter.ai/"
+      "https://otter.ai/enterprise"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -129,7 +129,7 @@
     "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
     "evidence_urls": [
       "https://help.otter.ai/",
-      "https://otter.ai/"
+      "https://otter.ai/enterprise"
     ],
     "confidence_score": 0.79,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",

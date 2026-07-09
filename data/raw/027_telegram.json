@@ -20,59 +20,73 @@
   "documents": [
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Telegram source 1",
-      "url": "https://core.telegram.org/",
+      "url": "https://core.telegram.org/bots/api",
       "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "Telegram source 2",
+      "url": "https://core.telegram.org/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Telegram source 2",
+      "url": "https://core.telegram.org/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -91,7 +105,8 @@
     "confidence_score": 0.88,
     "notes": "Classification is based on public communications API docs and standard partner app flows.",
     "evidence_urls": [
-      "https://core.telegram.org/"
+      "https://core.telegram.org/bots/api",
+      "https://core.telegram.org/api"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,7 +128,8 @@
     "buildability_verdict": "buildable_today",
     "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
     "evidence_urls": [
-      "https://core.telegram.org/"
+      "https://core.telegram.org/bots/api",
+      "https://core.telegram.org/api"
     ],
     "confidence_score": 0.94,
     "notes": "Classification is based on public communications API docs and standard partner app flows.",

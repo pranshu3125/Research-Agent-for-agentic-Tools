@@ -86,7 +86,7 @@
     "existing_mcp": "none_found",
     "buildability_verdict": "buildable_today",
     "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
-    "confidence_score": 0.76,
+    "confidence_score": 0.68,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
     "evidence_urls": [
       "https://reducto.ai/"
@@ -111,7 +111,7 @@
     "evidence_urls": [
       "https://reducto.ai/"
     ],
-    "confidence_score": 0.82,
+    "confidence_score": 0.74,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
     "last_checked_date": "2026-07-09",
     "research_mode": "real_cached",

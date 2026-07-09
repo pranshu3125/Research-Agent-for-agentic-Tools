@@ -82,7 +82,7 @@
       "token",
       "mixed"
     ],
-    "self_serve_status": "gated",
+    "self_serve_status": "partially_gated",
     "api_surface": "rest",
     "api_breadth": "medium",
     "existing_mcp": "none_found",
@@ -106,7 +106,7 @@
       "token",
       "mixed"
     ],
-    "self_serve_status": "gated",
+    "self_serve_status": "partially_gated",
     "api_surface": "rest",
     "api_breadth": "medium",
     "existing_mcp": "none_found",

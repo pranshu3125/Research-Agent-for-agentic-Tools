@@ -20,56 +20,56 @@
   "documents": [
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Attio source 1",
-      "url": "https://attio.com",
+      "url": "https://docs.attio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
@@ -91,7 +91,7 @@
     "confidence_score": 0.66,
     "notes": "Public docs exist, but the platform is newer and requires deeper endpoint-by-endpoint validation before roadmap commitment.",
     "evidence_urls": [
-      "https://attio.com"
+      "https://docs.attio.com/"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,7 +113,7 @@
     "buildability_verdict": "buildable_with_limitations",
     "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
     "evidence_urls": [
-      "https://attio.com"
+      "https://docs.attio.com/"
     ],
     "confidence_score": 0.72,
     "notes": "Public docs exist, but the platform is newer and requires deeper endpoint-by-endpoint validation before roadmap commitment.",

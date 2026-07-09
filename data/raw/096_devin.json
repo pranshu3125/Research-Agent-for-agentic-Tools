@@ -73,6 +73,20 @@
       "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "Devin source 2",
+      "url": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Devin source 2",
+      "url": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -91,7 +105,8 @@
     "confidence_score": 0.75,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
     "evidence_urls": [
-      "https://docs.devin.ai/"
+      "https://docs.devin.ai/",
+      "https://docs.devin.ai/work-with-devin/deepwiki-mcp"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,7 +128,8 @@
     "buildability_verdict": "buildable_with_limitations",
     "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
     "evidence_urls": [
-      "https://docs.devin.ai/"
+      "https://docs.devin.ai/",
+      "https://docs.devin.ai/work-with-devin/deepwiki-mcp"
     ],
     "confidence_score": 0.81,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",

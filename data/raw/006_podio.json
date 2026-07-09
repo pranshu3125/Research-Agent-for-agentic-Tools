@@ -20,56 +20,56 @@
   "documents": [
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
     },
     {
       "title": "Podio source 1",
-      "url": "https://podio.com",
+      "url": "https://developers.podio.com/",
       "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
       "source_type": "official_docs",
       "score": 0.95
@@ -88,10 +88,10 @@
     "existing_mcp": "none_found",
     "buildability_verdict": "buildable_with_limitations",
     "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
-    "confidence_score": 0.72,
+    "confidence_score": 0.66,
     "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
     "evidence_urls": [
-      "https://podio.com"
+      "https://developers.podio.com/"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,9 +113,9 @@
     "buildability_verdict": "buildable_with_limitations",
     "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
     "evidence_urls": [
-      "https://podio.com"
+      "https://developers.podio.com/"
     ],
-    "confidence_score": 0.78,
+    "confidence_score": 0.72,
     "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
     "last_checked_date": "2026-07-09",
     "research_mode": "real_cached",

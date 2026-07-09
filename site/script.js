@@ -157,6 +157,7 @@ function renderProof() {
   const metadata = payload.metadata;
   document.getElementById("proof-section").innerHTML = `
     <article class="list-card">
+      <p><strong>Submitted run note:</strong> This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility. The repo supports live_search through Tavily/SerpAPI, but live HTTP research was not executed in the submitted run.</p>
       <p><strong>Run real mode:</strong> <code>python src/run_research.py --mode real --limit 100</code></p>
       <p><strong>Run demo mode:</strong> <code>python src/run_research.py --mode demo</code></p>
       <p><strong>Run verification:</strong> <code>python src/verify.py --sample-size 15</code></p>
@@ -164,8 +165,8 @@ function renderProof() {
       <p><strong>Results saved to:</strong> ${metadata.results_path}</p>
       <p><strong>Verification saved to:</strong> ${metadata.verification_path}</p>
       <p><strong>Static page:</strong> ${metadata.site_path}</p>
-      <p><strong>Repo link placeholder:</strong> ${metadata.repo_link_placeholder}</p>
-      <p><strong>Deployed link placeholder:</strong> ${metadata.deployed_link_placeholder}</p>
+      <p><strong>Repository:</strong> <a href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">${metadata.repo_link_placeholder}</a></p>
+      <p><strong>Deployment:</strong> <a href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">${metadata.deployed_link_placeholder}</a></p>
     </article>
   `;
 }

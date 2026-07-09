@@ -73,6 +73,20 @@
       "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
       "source_type": "official_docs",
       "score": 0.95
+    },
+    {
+      "title": "Consensus source 2",
+      "url": "https://consensus.app/api",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Consensus source 2",
+      "url": "https://consensus.app/api",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "auth_docs",
+      "score": 0.87
     }
   ],
   "classification_profile": {
@@ -91,7 +105,8 @@
     "confidence_score": 0.61,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
     "evidence_urls": [
-      "https://consensus.app/"
+      "https://consensus.app/",
+      "https://consensus.app/api"
     ],
     "source_quality": "official_docs_cached"
   },
@@ -113,7 +128,8 @@
     "buildability_verdict": "needs_outreach",
     "main_blocker": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
     "evidence_urls": [
-      "https://consensus.app/"
+      "https://consensus.app/",
+      "https://consensus.app/api"
     ],
     "confidence_score": 0.67,
     "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
