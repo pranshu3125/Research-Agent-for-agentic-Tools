@@ -97,12 +97,12 @@
         
         <article class="metric-card kpi-card neutral">
           <div class="metric-label">Verification sample</div>
-          <div class="metric-value">17</div>
+          <div class="metric-value">25</div>
         </article>
         
         <article class="metric-card kpi-card buildable_with_limitations">
           <div class="metric-label">First-pass accuracy</div>
-          <div class="metric-value">0.65</div>
+          <div class="metric-value">0.76</div>
         </article>
         
         <article class="metric-card kpi-card buildable_today">
@@ -345,7 +345,7 @@
             <div class="verification-grid" id="verification-summary">
         <article class="mini-card verification-card">
           <div class="metric-label">Sample size</div>
-          <div class="metric-value">17</div>
+          <div class="metric-value">25</div>
         </article>
         
         <article class="mini-card verification-card">
@@ -355,12 +355,12 @@
         
         <article class="mini-card verification-card">
           <div class="metric-label">First-pass app accuracy</div>
-          <div class="metric-value">0.65</div>
+          <div class="metric-value">0.76</div>
         </article>
         
         <article class="mini-card verification-card">
           <div class="metric-label">First-pass field accuracy</div>
-          <div class="metric-value">0.92</div>
+          <div class="metric-value">0.94</div>
         </article>
         
         <article class="mini-card verification-card">
@@ -3559,8 +3559,8 @@
           <div><strong>Buildable today:</strong> 46</div>
           <div><strong>Buildable with limitations:</strong> 33</div>
           <div><strong>Outreach or gated:</strong> 36</div>
-          <div><strong>Verification sample size:</strong> 17</div>
-          <div><strong>First-pass accuracy:</strong> 0.65</div>
+          <div><strong>Verification sample size:</strong> 25</div>
+          <div><strong>First-pass accuracy:</strong> 0.76</div>
           <div><strong>Post-verification accuracy:</strong> 0.96</div>
           <div><strong>Corrections made:</strong> 6</div>
           <div><strong>Generate report:</strong> <code>python src/generate_report.py</code></div>
@@ -4952,7 +4952,7 @@
   },
   "verification": {
     "mode": "real_cached",
-    "sample_size": 17,
+    "sample_size": 25,
     "sampled_categories": [
       "AI Research and Media-native",
       "CRM",
@@ -4966,10 +4966,10 @@
       "Support and Helpdesk"
     ],
     "selection_strategy": "Forced inclusion of known edge cases, then category-balanced sampling across the 10 assignment groups.",
-    "first_pass_app_accuracy": 0.65,
-    "first_pass_field_accuracy": 0.92,
+    "first_pass_app_accuracy": 0.76,
+    "first_pass_field_accuracy": 0.94,
     "verified_accuracy_estimate": 0.96,
-    "correction_rate": 0.35,
+    "correction_rate": 0.24,
     "common_error_modes": [
       "self-serve vs gated classification drift",
       "buildability overconfidence",
@@ -5239,6 +5239,104 @@
         ],
         "corrections": [],
         "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Pipedrive",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://developers.pipedrive.com/"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Attio",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://docs.attio.com/"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Twenty",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://twenty.com",
+          "https://github.com/twentyhq/twenty"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Podio",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://developers.podio.com/"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Zoho CRM",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/overview.html"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Copper",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://developer.copper.com/"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "DealCloud",
+        "category": "CRM",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://api.docs.dealcloud.com/"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
+      },
+      {
+        "app_name": "Intercom",
+        "category": "Support and Helpdesk",
+        "verified": true,
+        "checked_fields": 5,
+        "corrected_fields": 0,
+        "evidence_rechecked": [
+          "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+          "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+        ],
+        "corrections": [],
+        "reviewer_note": "No material correction in the verification sample."
       }
     ],
     "known_limitations": [
@@ -5284,12 +5382,12 @@
     },
     {
       "label": "Verification sample",
-      "value": 17,
+      "value": 25,
       "tone": "neutral"
     },
     {
       "label": "First-pass accuracy",
-      "value": 0.65,
+      "value": 0.76,
       "tone": "buildable_with_limitations"
     },
     {

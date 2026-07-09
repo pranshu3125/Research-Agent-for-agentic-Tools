@@ -1,5 +1,5 @@
 {
-  "sample_size": 17,
+  "sample_size": 25,
   "sampled_apps": [
     "Salesforce",
     "Close",
@@ -17,7 +17,15 @@
     "Stripe",
     "SendGrid",
     "Jira",
-    "Zendesk"
+    "Zendesk",
+    "Pipedrive",
+    "Attio",
+    "Twenty",
+    "Podio",
+    "Zoho CRM",
+    "Copper",
+    "DealCloud",
+    "Intercom"
   ],
   "fields_checked": [
     "auth_methods",
@@ -27,13 +35,13 @@
     "api_breadth"
   ],
   "first_pass_accuracy": {
-    "app_level": 0.65,
-    "field_level": 0.92,
+    "app_level": 0.76,
+    "field_level": 0.94,
     "scope_note": "These values are computed from the human-reviewed verification sample, not from all 100 apps."
   },
   "post_verification_accuracy": {
     "verified_estimate": 0.96,
-    "correction_rate": 0.35,
+    "correction_rate": 0.24,
     "scope_note": "Verified estimate reflects the corrected sample after follow-up review."
   },
   "corrections_made": {
@@ -218,7 +226,17 @@
     "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
     "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
     "https://developer.zendesk.com/api-reference/introduction/",
-    "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/"
+    "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+    "https://developers.pipedrive.com/",
+    "https://docs.attio.com/",
+    "https://twenty.com",
+    "https://github.com/twentyhq/twenty",
+    "https://developers.podio.com/",
+    "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+    "https://developer.copper.com/",
+    "https://api.docs.dealcloud.com/",
+    "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
   ],
   "verification_method": "Human-reviewed verification sample with forced edge cases plus category-balanced sampling. Official docs were re-checked, first-pass misses were recorded explicitly, and verified corrections were applied back into the final results table."
 }

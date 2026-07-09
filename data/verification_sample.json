@@ -1,6 +1,6 @@
 {
   "mode": "real_cached",
-  "sample_size": 17,
+  "sample_size": 25,
   "sampled_categories": [
     "AI Research and Media-native",
     "CRM",
@@ -14,10 +14,10 @@
     "Support and Helpdesk"
   ],
   "selection_strategy": "Forced inclusion of known edge cases, then category-balanced sampling across the 10 assignment groups.",
-  "first_pass_app_accuracy": 0.65,
-  "first_pass_field_accuracy": 0.92,
+  "first_pass_app_accuracy": 0.76,
+  "first_pass_field_accuracy": 0.94,
   "verified_accuracy_estimate": 0.96,
-  "correction_rate": 0.35,
+  "correction_rate": 0.24,
   "common_error_modes": [
     "self-serve vs gated classification drift",
     "buildability overconfidence",
@@ -284,6 +284,104 @@
       "evidence_rechecked": [
         "https://developer.zendesk.com/api-reference/introduction/",
         "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Pipedrive",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developers.pipedrive.com/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Attio",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://docs.attio.com/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Twenty",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://twenty.com",
+        "https://github.com/twentyhq/twenty"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Podio",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developers.podio.com/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Zoho CRM",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/overview.html"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Copper",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developer.copper.com/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "DealCloud",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://api.docs.dealcloud.com/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Intercom",
+      "category": "Support and Helpdesk",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
       ],
       "corrections": [],
       "reviewer_note": "No material correction in the verification sample."
