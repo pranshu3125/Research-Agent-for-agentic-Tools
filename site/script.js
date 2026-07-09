@@ -87,6 +87,7 @@ function navLinks() {
 
 function renderNav() {
   const nav = document.getElementById("top-nav");
+  if (!nav) return;
   nav.innerHTML = navLinks()
     .map(
       ([id, label]) => `
@@ -117,7 +118,9 @@ function initTheme() {
 
 function renderModeBanner() {
   const metadata = payload.metadata;
-  document.getElementById("mode-banner").innerHTML = `
+  const node = document.getElementById("mode-banner");
+  if (!node) return;
+  node.innerHTML = `
     <div class="badge-row">
       <span class="mode-badge primary">real_cached submitted run</span>
       <span class="mode-badge secondary">Composio SDK/MCP-ready</span>
@@ -129,14 +132,18 @@ function renderModeBanner() {
 
 function renderHeroMeta() {
   const metadata = payload.metadata;
-  document.getElementById("hero-actions").innerHTML = `
-    <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">Open deployment</a>
-    <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">Source repo</a>
+  const node = document.getElementById("hero-actions");
+  if (!node) return;
+  node.innerHTML = `
+    <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noopener noreferrer">Open deployment</a>
+    <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noopener noreferrer">Source repo</a>
   `;
 }
 
 function renderReadingCard() {
-  document.getElementById("reading-card").innerHTML = `
+  const node = document.getElementById("reading-card");
+  if (!node) return;
+  node.innerHTML = `
     <h3>How to use this dashboard</h3>
     <ul>
       <li>Scan the KPI strip and verification snapshot first.</li>
@@ -356,7 +363,7 @@ function evidenceLinkGroup(urls, includeCopy = false) {
             : "";
           return `
             <div class="evidence-item">
-              <a class="evidence-link" href="${url}" target="_blank" rel="noreferrer">Evidence ${index + 1}</a>
+              <a class="evidence-link" href="${url}" target="_blank" rel="noopener noreferrer">Evidence ${index + 1}</a>
               ${copyButton}
             </div>
           `;
@@ -412,6 +419,7 @@ function getFilterOptions() {
 
 function fillSelect(selectId, options, labelPrefix) {
   const select = document.getElementById(selectId);
+  if (!select) return;
   select.innerHTML = options
     .map((value) => `<option value="${value}">${value === "all" ? labelPrefix : humanize(value)}</option>`)
     .join("");
@@ -758,8 +766,8 @@ function renderProof() {
       <p><strong>Correction policy:</strong> Final table includes human-reviewed corrections from the verification sample.</p>
       <p><strong>Do not overclaim:</strong> This dashboard does not claim a fully autonomous live research run.</p>
       <div class="proof-actions">
-        <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noreferrer">Deployment</a>
-        <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noreferrer">Repository</a>
+        <a class="action-button primary" href="${metadata.deployed_link_placeholder}" target="_blank" rel="noopener noreferrer">Deployment</a>
+        <a class="action-button secondary" href="${metadata.repo_link_placeholder}" target="_blank" rel="noopener noreferrer">Repository</a>
       </div>
       <div class="proof-grid">
         <div><strong>Generate report:</strong> <code>python src/generate_report.py</code></div>

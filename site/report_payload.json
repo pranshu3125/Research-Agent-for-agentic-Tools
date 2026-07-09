@@ -329,6 +329,15 @@
       "MCP availability is especially volatile and should be re-checked before packaging a production toolkit."
     ]
   },
+  "verification_report": {
+    "fields_checked": [
+      "auth_methods",
+      "self_serve_status",
+      "buildability_verdict",
+      "existing_mcp",
+      "api_breadth"
+    ]
+  },
   "kpi_cards": [
     {
       "label": "Total apps",

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import html
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -326,6 +327,15 @@ def build_site_payload(
         "metadata": metadata.dict(),
         "insights": insights.dict(),
         "verification": verification.dict(),
+        "verification_report": {
+            "fields_checked": [
+                "auth_methods",
+                "self_serve_status",
+                "buildability_verdict",
+                "existing_mcp",
+                "api_breadth",
+            ]
+        },
         "kpi_cards": kpi_cards,
         "executive_summary": executive_summary,
         "agent_did": agent_did,
@@ -353,8 +363,346 @@ def humanize_label(value: str) -> str:
     return value.replace("_", " ")
 
 
+def esc(value: object) -> str:
+    return html.escape(str(value), quote=True)
+
+
+def server_status_tag(value: str) -> str:
+    return f'<span class="status {esc(value)}">{esc(humanize_label(value))}</span>'
+
+
+def server_metric(value: object) -> str:
+    if isinstance(value, (int, float)) and value < 1:
+        return f"{value:.2f}"
+    return esc(value)
+
+
+def render_static_evidence_links(urls: List[str]) -> str:
+    return "".join(
+        f'<div class="evidence-item"><a class="evidence-link" href="{esc(url)}" target="_blank" rel="noopener noreferrer">Evidence {index + 1}</a></div>'
+        for index, url in enumerate(urls)
+    )
+
+
+def render_distribution_markup(data: Dict[str, int], chip_labels: bool = True) -> str:
+    total = sum(data.values()) or 1
+    rows = []
+    for label, count in sorted(data.items(), key=lambda item: item[1], reverse=True):
+        pct = round((count / total) * 100)
+        label_html = server_status_tag(label) if chip_labels else f'<span class="bar-label">{esc(label)}</span>'
+        rows.append(
+            f"""
+            <div class="distribution-row">
+              <div class="distribution-meta">
+                <div class="distribution-label">{label_html}</div>
+                <div class="meta-token">{count} ({pct}%)</div>
+              </div>
+              <div class="distribution-track">
+                <div class="distribution-fill {esc(_distribution_tone(label))}" style="width:{pct}%"></div>
+              </div>
+            </div>
+            """
+        )
+    return "".join(rows)
+
+
+def _distribution_tone(label: str) -> str:
+    if label in {"buildable_today", "self_serve", "official", "oauth2", "high"}:
+        return "fill-green"
+    if label in {"buildable_with_limitations", "partially_gated", "unofficial", "api_key", "token", "medium"}:
+        return "fill-amber"
+    if label in {"needs_outreach", "gated", "not_buildable_now", "required"}:
+        return "fill-orange"
+    if label in {"unclear", "none_found", "low", "not_required"}:
+        return "fill-gray"
+    return "fill-blue"
+
+
+def render_queue_markup(rows: List[Dict[str, object]], kind: str) -> str:
+    cards = []
+    for item in rows:
+        why_label = (
+            "Why it is attractive"
+            if kind == "build"
+            else "Why it needs human review"
+            if kind == "review"
+            else "Why outreach matters"
+        )
+        cards.append(
+            f"""
+            <article class="queue-card mini-card" data-app-card="{esc(item["app_name"])}">
+              <div class="card-topline">
+                <div>
+                  <h3>{esc(item["app_name"])}</h3>
+                  <div class="meta-row">
+                    <span class="pill">{esc(item["category"])}</span>
+                    {server_status_tag(item["buildability_verdict"])}
+                    {server_status_tag(item["self_serve_status"])}
+                  </div>
+                </div>
+                <div class="confidence-pill {esc(_confidence_band(float(item["confidence_score"])))}">{float(item["confidence_score"]):.2f}</div>
+              </div>
+              <p>{esc(item["one_line_description"])}</p>
+              <p><strong>{why_label}:</strong> {esc(item["main_blocker"])}</p>
+              <p><strong>Auth:</strong> {esc(", ".join(item["auth_methods"]))}</p>
+              <div class="evidence-row">{render_static_evidence_links(item["evidence_urls"])}</div>
+            </article>
+            """
+        )
+    return "".join(cards)
+
+
+def _confidence_band(score: float) -> str:
+    if score >= 0.8:
+        return "high"
+    if score >= 0.6:
+        return "medium"
+    return "low"
+
+
+def render_results_table_markup(rows: List[Dict[str, object]]) -> str:
+    body = []
+    for item in rows:
+        body.append(
+            f"""
+            <tr data-app-row="{esc(item["app_name"])}">
+              <td><button class="table-app-button" type="button" data-app-open="{esc(item["app_name"])}">{esc(item["app_name"])}</button></td>
+              <td>{esc(item["category"])}</td>
+              <td>{esc(item["one_line_description"])}</td>
+              <td>{" ".join(server_status_tag(method) for method in item["auth_methods"])}</td>
+              <td>{server_status_tag(item["self_serve_status"])}</td>
+              <td>{server_status_tag(item["api_surface"])}</td>
+              <td>{server_status_tag(item["existing_mcp"])}</td>
+              <td>{server_status_tag(item["buildability_verdict"])}</td>
+              <td>{esc(item["main_blocker"])}</td>
+              <td><span class="confidence-pill {esc(_confidence_band(float(item["confidence_score"])))}">{float(item["confidence_score"]):.2f}</span></td>
+            </tr>
+            """
+        )
+    return f"""
+    <thead>
+      <tr>
+        <th>App</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Auth</th>
+        <th>Access</th>
+        <th>API surface</th>
+        <th>MCP</th>
+        <th>Buildability</th>
+        <th>Blocker</th>
+        <th>Confidence</th>
+      </tr>
+    </thead>
+    <tbody>{''.join(body)}</tbody>
+    """
+
+
+def render_explorer_cards_markup(rows: List[Dict[str, object]], corrected_names: List[str]) -> str:
+    corrected = set(corrected_names)
+    cards = []
+    for item in rows:
+        review_required = bool(item.get("low_confidence")) or bool(item.get("uncertain_fields"))
+        cards.append(
+            f"""
+            <article class="app-card mini-card" data-app-card="{esc(item["app_name"])}">
+              <div class="card-topline">
+                <div>
+                  <h3>{esc(item["app_name"])}</h3>
+                  <div class="meta-row">
+                    <span class="pill">{esc(item["category"])}</span>
+                    {server_status_tag(item["buildability_verdict"])}
+                    {server_status_tag(item["self_serve_status"])}
+                  </div>
+                </div>
+                <div class="confidence-pill {esc(_confidence_band(float(item["confidence_score"])))}">{float(item["confidence_score"]):.2f}</div>
+              </div>
+              <p>{esc(item["one_line_description"])}</p>
+              <div class="meta-row">{" ".join(server_status_tag(method) for method in item["auth_methods"])}</div>
+              <p><strong>Blocker:</strong> {esc(item["main_blocker"])}</p>
+              <div class="meta-row">
+                {'<span class="pill">Corrected</span>' if item["app_name"] in corrected else ''}
+                {'<span class="pill warning">Human review</span>' if review_required else ''}
+              </div>
+            </article>
+            """
+        )
+    return "".join(cards)
+
+
+def render_matrix_markup(category_matrix: Dict[str, Dict[str, int]]) -> str:
+    rows = []
+    for category, metrics in sorted(category_matrix.items(), key=lambda item: item[0]):
+        rows.append(
+            f"""
+            <tr>
+              <td>{esc(category)}</td>
+              <td>{metrics['self_serve']}</td>
+              <td>{metrics['gated']}</td>
+              <td>{metrics['buildable_today']}</td>
+              <td>{metrics['needs_outreach']}</td>
+              <td>{metrics['unclear']}</td>
+            </tr>
+            """
+        )
+    return f"""
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Self-serve</th>
+        <th>Gated</th>
+        <th>Buildable today</th>
+        <th>Needs outreach</th>
+        <th>Human review</th>
+      </tr>
+    </thead>
+    <tbody>{''.join(rows)}</tbody>
+    """
+
+
 def render_html(payload: Dict[str, object]) -> str:
     app_json = json.dumps(payload, indent=2)
+    metadata = payload["metadata"]
+    insights = payload["insights"]
+    verification = payload["verification"]
+    kpi_markup = "".join(
+        f"""
+        <article class="metric-card kpi-card {esc(card['tone'])}">
+          <div class="metric-label">{esc(card['label'])}</div>
+          <div class="metric-value">{server_metric(card['value'])}</div>
+        </article>
+        """
+        for card in payload["kpi_cards"]
+    )
+    verification_markup = "".join(
+        f"""
+        <article class="mini-card verification-card">
+          <div class="metric-label">{esc(label)}</div>
+          <div class="metric-value">{server_metric(value)}</div>
+        </article>
+        """
+        for label, value in [
+            ("Sample size", verification["sample_size"]),
+            ("Fields checked", len(payload.get("verification_report", {}).get("fields_checked", [])) or 5),
+            ("First-pass app accuracy", verification["first_pass_app_accuracy"]),
+            ("First-pass field accuracy", verification["first_pass_field_accuracy"]),
+            ("Post-verification accuracy", verification["verified_accuracy_estimate"]),
+            ("Corrections made", len(payload["correction_apps"])),
+        ]
+    )
+    build_queue_markup = render_queue_markup(payload["easy_wins"], "build")
+    outreach_markup = render_queue_markup(payload["outreach_needed"], "outreach")
+    review_markup = render_queue_markup(payload["low_confidence"], "review")
+    executive_markup = "".join(f'<article class="mini-card"><p>{esc(item)}</p></article>' for item in payload["executive_summary"])
+    headline_markup = "".join(f'<article class="mini-card"><p>{esc(item)}</p></article>' for item in insights["headline_insights"])
+    correction_summary_markup = "".join(
+        f"""
+        <article class="mini-card correction-summary-card">
+          <div class="card-topline">
+            <div>
+              <h3>{esc(item['app_name'])}</h3>
+              <div class="meta-row">
+                <span class="pill">{esc(item['category'])}</span>
+                <span class="pill">{item['field_count']} corrected field{'s' if item['field_count'] != 1 else ''}</span>
+              </div>
+            </div>
+          </div>
+          <p><strong>Fields:</strong> {esc(', '.join(humanize_label(field) for field in item['fields']))}</p>
+          <p>{esc(item['reviewer_note'])}</p>
+        </article>
+        """
+        for item in payload["correction_apps"]
+    )
+    corrections_markup = "".join(
+        f"""
+        <article class="mini-card correction-detail-card">
+          <div class="card-topline">
+            <div>
+              <h3>{esc(entry['app_name'])}</h3>
+              <div class="meta-row">
+                <span class="pill">{esc(entry['category'])}</span>
+                <span class="pill">Corrected</span>
+              </div>
+            </div>
+          </div>
+          <p>{esc(entry['reviewer_note'])}</p>
+          <div class="before-after-grid">
+            {''.join(
+                f'<div class="before-after-row"><div class="before-after-label">{esc(humanize_label(corr["field_name"]))}</div><div class="before-after-values"><span class="before-chip">Before: {esc(corr["original_value"])}</span><span class="after-chip">After: {esc(corr["corrected_value"])}</span></div></div>'
+                for corr in entry['corrections']
+            )}
+          </div>
+        </article>
+        """
+        for entry in payload["corrections"]
+    )
+    work_split_markup = "".join(
+        f"""
+        <article class="mini-card">
+          <h3>{esc(title)}</h3>
+          <ul class="compact-list">{''.join(f'<li>{esc(item)}</li>' for item in rows)}</ul>
+        </article>
+        """
+        for title, rows in [("Agent / pipeline did", payload["agent_did"]), ("Human did", payload["human_did"])]
+    )
+    workflow_markup = "".join(
+        f'<div class="pipeline-step"><div class="pipeline-index">{index + 1}</div><div class="pipeline-label">{esc(step)}</div></div>'
+        + ('<div class="pipeline-arrow">→</div>' if index < len(["apps.csv", "evidence retrieval", "extraction", "classification", "clustering", "verification", "HTML report"]) - 1 else "")
+        for index, step in enumerate(["apps.csv", "evidence retrieval", "extraction", "classification", "clustering", "verification", "HTML report"])
+    )
+    reading_card_markup = """
+      <h3>How to use this dashboard</h3>
+      <ul>
+        <li>Scan the KPI strip and verification snapshot first.</li>
+        <li>Use Build Queue and Outreach Queue to understand product actionability.</li>
+        <li>Search or filter the 100 apps, then open the detail drawer to inspect evidence and reasoning.</li>
+      </ul>
+    """
+    mode_banner_markup = f"""
+      <div class="badge-row">
+        <span class="mode-badge primary">real_cached submitted run</span>
+        <span class="mode-badge secondary">Composio SDK/MCP-ready</span>
+        <span class="mode-badge secondary">{'live provider configured' if metadata['live_search_enabled'] else 'live search not executed'}</span>
+      </div>
+      <p class="mode-copy">{esc(metadata['mode_summary'])}</p>
+    """
+    hero_actions_markup = f"""
+      <a class="action-button primary" href="{esc(metadata['deployed_link_placeholder'])}" target="_blank" rel="noopener noreferrer">Open deployment</a>
+      <a class="action-button secondary" href="{esc(metadata['repo_link_placeholder'])}" target="_blank" rel="noopener noreferrer">Source repo</a>
+    """
+    proof_markup = f"""
+      <article class="mini-card">
+        <p><strong>Submitted run:</strong> This submitted run is real_cached: it uses an evidence-backed official-doc research catalog for reproducibility.</p>
+        <p><strong>Live mode honesty:</strong> The repo supports optional Composio SDK/MCP-ready live mode plus Tavily/SerpAPI adapters, but live HTTP research was not executed in this submitted run.</p>
+        <p><strong>Correction policy:</strong> Final table includes human-reviewed corrections from the verification sample.</p>
+        <p><strong>Do not overclaim:</strong> This dashboard does not claim a fully autonomous live research run.</p>
+        <div class="proof-actions">
+          <a class="action-button primary" href="{esc(metadata['deployed_link_placeholder'])}" target="_blank" rel="noopener noreferrer">Deployment</a>
+          <a class="action-button secondary" href="{esc(metadata['repo_link_placeholder'])}" target="_blank" rel="noopener noreferrer">Repository</a>
+        </div>
+        <div class="proof-grid">
+          <div><strong>Total apps researched:</strong> {insights['total_apps']}</div>
+          <div><strong>Buildable today:</strong> {insights['buildable_today']}</div>
+          <div><strong>Buildable with limitations:</strong> {insights['buildable_with_limitations']}</div>
+          <div><strong>Outreach or gated:</strong> {insights['partially_or_fully_gated']}</div>
+          <div><strong>Verification sample size:</strong> {verification['sample_size']}</div>
+          <div><strong>First-pass accuracy:</strong> {verification['first_pass_app_accuracy']:.2f}</div>
+          <div><strong>Post-verification accuracy:</strong> {verification['verified_accuracy_estimate']:.2f}</div>
+          <div><strong>Corrections made:</strong> {len(payload['correction_apps'])}</div>
+          <div><strong>Generate report:</strong> <code>python src/generate_report.py</code></div>
+          <div><strong>Smoke check:</strong> <code>python src/smoke_check.py</code></div>
+          <div><strong>Results path:</strong> {esc(metadata['results_path'])}</div>
+          <div><strong>Verification path:</strong> {esc(metadata['verification_path'])}</div>
+        </div>
+      </article>
+    """
+    matrix_markup = render_matrix_markup(payload["category_matrix"])
+    auth_markup = render_distribution_markup(payload["auth_patterns"])
+    buildability_markup = render_distribution_markup(payload["buildability_patterns"])
+    blocker_markup = render_distribution_markup(payload["blocker_patterns"], chip_labels=False)
+    mcp_markup = render_distribution_markup(payload["mcp_patterns"])
+    explorer_cards_markup = render_explorer_cards_markup(payload["results"][:100], payload["corrected_app_names"])
+    table_markup = render_results_table_markup(payload["results"])
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -379,7 +727,16 @@ def render_html(payload: Dict[str, object]) -> str:
       <div class="sidebar-copy">
         <p>Evidence-first product dashboard for 100 candidate tool integrations.</p>
       </div>
-      <nav class="sidebar-nav" id="top-nav"></nav>
+      <nav class="sidebar-nav" id="top-nav">
+        <a class="nav-link" href="#snapshot" data-target="snapshot"><span>Snapshot</span></a>
+        <a class="nav-link" href="#build-queue" data-target="build-queue"><span>Build Queue</span></a>
+        <a class="nav-link" href="#patterns" data-target="patterns"><span>Patterns</span></a>
+        <a class="nav-link" href="#verification" data-target="verification"><span>Verification</span></a>
+        <a class="nav-link" href="#agent-workflow" data-target="agent-workflow"><span>Agent Workflow</span></a>
+        <a class="nav-link" href="#explore-apps" data-target="explore-apps"><span>Explore Apps</span></a>
+        <a class="nav-link" href="#proof" data-target="proof"><span>Proof</span></a>
+        <a class="nav-link" href="#full-table" data-target="full-table"><span>Full Table</span></a>
+      </nav>
       <div class="sidebar-note">
         <p><strong>Run mode:</strong> real_cached submitted run</p>
         <p><strong>Live mode:</strong> Optional Composio SDK/MCP-ready adapter exists, but no live autonomous run is claimed here.</p>
@@ -393,14 +750,14 @@ def render_html(payload: Dict[str, object]) -> str:
             <p class="eyebrow">Agent Toolkit Readiness Study</p>
             <h1>100 apps, one product-ops view of what Composio can build now.</h1>
             <p class="subtitle">This dashboard evaluates API surface, auth friction, MCP signal, and practical buildability for the exact assignment inventory, then exposes the findings through searchable evidence-first app views.</p>
-            <div class="mode-banner" id="mode-banner"></div>
-            <div class="hero-actions" id="hero-actions"></div>
+            <div class="mode-banner" id="mode-banner">{mode_banner_markup}</div>
+            <div class="hero-actions" id="hero-actions">{hero_actions_markup}</div>
           </div>
           <div class="hero-side">
-            <div class="reading-card glass-panel" id="reading-card"></div>
+            <div class="reading-card glass-panel" id="reading-card">{reading_card_markup}</div>
           </div>
         </div>
-        <div class="card-grid hero-kpis" id="insight-cards"></div>
+        <div class="card-grid hero-kpis" id="insight-cards">{kpi_markup}</div>
       </header>
 
       <main id="app">
@@ -410,15 +767,15 @@ def render_html(payload: Dict[str, object]) -> str:
               <h2>Best Build Queue</h2>
               <p>High-confidence buildable apps with public docs and clean onboarding paths.</p>
             </div>
-            <div class="queue-grid" id="build-queue-list"></div>
+            <div class="queue-grid" id="build-queue-list">{build_queue_markup}</div>
           </section>
           <section class="panel glass-panel">
             <div class="section-heading">
               <h2>Verification Snapshot</h2>
               <p>Trust-building sample review surfaced before the deeper portfolio scan.</p>
             </div>
-            <div class="verification-grid" id="verification-summary"></div>
-            <div id="verification-note" class="stack-list"></div>
+            <div class="verification-grid" id="verification-summary">{verification_markup}</div>
+            <div id="verification-note" class="stack-list"><article class="mini-card"><p><strong>Selection strategy:</strong> {esc(verification['selection_strategy'])}</p><p><strong>Fields checked:</strong> {esc(', '.join(payload.get('verification_report', {}).get('fields_checked', ['auth_methods', 'self_serve_status', 'buildability_verdict', 'existing_mcp', 'api_breadth'])))}.</p><p><strong>Corrected apps:</strong> {esc(', '.join(payload['corrected_app_names']))}</p><p><strong>Human review boundary:</strong> Final table includes human-reviewed corrections, while this section preserves original first-pass misses for transparency.</p></article></div>
           </section>
         </section>
 
@@ -428,14 +785,14 @@ def render_html(payload: Dict[str, object]) -> str:
               <h2>Executive Summary</h2>
               <p>What a reviewer should understand in roughly two minutes.</p>
             </div>
-            <div id="executive-summary" class="stack-list"></div>
+            <div id="executive-summary" class="stack-list">{executive_markup}</div>
           </section>
           <section class="panel glass-panel">
             <div class="section-heading">
               <h2>Corrections Made</h2>
               <p>Human-reviewed fixes already applied back into the final table.</p>
             </div>
-            <div id="correction-apps" class="stack-list"></div>
+            <div id="correction-apps" class="stack-list">{correction_summary_markup}</div>
           </section>
         </section>
 
@@ -444,7 +801,7 @@ def render_html(payload: Dict[str, object]) -> str:
             <h2>Headline Insights</h2>
             <p>Portfolio-level findings before app-by-app exploration.</p>
           </div>
-          <div id="headline-insights" class="insight-list"></div>
+          <div id="headline-insights" class="insight-list">{headline_markup}</div>
         </section>
 
         <section class="split">
@@ -453,14 +810,14 @@ def render_html(payload: Dict[str, object]) -> str:
               <h2>Auth Distribution</h2>
               <p>Delegated auth dominates this inventory.</p>
             </div>
-            <div id="auth-patterns"></div>
+            <div id="auth-patterns">{auth_markup}</div>
           </section>
           <section class="panel glass-panel">
             <div class="section-heading">
               <h2>Buildability Buckets</h2>
               <p>Where Composio can move fast versus where sales or partner motions matter.</p>
             </div>
-            <div id="buildability-patterns"></div>
+            <div id="buildability-patterns">{buildability_markup}</div>
           </section>
         </section>
 
@@ -471,7 +828,7 @@ def render_html(payload: Dict[str, object]) -> str:
               <p>Readiness by assignment category.</p>
             </div>
             <div class="table-wrap compact-table">
-              <table id="matrix-table"></table>
+              <table id="matrix-table">{matrix_markup}</table>
             </div>
           </section>
           <section class="panel glass-panel">
@@ -479,13 +836,13 @@ def render_html(payload: Dict[str, object]) -> str:
               <h2>Blocker Distribution</h2>
               <p>Most common reasons an app is not an immediate build win.</p>
             </div>
-            <div id="blocker-patterns"></div>
+            <div id="blocker-patterns">{blocker_markup}</div>
             <div class="subsection">
               <div class="section-heading mini-heading">
                 <h3>MCP Signal</h3>
                 <p>Official versus community MCP presence.</p>
               </div>
-              <div id="mcp-patterns"></div>
+              <div id="mcp-patterns">{mcp_markup}</div>
             </div>
           </section>
         </section>
@@ -496,14 +853,14 @@ def render_html(payload: Dict[str, object]) -> str:
               <h2>Outreach Queue</h2>
               <p>Strong examples where partner access, enterprise setup, or approval is the real blocker.</p>
             </div>
-            <div class="queue-grid" id="outreach-queue"></div>
+            <div class="queue-grid" id="outreach-queue">{outreach_markup}</div>
           </section>
           <section class="panel glass-panel">
             <div class="section-heading">
               <h2>Human Review Queue</h2>
               <p>Apps that should not be auto-prioritized without a second look.</p>
             </div>
-            <div id="low-confidence" class="stack-list"></div>
+            <div id="low-confidence" class="stack-list">{review_markup}</div>
           </section>
         </section>
 
@@ -512,7 +869,7 @@ def render_html(payload: Dict[str, object]) -> str:
             <h2>Verification Details</h2>
             <p>Human-reviewed edge cases, first-pass misses, and the corrected before/after trail.</p>
           </div>
-          <div id="corrections" class="correction-grid"></div>
+          <div id="corrections" class="correction-grid">{corrections_markup}</div>
         </section>
 
         <section class="panel glass-panel section-anchor" id="agent-workflow">
@@ -520,8 +877,8 @@ def render_html(payload: Dict[str, object]) -> str:
             <h2>Agent Workflow</h2>
             <p>What was automated, what was human-reviewed, and how the final HTML report was generated.</p>
           </div>
-          <div class="pipeline-strip" id="workflow-pipeline"></div>
-          <div class="split compact-split" id="work-split"></div>
+          <div class="pipeline-strip" id="workflow-pipeline">{workflow_markup}</div>
+          <div class="split compact-split" id="work-split">{work_split_markup}</div>
         </section>
 
         <section class="panel glass-panel section-anchor" id="explore-apps">
@@ -538,28 +895,28 @@ def render_html(payload: Dict[str, object]) -> str:
           <div class="explorer-layout">
             <div class="filters-panel glass-panel" id="filters-panel">
               <div class="search-wrap">
-                <input id="search-input" type="search" placeholder="Search app, category, auth, API surface, blocker, notes..." />
+                <input id="search-input" type="search" aria-label="Search apps" placeholder="Search app, category, auth, API surface, blocker, notes..." />
               </div>
               <div class="quick-toggle-row">
                 <button id="toggle-high-confidence" class="chip-button" type="button">Show only high-confidence apps</button>
                 <button id="toggle-corrected" class="chip-button" type="button">Show corrected apps</button>
               </div>
               <div class="filters-grid">
-                <select id="category-filter"></select>
-                <select id="auth-filter"></select>
-                <select id="buildability-filter"></select>
-                <select id="gating-filter"></select>
-                <select id="mcp-filter"></select>
-                <select id="review-filter"></select>
-                <select id="confidence-filter"></select>
+                <select id="category-filter" aria-label="Filter by category"></select>
+                <select id="auth-filter" aria-label="Filter by auth method"></select>
+                <select id="buildability-filter" aria-label="Filter by buildability"></select>
+                <select id="gating-filter" aria-label="Filter by access status"></select>
+                <select id="mcp-filter" aria-label="Filter by MCP status"></select>
+                <select id="review-filter" aria-label="Filter by human review status"></select>
+                <select id="confidence-filter" aria-label="Filter by confidence"></select>
               </div>
               <div class="filters-actions">
                 <button id="clear-filters" class="utility-button" type="button">Clear filters</button>
-                <span id="result-count" class="result-count"></span>
+                <span id="result-count" class="result-count">Showing {len(payload['results'])} of {len(payload['results'])} apps</span>
               </div>
             </div>
             <div>
-              <div id="app-explorer-grid" class="explorer-grid"></div>
+              <div id="app-explorer-grid" class="explorer-grid">{explorer_cards_markup}</div>
               <div id="empty-state" class="empty-state" hidden>
                 <h3>No apps match these filters.</h3>
                 <p>Clear filters or broaden the search to restore the full 100-app view.</p>
@@ -573,7 +930,7 @@ def render_html(payload: Dict[str, object]) -> str:
             <h2>Proof</h2>
             <p>Exact honesty wording, run commands, and source/deployment links.</p>
           </div>
-          <div id="proof-section" class="stack-list"></div>
+          <div id="proof-section" class="stack-list">{proof_markup}</div>
         </section>
 
         <section class="panel glass-panel section-anchor" id="full-table">
@@ -582,7 +939,7 @@ def render_html(payload: Dict[str, object]) -> str:
             <p>The same filtered app set rendered in dense table form for spreadsheet-style scanning.</p>
           </div>
           <div class="table-wrap">
-            <table id="results-table"></table>
+            <table id="results-table">{table_markup}</table>
           </div>
         </section>
       </main>
