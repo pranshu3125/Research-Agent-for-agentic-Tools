@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 90,
+    "app_name": "YouTube",
+    "category": "Video",
+    "website_hint": "youtube.com"
+  },
+  "queries": [
+    "YouTube API docs auth",
+    "YouTube developer OAuth API key",
+    "YouTube MCP server",
+    "YouTube REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "YouTube website",
+      "url": "https://youtube.com",
+      "snippet": "Manual fallback result for YouTube. Use youtube.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "YouTube website",
+      "url": "https://youtube.com",
+      "snippet": "Manual fallback result for YouTube. Use youtube.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "YouTube website",
+      "url": "https://youtube.com",
+      "snippet": "Manual fallback result for YouTube. Use youtube.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "YouTube website",
+      "url": "https://youtube.com",
+      "snippet": "Manual fallback result for YouTube. Use youtube.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "YouTube docs guess",
+      "url": "https://youtube.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "YouTube docs guess",
+      "url": "https://youtube.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "YouTube docs guess",
+      "url": "https://youtube.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "YouTube docs guess",
+      "url": "https://youtube.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 90,
+    "app_name": "YouTube",
+    "category": "Video",
+    "one_line_description": "YouTube is a video product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://youtube.com",
+      "https://youtube.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 100,
+    "app_name": "Grain",
+    "category": "AI Research and Media-native",
+    "website_hint": "grain.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Grain API documentation",
+    "Grain developer docs authentication",
+    "Grain OAuth API key developer",
+    "Grain REST API docs",
+    "Grain GraphQL API docs",
+    "Grain MCP server",
+    "Grain developer account API access pricing",
+    "Grain partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Grain source 1",
+      "url": "https://grain.com/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Grain provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "confidence_score": 0.6,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "evidence_urls": [
+      "https://grain.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 100,
+    "app_name": "Grain",
+    "category": "AI Research and Media-native",
+    "website_hint": "grain.com",
+    "one_line_description": "Grain provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://grain.com/"
+    ],
+    "confidence_score": 0.66,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

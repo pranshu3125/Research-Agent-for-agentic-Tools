@@ -1,0 +1,98 @@
+{
+  "app": {
+    "id": 16,
+    "app_name": "Airtable",
+    "category": "Database",
+    "website_hint": "airtable.com"
+  },
+  "queries": [
+    "Airtable API docs auth",
+    "Airtable developer OAuth API key",
+    "Airtable MCP server",
+    "Airtable REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Airtable developer docs",
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "snippet": "Low-code database platform with table, record, schema, and automation APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Airtable developer docs",
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "snippet": "Low-code database platform with table, record, schema, and automation APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Airtable developer docs",
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "snippet": "Low-code database platform with table, record, schema, and automation APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Airtable developer docs",
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "snippet": "Low-code database platform with table, record, schema, and automation APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Airtable auth docs",
+      "url": "https://airtable.com/developers/web/guides/oauth-overview",
+      "snippet": "Rate limits and per-base permissions can cap aggressive agent behaviors.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Airtable auth docs",
+      "url": "https://airtable.com/developers/web/guides/oauth-overview",
+      "snippet": "Rate limits and per-base permissions can cap aggressive agent behaviors.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Airtable auth docs",
+      "url": "https://airtable.com/developers/web/guides/oauth-overview",
+      "snippet": "Rate limits and per-base permissions can cap aggressive agent behaviors.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Airtable auth docs",
+      "url": "https://airtable.com/developers/web/guides/oauth-overview",
+      "snippet": "Rate limits and per-base permissions can cap aggressive agent behaviors.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 16,
+    "app_name": "Airtable",
+    "category": "Database",
+    "one_line_description": "Low-code database platform with table, record, schema, and automation APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Rate limits and per-base permissions can cap aggressive agent behaviors.",
+    "evidence_urls": [
+      "https://airtable.com/developers/web/api/introduction",
+      "https://airtable.com/developers/web/guides/oauth-overview"
+    ],
+    "confidence_score": 0.87,
+    "notes": "Good balance of self-serve auth and practical business workflows.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

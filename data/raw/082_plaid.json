@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 82,
+    "app_name": "Plaid",
+    "category": "Finance and Fintech",
+    "website_hint": "plaid.com/docs"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Plaid API documentation",
+    "Plaid developer docs authentication",
+    "Plaid OAuth API key developer",
+    "Plaid REST API docs",
+    "Plaid GraphQL API docs",
+    "Plaid MCP server",
+    "Plaid developer account API access pricing",
+    "Plaid partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plaid source 1",
+      "url": "https://plaid.com/docs/",
+      "snippet": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Plaid exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+    "confidence_score": 0.85,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "evidence_urls": [
+      "https://plaid.com/docs/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 82,
+    "app_name": "Plaid",
+    "category": "Finance and Fintech",
+    "website_hint": "plaid.com/docs",
+    "one_line_description": "Plaid exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+    "evidence_urls": [
+      "https://plaid.com/docs/"
+    ],
+    "confidence_score": 0.91,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

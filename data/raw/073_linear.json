@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 73,
+    "app_name": "Linear",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.linear.app"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Linear API documentation",
+    "Linear developer docs authentication",
+    "Linear OAuth API key developer",
+    "Linear REST API docs",
+    "Linear GraphQL API docs",
+    "Linear MCP server",
+    "Linear developer account API access pricing",
+    "Linear partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Linear source 1",
+      "url": "https://developers.linear.app/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Linear exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "confidence_score": 0.9,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "evidence_urls": [
+      "https://developers.linear.app/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 73,
+    "app_name": "Linear",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.linear.app",
+    "one_line_description": "Linear exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developers.linear.app/"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

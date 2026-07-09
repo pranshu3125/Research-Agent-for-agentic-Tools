@@ -1,0 +1,98 @@
+{
+  "app": {
+    "id": 3,
+    "app_name": "HubSpot",
+    "category": "CRM",
+    "website_hint": "hubspot.com"
+  },
+  "queries": [
+    "HubSpot API docs auth",
+    "HubSpot developer OAuth API key",
+    "HubSpot MCP server",
+    "HubSpot REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "HubSpot developer docs",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "CRM and go-to-market platform with broad object and engagement APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot developer docs",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "CRM and go-to-market platform with broad object and engagement APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot developer docs",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "CRM and go-to-market platform with broad object and engagement APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot developer docs",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "CRM and go-to-market platform with broad object and engagement APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot auth docs",
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "snippet": "Enterprise data model complexity can raise implementation scope.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "HubSpot auth docs",
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "snippet": "Enterprise data model complexity can raise implementation scope.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "HubSpot auth docs",
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "snippet": "Enterprise data model complexity can raise implementation scope.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "HubSpot auth docs",
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "snippet": "Enterprise data model complexity can raise implementation scope.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 3,
+    "app_name": "HubSpot",
+    "category": "CRM",
+    "one_line_description": "CRM and go-to-market platform with broad object and engagement APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Enterprise data model complexity can raise implementation scope.",
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+    ],
+    "confidence_score": 0.88,
+    "notes": "Excellent docs; private app tokens are useful for internal automations but OAuth matters for marketplace-grade tooling.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

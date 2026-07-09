@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 22,
+    "app_name": "Twilio",
+    "category": "Communications and Messaging",
+    "website_hint": "twilio.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Twilio API documentation",
+    "Twilio developer docs authentication",
+    "Twilio OAuth API key developer",
+    "Twilio REST API docs",
+    "Twilio GraphQL API docs",
+    "Twilio MCP server",
+    "Twilio developer account API access pricing",
+    "Twilio partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 1",
+      "url": "https://www.twilio.com/docs/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twilio source 2",
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Twilio source 2",
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Twilio provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "evidence_urls": [
+      "https://www.twilio.com/docs/api",
+      "https://www.twilio.com/docs/iam/api"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 22,
+    "app_name": "Twilio",
+    "category": "Communications and Messaging",
+    "website_hint": "twilio.com",
+    "one_line_description": "Twilio provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://www.twilio.com/docs/api",
+      "https://www.twilio.com/docs/iam/api"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

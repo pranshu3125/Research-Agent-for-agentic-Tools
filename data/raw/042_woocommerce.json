@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 42,
+    "app_name": "WooCommerce",
+    "category": "Ecommerce",
+    "website_hint": "woocommerce.com/document/woocommerce-rest-api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "WooCommerce API documentation",
+    "WooCommerce developer docs authentication",
+    "WooCommerce OAuth API key developer",
+    "WooCommerce REST API docs",
+    "WooCommerce GraphQL API docs",
+    "WooCommerce MCP server",
+    "WooCommerce developer account API access pricing",
+    "WooCommerce partner API access"
+  ],
+  "documents": [
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "WooCommerce source 1",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "WooCommerce exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "basic",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "confidence_score": 0.83,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://woocommerce.com/document/woocommerce-rest-api/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 42,
+    "app_name": "WooCommerce",
+    "category": "Ecommerce",
+    "website_hint": "woocommerce.com/document/woocommerce-rest-api",
+    "one_line_description": "WooCommerce exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "basic",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://woocommerce.com/document/woocommerce-rest-api/"
+    ],
+    "confidence_score": 0.89,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

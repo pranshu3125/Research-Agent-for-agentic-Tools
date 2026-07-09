@@ -1,0 +1,128 @@
+{
+  "app": {
+    "id": 84,
+    "app_name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "website_hint": "paygent"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Paygent Connect API documentation",
+    "Paygent Connect developer docs authentication",
+    "Paygent Connect OAuth API key developer",
+    "Paygent Connect REST API docs",
+    "Paygent Connect GraphQL API docs",
+    "Paygent Connect MCP server",
+    "Paygent Connect developer account API access pricing",
+    "Paygent Connect partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Paygent Connect source 1",
+      "url": "https://www.paygent.co.jp/",
+      "snippet": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Paygent Connect exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+    "confidence_score": 0.42,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "evidence_urls": [
+      "https://www.paygent.co.jp/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 84,
+    "app_name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "website_hint": "paygent",
+    "one_line_description": "Paygent Connect exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+    "evidence_urls": [
+      "https://www.paygent.co.jp/"
+    ],
+    "confidence_score": 0.43,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "api_surface"
+    ]
+  }
+}

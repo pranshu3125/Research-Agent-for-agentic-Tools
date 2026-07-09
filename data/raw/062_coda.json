@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 62,
+    "app_name": "Coda",
+    "category": "Productivity",
+    "website_hint": "coda.io"
+  },
+  "queries": [
+    "Coda API docs auth",
+    "Coda developer OAuth API key",
+    "Coda MCP server",
+    "Coda REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Coda website",
+      "url": "https://coda.io",
+      "snippet": "Manual fallback result for Coda. Use coda.io to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Coda website",
+      "url": "https://coda.io",
+      "snippet": "Manual fallback result for Coda. Use coda.io to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Coda website",
+      "url": "https://coda.io",
+      "snippet": "Manual fallback result for Coda. Use coda.io to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Coda website",
+      "url": "https://coda.io",
+      "snippet": "Manual fallback result for Coda. Use coda.io to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Coda docs guess",
+      "url": "https://coda.io/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Coda docs guess",
+      "url": "https://coda.io/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Coda docs guess",
+      "url": "https://coda.io/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Coda docs guess",
+      "url": "https://coda.io/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 62,
+    "app_name": "Coda",
+    "category": "Productivity",
+    "one_line_description": "Coda is a productivity product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://coda.io",
+      "https://coda.io"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

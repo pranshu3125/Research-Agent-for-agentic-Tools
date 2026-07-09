@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 13,
+    "app_name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "website_hint": "freshdesk.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Freshdesk API documentation",
+    "Freshdesk developer docs authentication",
+    "Freshdesk OAuth API key developer",
+    "Freshdesk REST API docs",
+    "Freshdesk GraphQL API docs",
+    "Freshdesk MCP server",
+    "Freshdesk developer account API access pricing",
+    "Freshdesk partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Freshdesk source 1",
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Freshdesk is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "confidence_score": 0.77,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "evidence_urls": [
+      "https://developers.freshdesk.com/api/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 13,
+    "app_name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "website_hint": "freshdesk.com",
+    "one_line_description": "Freshdesk is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developers.freshdesk.com/api/"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

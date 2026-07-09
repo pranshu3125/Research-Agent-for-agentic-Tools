@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 25,
+    "app_name": "Dropbox",
+    "category": "File Storage",
+    "website_hint": "dropbox.com"
+  },
+  "queries": [
+    "Dropbox API docs auth",
+    "Dropbox developer OAuth API key",
+    "Dropbox MCP server",
+    "Dropbox REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Dropbox website",
+      "url": "https://dropbox.com",
+      "snippet": "Manual fallback result for Dropbox. Use dropbox.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Dropbox website",
+      "url": "https://dropbox.com",
+      "snippet": "Manual fallback result for Dropbox. Use dropbox.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Dropbox website",
+      "url": "https://dropbox.com",
+      "snippet": "Manual fallback result for Dropbox. Use dropbox.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Dropbox website",
+      "url": "https://dropbox.com",
+      "snippet": "Manual fallback result for Dropbox. Use dropbox.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Dropbox docs guess",
+      "url": "https://dropbox.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Dropbox docs guess",
+      "url": "https://dropbox.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Dropbox docs guess",
+      "url": "https://dropbox.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Dropbox docs guess",
+      "url": "https://dropbox.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 25,
+    "app_name": "Dropbox",
+    "category": "File Storage",
+    "one_line_description": "Dropbox is a file storage product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://dropbox.com",
+      "https://dropbox.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

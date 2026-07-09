@@ -1,0 +1,124 @@
+{
+  "app": {
+    "id": 8,
+    "app_name": "Close",
+    "category": "CRM",
+    "website_hint": "close.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Close API documentation",
+    "Close developer docs authentication",
+    "Close OAuth API key developer",
+    "Close REST API docs",
+    "Close GraphQL API docs",
+    "Close MCP server",
+    "Close developer account API access pricing",
+    "Close partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Close source 1",
+      "url": "https://developer.close.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Close is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "evidence_urls": [
+      "https://developer.close.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 8,
+    "app_name": "Close",
+    "category": "CRM",
+    "website_hint": "close.com",
+    "one_line_description": "Close is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developer.close.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

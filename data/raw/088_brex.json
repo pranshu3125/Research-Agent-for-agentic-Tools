@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 88,
+    "app_name": "Brex",
+    "category": "Finance and Fintech",
+    "website_hint": "developer.brex.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Brex API documentation",
+    "Brex developer docs authentication",
+    "Brex OAuth API key developer",
+    "Brex REST API docs",
+    "Brex GraphQL API docs",
+    "Brex MCP server",
+    "Brex developer account API access pricing",
+    "Brex partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Brex source 1",
+      "url": "https://developer.brex.com/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Brex exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "confidence_score": 0.74,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "evidence_urls": [
+      "https://developer.brex.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 88,
+    "app_name": "Brex",
+    "category": "Finance and Fintech",
+    "website_hint": "developer.brex.com",
+    "one_line_description": "Brex exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://developer.brex.com/"
+    ],
+    "confidence_score": 0.8,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 3,
+    "app_name": "Pipedrive",
+    "category": "CRM",
+    "website_hint": "pipedrive.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Pipedrive API documentation",
+    "Pipedrive developer docs authentication",
+    "Pipedrive OAuth API key developer",
+    "Pipedrive REST API docs",
+    "Pipedrive GraphQL API docs",
+    "Pipedrive MCP server",
+    "Pipedrive developer account API access pricing",
+    "Pipedrive partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pipedrive source 1",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Pipedrive is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "evidence_urls": [
+      "https://developers.pipedrive.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 3,
+    "app_name": "Pipedrive",
+    "category": "CRM",
+    "website_hint": "pipedrive.com",
+    "one_line_description": "Pipedrive is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developers.pipedrive.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 15,
+    "app_name": "Pylon",
+    "category": "Support and Helpdesk",
+    "website_hint": "usepylon.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Pylon API documentation",
+    "Pylon developer docs authentication",
+    "Pylon OAuth API key developer",
+    "Pylon REST API docs",
+    "Pylon GraphQL API docs",
+    "Pylon MCP server",
+    "Pylon developer account API access pricing",
+    "Pylon partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pylon source 1",
+      "url": "https://usepylon.com",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Pylon is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "confidence_score": 0.61,
+    "notes": "Public docs were not as obvious as larger incumbents, so this classification carries lower confidence and should be reviewed manually.",
+    "evidence_urls": [
+      "https://usepylon.com"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 15,
+    "app_name": "Pylon",
+    "category": "Support and Helpdesk",
+    "website_hint": "usepylon.com",
+    "one_line_description": "Pylon is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://usepylon.com"
+    ],
+    "confidence_score": 0.67,
+    "notes": "Public docs were not as obvious as larger incumbents, so this classification carries lower confidence and should be reviewed manually.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

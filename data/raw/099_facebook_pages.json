@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 99,
+    "app_name": "Facebook Pages",
+    "category": "Social",
+    "website_hint": "meta.com"
+  },
+  "queries": [
+    "Facebook Pages API docs auth",
+    "Facebook Pages developer OAuth API key",
+    "Facebook Pages MCP server",
+    "Facebook Pages REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Facebook Pages website",
+      "url": "https://meta.com",
+      "snippet": "Manual fallback result for Facebook Pages. Use meta.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Facebook Pages website",
+      "url": "https://meta.com",
+      "snippet": "Manual fallback result for Facebook Pages. Use meta.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Facebook Pages website",
+      "url": "https://meta.com",
+      "snippet": "Manual fallback result for Facebook Pages. Use meta.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Facebook Pages website",
+      "url": "https://meta.com",
+      "snippet": "Manual fallback result for Facebook Pages. Use meta.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Facebook Pages docs guess",
+      "url": "https://meta.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Facebook Pages docs guess",
+      "url": "https://meta.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Facebook Pages docs guess",
+      "url": "https://meta.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Facebook Pages docs guess",
+      "url": "https://meta.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 99,
+    "app_name": "Facebook Pages",
+    "category": "Social",
+    "one_line_description": "Facebook Pages is a social product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://meta.com",
+      "https://meta.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

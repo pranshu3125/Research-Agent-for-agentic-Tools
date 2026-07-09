@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 80,
+    "app_name": "Vercel",
+    "category": "Developer Tools",
+    "website_hint": "vercel.com"
+  },
+  "queries": [
+    "Vercel API docs auth",
+    "Vercel developer OAuth API key",
+    "Vercel MCP server",
+    "Vercel REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Vercel website",
+      "url": "https://vercel.com",
+      "snippet": "Manual fallback result for Vercel. Use vercel.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Vercel website",
+      "url": "https://vercel.com",
+      "snippet": "Manual fallback result for Vercel. Use vercel.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Vercel website",
+      "url": "https://vercel.com",
+      "snippet": "Manual fallback result for Vercel. Use vercel.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Vercel website",
+      "url": "https://vercel.com",
+      "snippet": "Manual fallback result for Vercel. Use vercel.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Vercel docs guess",
+      "url": "https://vercel.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Vercel docs guess",
+      "url": "https://vercel.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Vercel docs guess",
+      "url": "https://vercel.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Vercel docs guess",
+      "url": "https://vercel.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 80,
+    "app_name": "Vercel",
+    "category": "Developer Tools",
+    "one_line_description": "Vercel is a developer tools product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://vercel.com",
+      "https://vercel.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

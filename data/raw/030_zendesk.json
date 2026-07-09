@@ -1,0 +1,99 @@
+{
+  "app": {
+    "id": 30,
+    "app_name": "Zendesk",
+    "category": "Customer Support",
+    "website_hint": "zendesk.com"
+  },
+  "queries": [
+    "Zendesk API docs auth",
+    "Zendesk developer OAuth API key",
+    "Zendesk MCP server",
+    "Zendesk REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Zendesk developer docs",
+      "url": "https://developer.zendesk.com/api-reference/introduction/",
+      "snippet": "Customer support suite with ticketing, users, knowledge base, and admin APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zendesk developer docs",
+      "url": "https://developer.zendesk.com/api-reference/introduction/",
+      "snippet": "Customer support suite with ticketing, users, knowledge base, and admin APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zendesk developer docs",
+      "url": "https://developer.zendesk.com/api-reference/introduction/",
+      "snippet": "Customer support suite with ticketing, users, knowledge base, and admin APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zendesk developer docs",
+      "url": "https://developer.zendesk.com/api-reference/introduction/",
+      "snippet": "Customer support suite with ticketing, users, knowledge base, and admin APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zendesk auth docs",
+      "url": "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+      "snippet": "Legacy auth variants complicate secure default configuration.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Zendesk auth docs",
+      "url": "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+      "snippet": "Legacy auth variants complicate secure default configuration.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Zendesk auth docs",
+      "url": "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+      "snippet": "Legacy auth variants complicate secure default configuration.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Zendesk auth docs",
+      "url": "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+      "snippet": "Legacy auth variants complicate secure default configuration.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 30,
+    "app_name": "Zendesk",
+    "category": "Customer Support",
+    "one_line_description": "Customer support suite with ticketing, users, knowledge base, and admin APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "basic",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Legacy auth variants complicate secure default configuration.",
+    "evidence_urls": [
+      "https://developer.zendesk.com/api-reference/introduction/",
+      "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/"
+    ],
+    "confidence_score": 0.86,
+    "notes": "Broad ticketing surface with multiple auth paths.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

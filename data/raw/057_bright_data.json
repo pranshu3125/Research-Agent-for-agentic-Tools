@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 57,
+    "app_name": "Bright Data",
+    "category": "Data SEO and Scraping",
+    "website_hint": "brightdata.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Bright Data API documentation",
+    "Bright Data developer docs authentication",
+    "Bright Data OAuth API key developer",
+    "Bright Data REST API docs",
+    "Bright Data GraphQL API docs",
+    "Bright Data MCP server",
+    "Bright Data developer account API access pricing",
+    "Bright Data partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Bright Data source 1",
+      "url": "https://brightdata.com/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Bright Data exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "confidence_score": 0.81,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "evidence_urls": [
+      "https://brightdata.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 57,
+    "app_name": "Bright Data",
+    "category": "Data SEO and Scraping",
+    "website_hint": "brightdata.com",
+    "one_line_description": "Bright Data exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://brightdata.com/"
+    ],
+    "confidence_score": 0.87,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

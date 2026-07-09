@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 71,
+    "app_name": "Notion",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.notion.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Notion API documentation",
+    "Notion developer docs authentication",
+    "Notion OAuth API key developer",
+    "Notion REST API docs",
+    "Notion GraphQL API docs",
+    "Notion MCP server",
+    "Notion developer account API access pricing",
+    "Notion partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Notion source 1",
+      "url": "https://developers.notion.com/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Notion exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "evidence_urls": [
+      "https://developers.notion.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 71,
+    "app_name": "Notion",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.notion.com",
+    "one_line_description": "Notion exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developers.notion.com/"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

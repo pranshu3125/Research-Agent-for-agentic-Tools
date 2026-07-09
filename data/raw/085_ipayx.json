@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 85,
+    "app_name": "iPayX",
+    "category": "Finance and Fintech",
+    "website_hint": "ipayx.ai/docs"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "iPayX API documentation",
+    "iPayX developer docs authentication",
+    "iPayX OAuth API key developer",
+    "iPayX REST API docs",
+    "iPayX GraphQL API docs",
+    "iPayX MCP server",
+    "iPayX developer account API access pricing",
+    "iPayX partner API access"
+  ],
+  "documents": [
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "iPayX source 1",
+      "url": "https://ipayx.ai/docs",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "iPayX exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "confidence_score": 0.53,
+    "notes": "The public docs hint suggests an API surface, but the ecosystem is less mature than larger payment platforms.",
+    "evidence_urls": [
+      "https://ipayx.ai/docs"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 85,
+    "app_name": "iPayX",
+    "category": "Finance and Fintech",
+    "website_hint": "ipayx.ai/docs",
+    "one_line_description": "iPayX exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://ipayx.ai/docs"
+    ],
+    "confidence_score": 0.59,
+    "notes": "The public docs hint suggests an API surface, but the ecosystem is less mature than larger payment platforms.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": []
+  }
+}

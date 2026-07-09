@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 14,
+    "app_name": "ClickUp",
+    "category": "Project Management",
+    "website_hint": "clickup.com"
+  },
+  "queries": [
+    "ClickUp API docs auth",
+    "ClickUp developer OAuth API key",
+    "ClickUp MCP server",
+    "ClickUp REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "ClickUp website",
+      "url": "https://clickup.com",
+      "snippet": "Manual fallback result for ClickUp. Use clickup.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ClickUp website",
+      "url": "https://clickup.com",
+      "snippet": "Manual fallback result for ClickUp. Use clickup.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ClickUp website",
+      "url": "https://clickup.com",
+      "snippet": "Manual fallback result for ClickUp. Use clickup.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ClickUp website",
+      "url": "https://clickup.com",
+      "snippet": "Manual fallback result for ClickUp. Use clickup.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ClickUp docs guess",
+      "url": "https://clickup.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "ClickUp docs guess",
+      "url": "https://clickup.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "ClickUp docs guess",
+      "url": "https://clickup.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "ClickUp docs guess",
+      "url": "https://clickup.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 14,
+    "app_name": "ClickUp",
+    "category": "Project Management",
+    "one_line_description": "ClickUp is a project management product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://clickup.com",
+      "https://clickup.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 95,
+    "app_name": "Reducto",
+    "category": "AI Research and Media-native",
+    "website_hint": "reducto.ai"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Reducto API documentation",
+    "Reducto developer docs authentication",
+    "Reducto OAuth API key developer",
+    "Reducto REST API docs",
+    "Reducto GraphQL API docs",
+    "Reducto MCP server",
+    "Reducto developer account API access pricing",
+    "Reducto partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Reducto source 1",
+      "url": "https://reducto.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Reducto provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "confidence_score": 0.76,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "evidence_urls": [
+      "https://reducto.ai/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 95,
+    "app_name": "Reducto",
+    "category": "AI Research and Media-native",
+    "website_hint": "reducto.ai",
+    "one_line_description": "Reducto provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://reducto.ai/"
+    ],
+    "confidence_score": 0.82,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

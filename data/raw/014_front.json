@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 14,
+    "app_name": "Front",
+    "category": "Support and Helpdesk",
+    "website_hint": "front.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Front API documentation",
+    "Front developer docs authentication",
+    "Front OAuth API key developer",
+    "Front REST API docs",
+    "Front GraphQL API docs",
+    "Front MCP server",
+    "Front developer account API access pricing",
+    "Front partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Front source 1",
+      "url": "https://dev.frontapp.com/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Front is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "confidence_score": 0.77,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "evidence_urls": [
+      "https://dev.frontapp.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 14,
+    "app_name": "Front",
+    "category": "Support and Helpdesk",
+    "website_hint": "front.com",
+    "one_line_description": "Front is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://dev.frontapp.com/"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

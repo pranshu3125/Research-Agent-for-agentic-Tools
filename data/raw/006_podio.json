@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 6,
+    "app_name": "Podio",
+    "category": "CRM",
+    "website_hint": "podio.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Podio API documentation",
+    "Podio developer docs authentication",
+    "Podio OAuth API key developer",
+    "Podio REST API docs",
+    "Podio GraphQL API docs",
+    "Podio MCP server",
+    "Podio developer account API access pricing",
+    "Podio partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Podio source 1",
+      "url": "https://podio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Podio is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.72,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "evidence_urls": [
+      "https://podio.com"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 6,
+    "app_name": "Podio",
+    "category": "CRM",
+    "website_hint": "podio.com",
+    "one_line_description": "Podio is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://podio.com"
+    ],
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

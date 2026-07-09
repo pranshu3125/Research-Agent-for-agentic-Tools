@@ -1,0 +1,128 @@
+{
+  "app": {
+    "id": 25,
+    "app_name": "Pumble",
+    "category": "Communications and Messaging",
+    "website_hint": "pumble.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Pumble API documentation",
+    "Pumble developer docs authentication",
+    "Pumble OAuth API key developer",
+    "Pumble REST API docs",
+    "Pumble GraphQL API docs",
+    "Pumble MCP server",
+    "Pumble developer account API access pricing",
+    "Pumble partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pumble source 1",
+      "url": "https://pumble.com",
+      "snippet": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Pumble provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+    "confidence_score": 0.45,
+    "notes": "This is a genuine low-confidence result after reviewing the public product and developer visibility.",
+    "evidence_urls": [
+      "https://pumble.com"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 25,
+    "app_name": "Pumble",
+    "category": "Communications and Messaging",
+    "website_hint": "pumble.com",
+    "one_line_description": "Pumble provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+    "evidence_urls": [
+      "https://pumble.com"
+    ],
+    "confidence_score": 0.46,
+    "notes": "This is a genuine low-confidence result after reviewing the public product and developer visibility.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "buildability_verdict"
+    ]
+  }
+}

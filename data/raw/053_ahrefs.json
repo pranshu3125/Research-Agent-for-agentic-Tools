@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 53,
+    "app_name": "Ahrefs",
+    "category": "Data SEO and Scraping",
+    "website_hint": "ahrefs.com/api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Ahrefs API documentation",
+    "Ahrefs developer docs authentication",
+    "Ahrefs OAuth API key developer",
+    "Ahrefs REST API docs",
+    "Ahrefs GraphQL API docs",
+    "Ahrefs MCP server",
+    "Ahrefs developer account API access pricing",
+    "Ahrefs partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Ahrefs source 1",
+      "url": "https://ahrefs.com/api",
+      "snippet": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Ahrefs exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+    "confidence_score": 0.7,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "evidence_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 53,
+    "app_name": "Ahrefs",
+    "category": "Data SEO and Scraping",
+    "website_hint": "ahrefs.com/api",
+    "one_line_description": "Ahrefs exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+    "evidence_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "confidence_score": 0.76,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

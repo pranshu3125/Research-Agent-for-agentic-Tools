@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 45,
+    "app_name": "Snowflake",
+    "category": "Data",
+    "website_hint": "snowflake.com"
+  },
+  "queries": [
+    "Snowflake API docs auth",
+    "Snowflake developer OAuth API key",
+    "Snowflake MCP server",
+    "Snowflake REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Snowflake website",
+      "url": "https://snowflake.com",
+      "snippet": "Manual fallback result for Snowflake. Use snowflake.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Snowflake website",
+      "url": "https://snowflake.com",
+      "snippet": "Manual fallback result for Snowflake. Use snowflake.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Snowflake website",
+      "url": "https://snowflake.com",
+      "snippet": "Manual fallback result for Snowflake. Use snowflake.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Snowflake website",
+      "url": "https://snowflake.com",
+      "snippet": "Manual fallback result for Snowflake. Use snowflake.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Snowflake docs guess",
+      "url": "https://snowflake.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Snowflake docs guess",
+      "url": "https://snowflake.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Snowflake docs guess",
+      "url": "https://snowflake.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Snowflake docs guess",
+      "url": "https://snowflake.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 45,
+    "app_name": "Snowflake",
+    "category": "Data",
+    "one_line_description": "Snowflake is a data product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://snowflake.com",
+      "https://snowflake.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 96,
+    "app_name": "Devin",
+    "category": "AI Research and Media-native",
+    "website_hint": "docs.devin.ai"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Devin API documentation",
+    "Devin developer docs authentication",
+    "Devin OAuth API key developer",
+    "Devin REST API docs",
+    "Devin GraphQL API docs",
+    "Devin MCP server",
+    "Devin developer account API access pricing",
+    "Devin partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Devin source 1",
+      "url": "https://docs.devin.ai/",
+      "snippet": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Devin provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "official",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "confidence_score": 0.75,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "evidence_urls": [
+      "https://docs.devin.ai/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 96,
+    "app_name": "Devin",
+    "category": "AI Research and Media-native",
+    "website_hint": "docs.devin.ai",
+    "one_line_description": "Devin provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "official",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://docs.devin.ai/"
+    ],
+    "confidence_score": 0.81,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

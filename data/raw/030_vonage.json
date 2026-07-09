@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 30,
+    "app_name": "Vonage",
+    "category": "Communications and Messaging",
+    "website_hint": "developer.vonage.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Vonage API documentation",
+    "Vonage developer docs authentication",
+    "Vonage OAuth API key developer",
+    "Vonage REST API docs",
+    "Vonage GraphQL API docs",
+    "Vonage MCP server",
+    "Vonage developer account API access pricing",
+    "Vonage partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Vonage source 1",
+      "url": "https://developer.vonage.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Vonage provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "confidence_score": 0.9,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "evidence_urls": [
+      "https://developer.vonage.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 30,
+    "app_name": "Vonage",
+    "category": "Communications and Messaging",
+    "website_hint": "developer.vonage.com",
+    "one_line_description": "Vonage provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://developer.vonage.com/"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

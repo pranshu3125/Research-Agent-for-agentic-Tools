@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 20,
+    "app_name": "Google Calendar",
+    "category": "Calendar",
+    "website_hint": "google.com"
+  },
+  "queries": [
+    "Google Calendar API docs auth",
+    "Google Calendar developer OAuth API key",
+    "Google Calendar MCP server",
+    "Google Calendar REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Google Calendar developer docs",
+      "url": "https://developers.google.com/workspace/calendar/api/guides/overview",
+      "snippet": "Calendar scheduling API for events, calendars, attendees, and availability workflows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Google Calendar developer docs",
+      "url": "https://developers.google.com/workspace/calendar/api/guides/overview",
+      "snippet": "Calendar scheduling API for events, calendars, attendees, and availability workflows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Google Calendar developer docs",
+      "url": "https://developers.google.com/workspace/calendar/api/guides/overview",
+      "snippet": "Calendar scheduling API for events, calendars, attendees, and availability workflows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Google Calendar developer docs",
+      "url": "https://developers.google.com/workspace/calendar/api/guides/overview",
+      "snippet": "Calendar scheduling API for events, calendars, attendees, and availability workflows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Google Calendar auth docs",
+      "url": "https://developers.google.com/identity/protocols/oauth2",
+      "snippet": "Sensitive scopes and domain-level controls can limit production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Google Calendar auth docs",
+      "url": "https://developers.google.com/identity/protocols/oauth2",
+      "snippet": "Sensitive scopes and domain-level controls can limit production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Google Calendar auth docs",
+      "url": "https://developers.google.com/identity/protocols/oauth2",
+      "snippet": "Sensitive scopes and domain-level controls can limit production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Google Calendar auth docs",
+      "url": "https://developers.google.com/identity/protocols/oauth2",
+      "snippet": "Sensitive scopes and domain-level controls can limit production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 20,
+    "app_name": "Google Calendar",
+    "category": "Calendar",
+    "one_line_description": "Calendar scheduling API for events, calendars, attendees, and availability workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "yes",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Sensitive scopes and domain-level controls can limit production rollout.",
+    "evidence_urls": [
+      "https://developers.google.com/workspace/calendar/api/guides/overview",
+      "https://developers.google.com/identity/protocols/oauth2"
+    ],
+    "confidence_score": 0.8,
+    "notes": "Useful agent primitive, but not frictionless for all deployments.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

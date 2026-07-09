@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 23,
+    "app_name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "website_hint": "zoho.com/cliq"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Zoho Cliq API documentation",
+    "Zoho Cliq developer docs authentication",
+    "Zoho Cliq OAuth API key developer",
+    "Zoho Cliq REST API docs",
+    "Zoho Cliq GraphQL API docs",
+    "Zoho Cliq MCP server",
+    "Zoho Cliq developer account API access pricing",
+    "Zoho Cliq partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho Cliq source 1",
+      "url": "https://www.zoho.com/cliq/developer-platform/introduction.html",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Zoho Cliq provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "confidence_score": 0.72,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "evidence_urls": [
+      "https://www.zoho.com/cliq/developer-platform/introduction.html"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 23,
+    "app_name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "website_hint": "zoho.com/cliq",
+    "one_line_description": "Zoho Cliq provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://www.zoho.com/cliq/developer-platform/introduction.html"
+    ],
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

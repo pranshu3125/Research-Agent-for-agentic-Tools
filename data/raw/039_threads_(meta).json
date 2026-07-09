@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 39,
+    "app_name": "Threads (Meta)",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.facebook.com/docs/threads"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Threads (Meta) API documentation",
+    "Threads (Meta) developer docs authentication",
+    "Threads (Meta) OAuth API key developer",
+    "Threads (Meta) REST API docs",
+    "Threads (Meta) GraphQL API docs",
+    "Threads (Meta) MCP server",
+    "Threads (Meta) developer account API access pricing",
+    "Threads (Meta) partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Threads (Meta) source 1",
+      "url": "https://developers.facebook.com/docs/threads",
+      "snippet": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Threads (Meta) exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+    "confidence_score": 0.69,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 39,
+    "app_name": "Threads (Meta)",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.facebook.com/docs/threads",
+    "one_line_description": "Threads (Meta) exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "confidence_score": 0.75,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

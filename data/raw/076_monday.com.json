@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 76,
+    "app_name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "website_hint": "developer.monday.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Monday.com API documentation",
+    "Monday.com developer docs authentication",
+    "Monday.com OAuth API key developer",
+    "Monday.com REST API docs",
+    "Monday.com GraphQL API docs",
+    "Monday.com MCP server",
+    "Monday.com developer account API access pricing",
+    "Monday.com partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Monday.com source 1",
+      "url": "https://developer.monday.com/api-reference/docs",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Monday.com exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "confidence_score": 0.88,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "evidence_urls": [
+      "https://developer.monday.com/api-reference/docs"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 76,
+    "app_name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "website_hint": "developer.monday.com",
+    "one_line_description": "Monday.com exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developer.monday.com/api-reference/docs"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

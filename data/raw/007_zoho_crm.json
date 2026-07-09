@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 7,
+    "app_name": "Zoho CRM",
+    "category": "CRM",
+    "website_hint": "zoho.com/crm"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Zoho CRM API documentation",
+    "Zoho CRM developer docs authentication",
+    "Zoho CRM OAuth API key developer",
+    "Zoho CRM REST API docs",
+    "Zoho CRM GraphQL API docs",
+    "Zoho CRM MCP server",
+    "Zoho CRM developer account API access pricing",
+    "Zoho CRM partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Zoho CRM source 1",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/overview.html",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Zoho CRM is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.75,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "evidence_urls": [
+      "https://www.zoho.com/crm/developer/docs/api/v8/overview.html"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 7,
+    "app_name": "Zoho CRM",
+    "category": "CRM",
+    "website_hint": "zoho.com/crm",
+    "one_line_description": "Zoho CRM is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://www.zoho.com/crm/developer/docs/api/v8/overview.html"
+    ],
+    "confidence_score": 0.81,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

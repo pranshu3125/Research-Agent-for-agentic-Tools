@@ -1,0 +1,98 @@
+{
+  "app": {
+    "id": 6,
+    "app_name": "Shopify",
+    "category": "Ecommerce",
+    "website_hint": "shopify.com"
+  },
+  "queries": [
+    "Shopify API docs auth",
+    "Shopify developer OAuth API key",
+    "Shopify MCP server",
+    "Shopify REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Shopify developer docs",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Commerce platform with storefront, admin, and partner-facing developer surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify developer docs",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Commerce platform with storefront, admin, and partner-facing developer surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify developer docs",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Commerce platform with storefront, admin, and partner-facing developer surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify developer docs",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Commerce platform with storefront, admin, and partner-facing developer surfaces.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify auth docs",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "snippet": "App review and merchant permission scopes can slow production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Shopify auth docs",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "snippet": "App review and merchant permission scopes can slow production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Shopify auth docs",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "snippet": "App review and merchant permission scopes can slow production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Shopify auth docs",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "snippet": "App review and merchant permission scopes can slow production rollout.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 6,
+    "app_name": "Shopify",
+    "category": "Ecommerce",
+    "one_line_description": "Commerce platform with storefront, admin, and partner-facing developer surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "App review and merchant permission scopes can slow production rollout.",
+    "evidence_urls": [
+      "https://shopify.dev/docs/api",
+      "https://shopify.dev/docs/apps/build/authentication-authorization"
+    ],
+    "confidence_score": 0.89,
+    "notes": "Strong platform fit, but partner workflow details matter for distribution.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

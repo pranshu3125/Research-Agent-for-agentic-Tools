@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 44,
+    "app_name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "website_hint": "developer.salesforce.com/docs/commerce"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Salesforce Commerce Cloud API documentation",
+    "Salesforce Commerce Cloud developer docs authentication",
+    "Salesforce Commerce Cloud OAuth API key developer",
+    "Salesforce Commerce Cloud REST API docs",
+    "Salesforce Commerce Cloud GraphQL API docs",
+    "Salesforce Commerce Cloud MCP server",
+    "Salesforce Commerce Cloud developer account API access pricing",
+    "Salesforce Commerce Cloud partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce Commerce Cloud source 1",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "snippet": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Salesforce Commerce Cloud exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+    "confidence_score": 0.79,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 44,
+    "app_name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "website_hint": "developer.salesforce.com/docs/commerce",
+    "one_line_description": "Salesforce Commerce Cloud exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "confidence_score": 0.85,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

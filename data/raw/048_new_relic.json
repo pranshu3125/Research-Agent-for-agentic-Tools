@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 48,
+    "app_name": "New Relic",
+    "category": "Observability",
+    "website_hint": "newrelic.com"
+  },
+  "queries": [
+    "New Relic API docs auth",
+    "New Relic developer OAuth API key",
+    "New Relic MCP server",
+    "New Relic REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "New Relic website",
+      "url": "https://newrelic.com",
+      "snippet": "Manual fallback result for New Relic. Use newrelic.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "New Relic website",
+      "url": "https://newrelic.com",
+      "snippet": "Manual fallback result for New Relic. Use newrelic.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "New Relic website",
+      "url": "https://newrelic.com",
+      "snippet": "Manual fallback result for New Relic. Use newrelic.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "New Relic website",
+      "url": "https://newrelic.com",
+      "snippet": "Manual fallback result for New Relic. Use newrelic.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "New Relic docs guess",
+      "url": "https://newrelic.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "New Relic docs guess",
+      "url": "https://newrelic.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "New Relic docs guess",
+      "url": "https://newrelic.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "New Relic docs guess",
+      "url": "https://newrelic.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 48,
+    "app_name": "New Relic",
+    "category": "Observability",
+    "one_line_description": "New Relic is a observability product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://newrelic.com",
+      "https://newrelic.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

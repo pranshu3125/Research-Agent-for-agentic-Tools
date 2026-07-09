@@ -1,0 +1,128 @@
+{
+  "app": {
+    "id": 37,
+    "app_name": "systeme.io",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "systeme.io"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "systeme.io API documentation",
+    "systeme.io developer docs authentication",
+    "systeme.io OAuth API key developer",
+    "systeme.io REST API docs",
+    "systeme.io GraphQL API docs",
+    "systeme.io MCP server",
+    "systeme.io developer account API access pricing",
+    "systeme.io partner API access"
+  ],
+  "documents": [
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "systeme.io source 1",
+      "url": "https://systeme.io",
+      "snippet": "Public developer surface was not clear enough to support a strong buildability claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "systeme.io exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer surface was not clear enough to support a strong buildability claim.",
+    "confidence_score": 0.39,
+    "notes": "This remains intentionally unclear after attempted review of the public site and available documentation hints.",
+    "evidence_urls": [
+      "https://systeme.io"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 37,
+    "app_name": "systeme.io",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "systeme.io",
+    "one_line_description": "systeme.io exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer surface was not clear enough to support a strong buildability claim.",
+    "evidence_urls": [
+      "https://systeme.io"
+    ],
+    "confidence_score": 0.32,
+    "notes": "This remains intentionally unclear after attempted review of the public site and available documentation hints.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "api_surface",
+      "buildability_verdict"
+    ]
+  }
+}

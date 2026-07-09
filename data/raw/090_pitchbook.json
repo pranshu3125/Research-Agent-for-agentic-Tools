@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 90,
+    "app_name": "PitchBook",
+    "category": "Finance and Fintech",
+    "website_hint": "pitchbook.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "PitchBook API documentation",
+    "PitchBook developer docs authentication",
+    "PitchBook OAuth API key developer",
+    "PitchBook REST API docs",
+    "PitchBook GraphQL API docs",
+    "PitchBook MCP server",
+    "PitchBook developer account API access pricing",
+    "PitchBook partner API access"
+  ],
+  "documents": [
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "PitchBook source 1",
+      "url": "https://pitchbook.com/",
+      "snippet": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "PitchBook exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+    "confidence_score": 0.67,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "evidence_urls": [
+      "https://pitchbook.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 90,
+    "app_name": "PitchBook",
+    "category": "Finance and Fintech",
+    "website_hint": "pitchbook.com",
+    "one_line_description": "PitchBook exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+    "evidence_urls": [
+      "https://pitchbook.com/"
+    ],
+    "confidence_score": 0.73,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

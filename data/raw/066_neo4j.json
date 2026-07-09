@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 66,
+    "app_name": "Neo4j",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "neo4j.com/docs/api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Neo4j API documentation",
+    "Neo4j developer docs authentication",
+    "Neo4j OAuth API key developer",
+    "Neo4j REST API docs",
+    "Neo4j GraphQL API docs",
+    "Neo4j MCP server",
+    "Neo4j developer account API access pricing",
+    "Neo4j partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Neo4j source 1",
+      "url": "https://neo4j.com/docs/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Neo4j exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "confidence_score": 0.73,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "evidence_urls": [
+      "https://neo4j.com/docs/api/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 66,
+    "app_name": "Neo4j",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "neo4j.com/docs/api",
+    "one_line_description": "Neo4j exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://neo4j.com/docs/api/"
+    ],
+    "confidence_score": 0.79,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

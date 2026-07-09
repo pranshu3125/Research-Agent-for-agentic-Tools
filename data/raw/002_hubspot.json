@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 2,
+    "app_name": "HubSpot",
+    "category": "CRM",
+    "website_hint": "hubspot.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "HubSpot API documentation",
+    "HubSpot developer docs authentication",
+    "HubSpot OAuth API key developer",
+    "HubSpot REST API docs",
+    "HubSpot GraphQL API docs",
+    "HubSpot MCP server",
+    "HubSpot developer account API access pricing",
+    "HubSpot partner API access"
+  ],
+  "documents": [
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 1",
+      "url": "https://developers.hubspot.com/docs/api/overview",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "HubSpot source 2",
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "HubSpot source 2",
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "CRM and go-to-market platform with broad object, engagement, and workflow APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.91,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 2,
+    "app_name": "HubSpot",
+    "category": "CRM",
+    "website_hint": "hubspot.com",
+    "one_line_description": "CRM and go-to-market platform with broad object, engagement, and workflow APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

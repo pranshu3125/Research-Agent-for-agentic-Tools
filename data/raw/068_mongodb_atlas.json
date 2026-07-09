@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 68,
+    "app_name": "MongoDB Atlas",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "mongodb.com/docs/atlas/api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "MongoDB Atlas API documentation",
+    "MongoDB Atlas developer docs authentication",
+    "MongoDB Atlas OAuth API key developer",
+    "MongoDB Atlas REST API docs",
+    "MongoDB Atlas GraphQL API docs",
+    "MongoDB Atlas MCP server",
+    "MongoDB Atlas developer account API access pricing",
+    "MongoDB Atlas partner API access"
+  ],
+  "documents": [
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "MongoDB Atlas source 1",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "MongoDB Atlas exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "confidence_score": 0.84,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "evidence_urls": [
+      "https://www.mongodb.com/docs/atlas/api/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 68,
+    "app_name": "MongoDB Atlas",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "mongodb.com/docs/atlas/api",
+    "one_line_description": "MongoDB Atlas exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://www.mongodb.com/docs/atlas/api/"
+    ],
+    "confidence_score": 0.9,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

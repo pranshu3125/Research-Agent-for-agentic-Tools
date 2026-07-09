@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 76,
+    "app_name": "ServiceNow",
+    "category": "ITSM",
+    "website_hint": "servicenow.com"
+  },
+  "queries": [
+    "ServiceNow API docs auth",
+    "ServiceNow developer OAuth API key",
+    "ServiceNow MCP server",
+    "ServiceNow REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "ServiceNow website",
+      "url": "https://servicenow.com",
+      "snippet": "Manual fallback result for ServiceNow. Use servicenow.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ServiceNow website",
+      "url": "https://servicenow.com",
+      "snippet": "Manual fallback result for ServiceNow. Use servicenow.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ServiceNow website",
+      "url": "https://servicenow.com",
+      "snippet": "Manual fallback result for ServiceNow. Use servicenow.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ServiceNow website",
+      "url": "https://servicenow.com",
+      "snippet": "Manual fallback result for ServiceNow. Use servicenow.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "ServiceNow docs guess",
+      "url": "https://servicenow.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "ServiceNow docs guess",
+      "url": "https://servicenow.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "ServiceNow docs guess",
+      "url": "https://servicenow.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "ServiceNow docs guess",
+      "url": "https://servicenow.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 76,
+    "app_name": "ServiceNow",
+    "category": "ITSM",
+    "one_line_description": "ServiceNow is a itsm product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://servicenow.com",
+      "https://servicenow.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

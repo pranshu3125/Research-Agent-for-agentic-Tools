@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 74,
+    "app_name": "Jira",
+    "category": "Productivity and Project Management",
+    "website_hint": "developer.atlassian.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Jira API documentation",
+    "Jira developer docs authentication",
+    "Jira OAuth API key developer",
+    "Jira REST API docs",
+    "Jira GraphQL API docs",
+    "Jira MCP server",
+    "Jira developer account API access pricing",
+    "Jira partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 1",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Jira source 2",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Jira source 2",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "snippet": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Jira exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "confidence_score": 0.91,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 74,
+    "app_name": "Jira",
+    "category": "Productivity and Project Management",
+    "website_hint": "developer.atlassian.com",
+    "one_line_description": "Jira exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

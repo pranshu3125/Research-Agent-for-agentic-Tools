@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 68,
+    "app_name": "Eventbrite",
+    "category": "Events",
+    "website_hint": "eventbrite.com"
+  },
+  "queries": [
+    "Eventbrite API docs auth",
+    "Eventbrite developer OAuth API key",
+    "Eventbrite MCP server",
+    "Eventbrite REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Eventbrite website",
+      "url": "https://eventbrite.com",
+      "snippet": "Manual fallback result for Eventbrite. Use eventbrite.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Eventbrite website",
+      "url": "https://eventbrite.com",
+      "snippet": "Manual fallback result for Eventbrite. Use eventbrite.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Eventbrite website",
+      "url": "https://eventbrite.com",
+      "snippet": "Manual fallback result for Eventbrite. Use eventbrite.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Eventbrite website",
+      "url": "https://eventbrite.com",
+      "snippet": "Manual fallback result for Eventbrite. Use eventbrite.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Eventbrite docs guess",
+      "url": "https://eventbrite.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Eventbrite docs guess",
+      "url": "https://eventbrite.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Eventbrite docs guess",
+      "url": "https://eventbrite.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Eventbrite docs guess",
+      "url": "https://eventbrite.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 68,
+    "app_name": "Eventbrite",
+    "category": "Events",
+    "one_line_description": "Eventbrite is a events product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://eventbrite.com",
+      "https://eventbrite.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

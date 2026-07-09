@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 69,
+    "app_name": "Datadog",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.datadoghq.com/api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Datadog API documentation",
+    "Datadog developer docs authentication",
+    "Datadog OAuth API key developer",
+    "Datadog REST API docs",
+    "Datadog GraphQL API docs",
+    "Datadog MCP server",
+    "Datadog developer account API access pricing",
+    "Datadog partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Datadog source 1",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Datadog exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "confidence_score": 0.88,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api/latest/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 69,
+    "app_name": "Datadog",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.datadoghq.com/api",
+    "one_line_description": "Datadog exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api/latest/"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

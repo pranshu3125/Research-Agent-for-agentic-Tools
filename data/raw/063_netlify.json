@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 63,
+    "app_name": "Netlify",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.netlify.com/api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Netlify API documentation",
+    "Netlify developer docs authentication",
+    "Netlify OAuth API key developer",
+    "Netlify REST API docs",
+    "Netlify GraphQL API docs",
+    "Netlify MCP server",
+    "Netlify developer account API access pricing",
+    "Netlify partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Netlify source 1",
+      "url": "https://docs.netlify.com/api/get-started/",
+      "snippet": "Permission scoping matters because these APIs can mutate production state quickly.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Netlify exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "confidence_score": 0.86,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "evidence_urls": [
+      "https://docs.netlify.com/api/get-started/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 63,
+    "app_name": "Netlify",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.netlify.com/api",
+    "one_line_description": "Netlify exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.netlify.com/api/get-started/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

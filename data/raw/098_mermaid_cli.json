@@ -1,0 +1,124 @@
+{
+  "app": {
+    "id": 98,
+    "app_name": "Mermaid CLI",
+    "category": "AI Research and Media-native",
+    "website_hint": "github.com/mermaid-js/mermaid-cli"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Mermaid CLI API documentation",
+    "Mermaid CLI developer docs authentication",
+    "Mermaid CLI OAuth API key developer",
+    "Mermaid CLI REST API docs",
+    "Mermaid CLI GraphQL API docs",
+    "Mermaid CLI MCP server",
+    "Mermaid CLI developer account API access pricing",
+    "Mermaid CLI partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mermaid CLI source 1",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Mermaid CLI is a code-native diagramming tool that can be wrapped directly as an agent tool without SaaS partnership work.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "sdk_only",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+    "confidence_score": 0.9,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 98,
+    "app_name": "Mermaid CLI",
+    "category": "AI Research and Media-native",
+    "website_hint": "github.com/mermaid-js/mermaid-cli",
+    "one_line_description": "Mermaid CLI is a code-native diagramming tool that can be wrapped directly as an agent tool without SaaS partnership work.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "sdk_only",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "confidence_score": 0.91,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "auth_methods"
+    ]
+  }
+}

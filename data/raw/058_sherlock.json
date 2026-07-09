@@ -1,0 +1,124 @@
+{
+  "app": {
+    "id": 58,
+    "app_name": "Sherlock",
+    "category": "Data SEO and Scraping",
+    "website_hint": "github.com/sherlock-project/sherlock"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Sherlock API documentation",
+    "Sherlock developer docs authentication",
+    "Sherlock OAuth API key developer",
+    "Sherlock REST API docs",
+    "Sherlock GraphQL API docs",
+    "Sherlock MCP server",
+    "Sherlock developer account API access pricing",
+    "Sherlock partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Sherlock source 1",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Open-source OSINT tooling exposed as a CLI/codebase rather than a classic hosted SaaS API.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "sdk_only",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+    "confidence_score": 0.82,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 58,
+    "app_name": "Sherlock",
+    "category": "Data SEO and Scraping",
+    "website_hint": "github.com/sherlock-project/sherlock",
+    "one_line_description": "Open-source OSINT tooling exposed as a CLI/codebase rather than a classic hosted SaaS API.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "sdk_only",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "auth_methods"
+    ]
+  }
+}

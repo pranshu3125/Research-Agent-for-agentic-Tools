@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 38,
+    "app_name": "Pinterest",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.pinterest.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Pinterest API documentation",
+    "Pinterest developer docs authentication",
+    "Pinterest OAuth API key developer",
+    "Pinterest REST API docs",
+    "Pinterest GraphQL API docs",
+    "Pinterest MCP server",
+    "Pinterest developer account API access pricing",
+    "Pinterest partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Pinterest source 1",
+      "url": "https://developers.pinterest.com/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Pinterest exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "evidence_urls": [
+      "https://developers.pinterest.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 38,
+    "app_name": "Pinterest",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.pinterest.com",
+    "one_line_description": "Pinterest exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://developers.pinterest.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

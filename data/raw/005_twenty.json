@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 5,
+    "app_name": "Twenty",
+    "category": "CRM",
+    "website_hint": "twenty.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Twenty API documentation",
+    "Twenty developer docs authentication",
+    "Twenty OAuth API key developer",
+    "Twenty REST API docs",
+    "Twenty GraphQL API docs",
+    "Twenty MCP server",
+    "Twenty developer account API access pricing",
+    "Twenty partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Twenty source 1",
+      "url": "https://twenty.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Open-source CRM with developer-friendly positioning and a lower access barrier for toolkit experimentation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.7,
+    "notes": "Open-source positioning lowers partnership risk, though production-hardening still needs code-level review.",
+    "evidence_urls": [
+      "https://twenty.com"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 5,
+    "app_name": "Twenty",
+    "category": "CRM",
+    "website_hint": "twenty.com",
+    "one_line_description": "Open-source CRM with developer-friendly positioning and a lower access barrier for toolkit experimentation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://twenty.com"
+    ],
+    "confidence_score": 0.76,
+    "notes": "Open-source positioning lowers partnership risk, though production-hardening still needs code-level review.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

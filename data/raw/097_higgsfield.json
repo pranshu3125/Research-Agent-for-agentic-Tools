@@ -1,0 +1,129 @@
+{
+  "app": {
+    "id": 97,
+    "app_name": "higgsfield",
+    "category": "AI Research and Media-native",
+    "website_hint": "higgsfield.ai/cli"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "higgsfield API documentation",
+    "higgsfield developer docs authentication",
+    "higgsfield OAuth API key developer",
+    "higgsfield REST API docs",
+    "higgsfield GraphQL API docs",
+    "higgsfield MCP server",
+    "higgsfield developer account API access pricing",
+    "higgsfield partner API access"
+  ],
+  "documents": [
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "higgsfield source 1",
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "higgsfield provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+    "confidence_score": 0.38,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "evidence_urls": [
+      "https://higgsfield.ai/cli"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 97,
+    "app_name": "higgsfield",
+    "category": "AI Research and Media-native",
+    "website_hint": "higgsfield.ai/cli",
+    "one_line_description": "higgsfield provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+    "evidence_urls": [
+      "https://higgsfield.ai/cli"
+    ],
+    "confidence_score": 0.34,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "buildability_verdict"
+    ]
+  }
+}

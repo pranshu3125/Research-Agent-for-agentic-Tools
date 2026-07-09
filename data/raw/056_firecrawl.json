@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 56,
+    "app_name": "Firecrawl",
+    "category": "Data SEO and Scraping",
+    "website_hint": "firecrawl.dev"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Firecrawl API documentation",
+    "Firecrawl developer docs authentication",
+    "Firecrawl OAuth API key developer",
+    "Firecrawl REST API docs",
+    "Firecrawl GraphQL API docs",
+    "Firecrawl MCP server",
+    "Firecrawl developer account API access pricing",
+    "Firecrawl partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Firecrawl source 1",
+      "url": "https://firecrawl.dev/",
+      "snippet": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Firecrawl exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "confidence_score": 0.86,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "evidence_urls": [
+      "https://firecrawl.dev/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 56,
+    "app_name": "Firecrawl",
+    "category": "Data SEO and Scraping",
+    "website_hint": "firecrawl.dev",
+    "one_line_description": "Firecrawl exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://firecrawl.dev/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

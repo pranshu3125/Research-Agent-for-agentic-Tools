@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 5,
+    "app_name": "Stripe",
+    "category": "Payments",
+    "website_hint": "stripe.com"
+  },
+  "queries": [
+    "Stripe API docs auth",
+    "Stripe developer OAuth API key",
+    "Stripe MCP server",
+    "Stripe REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Stripe developer docs",
+      "url": "https://docs.stripe.com/api",
+      "snippet": "Payments infrastructure platform with highly structured APIs and first-class developer tooling.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Stripe developer docs",
+      "url": "https://docs.stripe.com/api",
+      "snippet": "Payments infrastructure platform with highly structured APIs and first-class developer tooling.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Stripe developer docs",
+      "url": "https://docs.stripe.com/api",
+      "snippet": "Payments infrastructure platform with highly structured APIs and first-class developer tooling.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Stripe developer docs",
+      "url": "https://docs.stripe.com/api",
+      "snippet": "Payments infrastructure platform with highly structured APIs and first-class developer tooling.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Stripe auth docs",
+      "url": "https://docs.stripe.com/keys",
+      "snippet": "Sensitive financial actions need careful permission scoping and idempotency handling.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Stripe auth docs",
+      "url": "https://docs.stripe.com/keys",
+      "snippet": "Sensitive financial actions need careful permission scoping and idempotency handling.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Stripe auth docs",
+      "url": "https://docs.stripe.com/keys",
+      "snippet": "Sensitive financial actions need careful permission scoping and idempotency handling.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Stripe auth docs",
+      "url": "https://docs.stripe.com/keys",
+      "snippet": "Sensitive financial actions need careful permission scoping and idempotency handling.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 5,
+    "app_name": "Stripe",
+    "category": "Payments",
+    "one_line_description": "Payments infrastructure platform with highly structured APIs and first-class developer tooling.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "yes",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Sensitive financial actions need careful permission scoping and idempotency handling.",
+    "evidence_urls": [
+      "https://docs.stripe.com/api",
+      "https://docs.stripe.com/keys"
+    ],
+    "confidence_score": 0.95,
+    "notes": "One of the cleanest API surfaces in the sample set.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

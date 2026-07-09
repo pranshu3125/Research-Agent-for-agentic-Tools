@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 16,
+    "app_name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "website_hint": "liveagent.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "LiveAgent API documentation",
+    "LiveAgent developer docs authentication",
+    "LiveAgent OAuth API key developer",
+    "LiveAgent REST API docs",
+    "LiveAgent GraphQL API docs",
+    "LiveAgent MCP server",
+    "LiveAgent developer account API access pricing",
+    "LiveAgent partner API access"
+  ],
+  "documents": [
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LiveAgent source 1",
+      "url": "https://liveagent.com/api/",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "LiveAgent is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "confidence_score": 0.68,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "evidence_urls": [
+      "https://liveagent.com/api/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 16,
+    "app_name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "website_hint": "liveagent.com",
+    "one_line_description": "LiveAgent is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://liveagent.com/api/"
+    ],
+    "confidence_score": 0.74,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

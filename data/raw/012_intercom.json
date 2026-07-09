@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 12,
+    "app_name": "Intercom",
+    "category": "Support and Helpdesk",
+    "website_hint": "intercom.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Intercom API documentation",
+    "Intercom developer docs authentication",
+    "Intercom OAuth API key developer",
+    "Intercom REST API docs",
+    "Intercom GraphQL API docs",
+    "Intercom MCP server",
+    "Intercom developer account API access pricing",
+    "Intercom partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 1",
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Intercom source 2",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Intercom source 2",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Intercom is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "confidence_score": 0.8,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "evidence_urls": [
+      "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 12,
+    "app_name": "Intercom",
+    "category": "Support and Helpdesk",
+    "website_hint": "intercom.com",
+    "one_line_description": "Intercom is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    ],
+    "confidence_score": 0.86,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

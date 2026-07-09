@@ -1,0 +1,98 @@
+{
+  "app": {
+    "id": 1,
+    "app_name": "Slack",
+    "category": "Communication",
+    "website_hint": "slack.com"
+  },
+  "queries": [
+    "Slack API docs auth",
+    "Slack developer OAuth API key",
+    "Slack MCP server",
+    "Slack REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Slack developer docs",
+      "url": "https://api.slack.com/web",
+      "snippet": "Team communication platform with mature messaging, workflow, and app APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack developer docs",
+      "url": "https://api.slack.com/web",
+      "snippet": "Team communication platform with mature messaging, workflow, and app APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack developer docs",
+      "url": "https://api.slack.com/web",
+      "snippet": "Team communication platform with mature messaging, workflow, and app APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack developer docs",
+      "url": "https://api.slack.com/web",
+      "snippet": "Team communication platform with mature messaging, workflow, and app APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack auth docs",
+      "url": "https://api.slack.com/authentication",
+      "snippet": "None material; scope management is the main integration concern.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Slack auth docs",
+      "url": "https://api.slack.com/authentication",
+      "snippet": "None material; scope management is the main integration concern.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Slack auth docs",
+      "url": "https://api.slack.com/authentication",
+      "snippet": "None material; scope management is the main integration concern.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "Slack auth docs",
+      "url": "https://api.slack.com/authentication",
+      "snippet": "None material; scope management is the main integration concern.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 1,
+    "app_name": "Slack",
+    "category": "Communication",
+    "one_line_description": "Team communication platform with mature messaging, workflow, and app APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "yes",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "None material; scope management is the main integration concern.",
+    "evidence_urls": [
+      "https://api.slack.com/web",
+      "https://api.slack.com/authentication"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Strong official docs and self-serve app creation make Slack a high-confidence target.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "app": {
+    "id": 34,
+    "app_name": "GoHighLevel",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "highlevel.stoplight.io"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "GoHighLevel API documentation",
+    "GoHighLevel developer docs authentication",
+    "GoHighLevel OAuth API key developer",
+    "GoHighLevel REST API docs",
+    "GoHighLevel GraphQL API docs",
+    "GoHighLevel MCP server",
+    "GoHighLevel developer account API access pricing",
+    "GoHighLevel partner API access"
+  ],
+  "documents": [
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GoHighLevel source 1",
+      "url": "https://highlevel.stoplight.io/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "GoHighLevel exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "confidence_score": 0.69,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "evidence_urls": [
+      "https://highlevel.stoplight.io/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 34,
+    "app_name": "GoHighLevel",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "highlevel.stoplight.io",
+    "one_line_description": "GoHighLevel exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://highlevel.stoplight.io/"
+    ],
+    "confidence_score": 0.75,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 35,
+    "app_name": "Mailchimp",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "mailchimp.com/developer"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Mailchimp API documentation",
+    "Mailchimp developer docs authentication",
+    "Mailchimp OAuth API key developer",
+    "Mailchimp REST API docs",
+    "Mailchimp GraphQL API docs",
+    "Mailchimp MCP server",
+    "Mailchimp developer account API access pricing",
+    "Mailchimp partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Mailchimp source 1",
+      "url": "https://mailchimp.com/developer/",
+      "snippet": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Mailchimp exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "confidence_score": 0.87,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "evidence_urls": [
+      "https://mailchimp.com/developer/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 35,
+    "app_name": "Mailchimp",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "mailchimp.com/developer",
+    "one_line_description": "Mailchimp exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://mailchimp.com/developer/"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "app": {
+    "id": 50,
+    "app_name": "fanbasis",
+    "category": "Ecommerce",
+    "website_hint": "fanbasis.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "fanbasis API documentation",
+    "fanbasis developer docs authentication",
+    "fanbasis OAuth API key developer",
+    "fanbasis REST API docs",
+    "fanbasis GraphQL API docs",
+    "fanbasis MCP server",
+    "fanbasis developer account API access pricing",
+    "fanbasis partner API access"
+  ],
+  "documents": [
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "fanbasis source 1",
+      "url": "https://fanbasis.com",
+      "snippet": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "fanbasis exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+    "confidence_score": 0.36,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://fanbasis.com"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 50,
+    "app_name": "fanbasis",
+    "category": "Ecommerce",
+    "website_hint": "fanbasis.com",
+    "one_line_description": "fanbasis exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+    "evidence_urls": [
+      "https://fanbasis.com"
+    ],
+    "confidence_score": 0.32,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "api_surface",
+      "buildability_verdict"
+    ]
+  }
+}

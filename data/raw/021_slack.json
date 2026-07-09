@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 21,
+    "app_name": "Slack",
+    "category": "Communications and Messaging",
+    "website_hint": "slack.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Slack API documentation",
+    "Slack developer docs authentication",
+    "Slack OAuth API key developer",
+    "Slack REST API docs",
+    "Slack GraphQL API docs",
+    "Slack MCP server",
+    "Slack developer account API access pricing",
+    "Slack partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 1",
+      "url": "https://api.slack.com/web",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Slack source 2",
+      "url": "https://api.slack.com/authentication",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Slack source 2",
+      "url": "https://api.slack.com/authentication",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Slack provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "confidence_score": 0.95,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "evidence_urls": [
+      "https://api.slack.com/web",
+      "https://api.slack.com/authentication"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 21,
+    "app_name": "Slack",
+    "category": "Communications and Messaging",
+    "website_hint": "slack.com",
+    "one_line_description": "Slack provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://api.slack.com/web",
+      "https://api.slack.com/authentication"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

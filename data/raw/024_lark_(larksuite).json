@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 24,
+    "app_name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "website_hint": "open.larksuite.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Lark (Larksuite) API documentation",
+    "Lark (Larksuite) developer docs authentication",
+    "Lark (Larksuite) OAuth API key developer",
+    "Lark (Larksuite) REST API docs",
+    "Lark (Larksuite) GraphQL API docs",
+    "Lark (Larksuite) MCP server",
+    "Lark (Larksuite) developer account API access pricing",
+    "Lark (Larksuite) partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Lark (Larksuite) source 1",
+      "url": "https://open.larksuite.com/",
+      "snippet": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Lark (Larksuite) provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "evidence_urls": [
+      "https://open.larksuite.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 24,
+    "app_name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "website_hint": "open.larksuite.com",
+    "one_line_description": "Lark (Larksuite) provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://open.larksuite.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

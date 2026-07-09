@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 33,
+    "app_name": "LinkedIn Ads",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "learn.microsoft.com/linkedin/marketing"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "LinkedIn Ads API documentation",
+    "LinkedIn Ads developer docs authentication",
+    "LinkedIn Ads OAuth API key developer",
+    "LinkedIn Ads REST API docs",
+    "LinkedIn Ads GraphQL API docs",
+    "LinkedIn Ads MCP server",
+    "LinkedIn Ads developer account API access pricing",
+    "LinkedIn Ads partner API access"
+  ],
+  "documents": [
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "LinkedIn Ads source 1",
+      "url": "https://learn.microsoft.com/linkedin/marketing/",
+      "snippet": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "LinkedIn Ads exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+    "confidence_score": 0.8,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "evidence_urls": [
+      "https://learn.microsoft.com/linkedin/marketing/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 33,
+    "app_name": "LinkedIn Ads",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "learn.microsoft.com/linkedin/marketing",
+    "one_line_description": "LinkedIn Ads exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+    "evidence_urls": [
+      "https://learn.microsoft.com/linkedin/marketing/"
+    ],
+    "confidence_score": 0.86,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

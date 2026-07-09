@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 88,
+    "app_name": "Hotjar",
+    "category": "Analytics",
+    "website_hint": "hotjar.com"
+  },
+  "queries": [
+    "Hotjar API docs auth",
+    "Hotjar developer OAuth API key",
+    "Hotjar MCP server",
+    "Hotjar REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Hotjar website",
+      "url": "https://hotjar.com",
+      "snippet": "Manual fallback result for Hotjar. Use hotjar.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Hotjar website",
+      "url": "https://hotjar.com",
+      "snippet": "Manual fallback result for Hotjar. Use hotjar.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Hotjar website",
+      "url": "https://hotjar.com",
+      "snippet": "Manual fallback result for Hotjar. Use hotjar.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Hotjar website",
+      "url": "https://hotjar.com",
+      "snippet": "Manual fallback result for Hotjar. Use hotjar.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Hotjar docs guess",
+      "url": "https://hotjar.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Hotjar docs guess",
+      "url": "https://hotjar.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Hotjar docs guess",
+      "url": "https://hotjar.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Hotjar docs guess",
+      "url": "https://hotjar.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 88,
+    "app_name": "Hotjar",
+    "category": "Analytics",
+    "one_line_description": "Hotjar is a analytics product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://hotjar.com",
+      "https://hotjar.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

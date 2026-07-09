@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 41,
+    "app_name": "Shopify",
+    "category": "Ecommerce",
+    "website_hint": "shopify.dev"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Shopify API documentation",
+    "Shopify developer docs authentication",
+    "Shopify OAuth API key developer",
+    "Shopify REST API docs",
+    "Shopify GraphQL API docs",
+    "Shopify MCP server",
+    "Shopify developer account API access pricing",
+    "Shopify partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 1",
+      "url": "https://shopify.dev/docs/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Shopify source 2",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Shopify source 2",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Shopify exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://shopify.dev/docs/api",
+      "https://shopify.dev/docs/apps/build/authentication-authorization"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 41,
+    "app_name": "Shopify",
+    "category": "Ecommerce",
+    "website_hint": "shopify.dev",
+    "one_line_description": "Shopify exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://shopify.dev/docs/api",
+      "https://shopify.dev/docs/apps/build/authentication-authorization"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

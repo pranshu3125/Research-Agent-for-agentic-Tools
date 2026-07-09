@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 43,
+    "app_name": "BigCommerce",
+    "category": "Ecommerce",
+    "website_hint": "developer.bigcommerce.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "BigCommerce API documentation",
+    "BigCommerce developer docs authentication",
+    "BigCommerce OAuth API key developer",
+    "BigCommerce REST API docs",
+    "BigCommerce GraphQL API docs",
+    "BigCommerce MCP server",
+    "BigCommerce developer account API access pricing",
+    "BigCommerce partner API access"
+  ],
+  "documents": [
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "BigCommerce source 1",
+      "url": "https://developer.bigcommerce.com/",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "BigCommerce exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "confidence_score": 0.86,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://developer.bigcommerce.com/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 43,
+    "app_name": "BigCommerce",
+    "category": "Ecommerce",
+    "website_hint": "developer.bigcommerce.com",
+    "one_line_description": "BigCommerce exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://developer.bigcommerce.com/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "app": {
+    "id": 59,
+    "app_name": "Waterfall.io",
+    "category": "Data SEO and Scraping",
+    "website_hint": "waterfall.io"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Waterfall.io API documentation",
+    "Waterfall.io developer docs authentication",
+    "Waterfall.io OAuth API key developer",
+    "Waterfall.io REST API docs",
+    "Waterfall.io GraphQL API docs",
+    "Waterfall.io MCP server",
+    "Waterfall.io developer account API access pricing",
+    "Waterfall.io partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Waterfall.io source 1",
+      "url": "https://waterfall.io",
+      "snippet": "Public API and auth details were not clear enough to support a confident classification.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Waterfall.io exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public API and auth details were not clear enough to support a confident classification.",
+    "confidence_score": 0.35,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "evidence_urls": [
+      "https://waterfall.io"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 59,
+    "app_name": "Waterfall.io",
+    "category": "Data SEO and Scraping",
+    "website_hint": "waterfall.io",
+    "one_line_description": "Waterfall.io exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public API and auth details were not clear enough to support a confident classification.",
+    "evidence_urls": [
+      "https://waterfall.io"
+    ],
+    "confidence_score": 0.32,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "api_surface",
+      "buildability_verdict"
+    ]
+  }
+}

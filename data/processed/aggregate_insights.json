@@ -1,0 +1,21 @@
+{
+  "total_apps": 100,
+  "buildable_today": 46,
+  "buildable_with_limitations": 35,
+  "needs_outreach": 13,
+  "unclear_count": 6,
+  "partially_or_fully_gated": 36,
+  "dominant_auth_method": "oauth2",
+  "most_common_blocker": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+  "verification_accuracy": 0.96,
+  "report_mode": "real_cached",
+  "headline_insights": [
+    "Productivity and Project Management is the cleanest quick-win category in this scan, driven by public docs and self-serve developer onboarding.",
+    "Finance and Fintech is the most access-constrained category, where business approval or platform policy is often the blocker rather than raw API absence.",
+    "oauth2 is the dominant auth pattern across the inventory, reinforcing that delegated user authorization is the normal case for agent toolkits.",
+    "46 apps look like immediate build candidates, while 35 more are buildable with real but manageable implementation constraints.",
+    "13 apps likely need outreach because approval, enterprise setup, or commercial access gating is the real blocker.",
+    "11 apps remain low-confidence or partially unclear after real-cache research and should get human review before roadmap decisions.",
+    "Official MCP support is rare (2 apps), while community or unofficial MCP signal exists for 12 apps and should be treated as directional rather than production-ready."
+  ]
+}

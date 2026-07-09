@@ -1,0 +1,294 @@
+{
+  "mode": "real_cached",
+  "sample_size": 17,
+  "sampled_categories": [
+    "AI Research and Media-native",
+    "CRM",
+    "Communications and Messaging",
+    "Data SEO and Scraping",
+    "Developer Infra and Data Platforms",
+    "Ecommerce",
+    "Finance and Fintech",
+    "Marketing Ads Email and Social",
+    "Productivity and Project Management",
+    "Support and Helpdesk"
+  ],
+  "selection_strategy": "Forced inclusion of known edge cases, then category-balanced sampling across the 10 assignment groups.",
+  "first_pass_app_accuracy": 0.65,
+  "first_pass_field_accuracy": 0.92,
+  "verified_accuracy_estimate": 0.96,
+  "correction_rate": 0.35,
+  "common_error_modes": [
+    "self-serve vs gated classification drift",
+    "buildability overconfidence",
+    "auth method incompleteness"
+  ],
+  "records": [
+    {
+      "app_name": "Salesforce",
+      "category": "CRM",
+      "verified": false,
+      "checked_fields": 5,
+      "corrected_fields": 2,
+      "evidence_rechecked": [
+        "https://developer.salesforce.com/docs/apis",
+        "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"
+      ],
+      "corrections": [
+        {
+          "field_name": "self_serve_status",
+          "original_value": "partially_gated",
+          "corrected_value": "gated",
+          "reason": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested."
+        },
+        {
+          "field_name": "buildability_verdict",
+          "original_value": "buildable_with_limitations",
+          "corrected_value": "needs_outreach",
+          "reason": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested."
+        }
+      ],
+      "reviewer_note": "Customer-org setup and admin approval proved more gating than the first-pass classification suggested."
+    },
+    {
+      "app_name": "Close",
+      "category": "CRM",
+      "verified": false,
+      "checked_fields": 5,
+      "corrected_fields": 1,
+      "evidence_rechecked": [
+        "https://developer.close.com/"
+      ],
+      "corrections": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "oauth2,mixed",
+          "corrected_value": "api_key,oauth2,mixed",
+          "reason": "The first pass leaned too heavily on CRM-default OAuth assumptions and understated the importance of API-key usage."
+        }
+      ],
+      "reviewer_note": "The first pass leaned too heavily on CRM-default OAuth assumptions and understated the importance of API-key usage."
+    },
+    {
+      "app_name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "verified": false,
+      "checked_fields": 5,
+      "corrected_fields": 1,
+      "evidence_rechecked": [
+        "https://developers.facebook.com/docs/whatsapp"
+      ],
+      "corrections": [
+        {
+          "field_name": "self_serve_status",
+          "original_value": "partially_gated",
+          "corrected_value": "gated",
+          "reason": "Meta business verification and template review make the effective access path more restrictive than a generic partially-gated label."
+        }
+      ],
+      "reviewer_note": "Meta business verification and template review make the effective access path more restrictive than a generic partially-gated label."
+    },
+    {
+      "app_name": "Ahrefs",
+      "category": "Data SEO and Scraping",
+      "verified": false,
+      "checked_fields": 5,
+      "corrected_fields": 1,
+      "evidence_rechecked": [
+        "https://ahrefs.com/api"
+      ],
+      "corrections": [
+        {
+          "field_name": "self_serve_status",
+          "original_value": "gated",
+          "corrected_value": "partially_gated",
+          "reason": "Public API access appears tied to plan or commercial qualification rather than completely closed, so the first pass was slightly too hard-line."
+        }
+      ],
+      "reviewer_note": "Public API access appears tied to plan or commercial qualification rather than completely closed, so the first pass was slightly too hard-line."
+    },
+    {
+      "app_name": "Otter AI",
+      "category": "AI Research and Media-native",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://help.otter.ai/",
+        "https://otter.ai/"
+      ],
+      "corrections": [],
+      "reviewer_note": "Follow-up review confirmed MCP support rather than leaving it inferred from broader product language."
+    },
+    {
+      "app_name": "Clay",
+      "category": "Data SEO and Scraping",
+      "verified": false,
+      "checked_fields": 5,
+      "corrected_fields": 1,
+      "evidence_rechecked": [
+        "https://www.clay.com/"
+      ],
+      "corrections": [
+        {
+          "field_name": "buildability_verdict",
+          "original_value": "buildable_with_limitations",
+          "corrected_value": "needs_outreach",
+          "reason": "The first pass understated how much paid access and workspace-level setup can affect practical rollout."
+        }
+      ],
+      "reviewer_note": "The first pass understated how much paid access and workspace-level setup can affect practical rollout."
+    },
+    {
+      "app_name": "NotebookLM",
+      "category": "AI Research and Media-native",
+      "verified": false,
+      "checked_fields": 5,
+      "corrected_fields": 1,
+      "evidence_rechecked": [
+        "https://cloud.google.com/gemini"
+      ],
+      "corrections": [
+        {
+          "field_name": "buildability_verdict",
+          "original_value": "not_buildable_now",
+          "corrected_value": "needs_outreach",
+          "reason": "The blocker is less 'impossible now' and more 'requires a different Google enterprise surface than a direct public NotebookLM app API'."
+        }
+      ],
+      "reviewer_note": "The blocker is less 'impossible now' and more 'requires a different Google enterprise surface than a direct public NotebookLM app API'."
+    },
+    {
+      "app_name": "Mermaid CLI",
+      "category": "AI Research and Media-native",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "HubSpot",
+      "category": "CRM",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developers.hubspot.com/docs/api/overview",
+        "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Slack",
+      "category": "Communications and Messaging",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://api.slack.com/web",
+        "https://api.slack.com/authentication"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Apify",
+      "category": "Data SEO and Scraping",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://docs.apify.com/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "GitHub",
+      "category": "Developer Infra and Data Platforms",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://docs.github.com/en/rest",
+        "https://docs.github.com/en/graphql"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Shopify",
+      "category": "Ecommerce",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://shopify.dev/docs/api",
+        "https://shopify.dev/docs/apps/build/authentication-authorization"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Stripe",
+      "category": "Finance and Fintech",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/keys"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "SendGrid",
+      "category": "Marketing Ads Email and Social",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://www.twilio.com/docs/sendgrid/api-reference"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Jira",
+      "category": "Productivity and Project Management",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    },
+    {
+      "app_name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "verified": true,
+      "checked_fields": 5,
+      "corrected_fields": 0,
+      "evidence_rechecked": [
+        "https://developer.zendesk.com/api-reference/introduction/",
+        "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/"
+      ],
+      "corrections": [],
+      "reviewer_note": "No material correction in the verification sample."
+    }
+  ],
+  "known_limitations": [
+    "Verification is sample-based rather than exhaustive across all 100 apps.",
+    "The bundled real cache still relies on public docs visibility; deeper customer-side gating can surface only during implementation.",
+    "MCP availability is especially volatile and should be re-checked before packaging a production toolkit."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 82,
+    "app_name": "Cloudflare",
+    "category": "Infrastructure",
+    "website_hint": "cloudflare.com"
+  },
+  "queries": [
+    "Cloudflare API docs auth",
+    "Cloudflare developer OAuth API key",
+    "Cloudflare MCP server",
+    "Cloudflare REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Cloudflare website",
+      "url": "https://cloudflare.com",
+      "snippet": "Manual fallback result for Cloudflare. Use cloudflare.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Cloudflare website",
+      "url": "https://cloudflare.com",
+      "snippet": "Manual fallback result for Cloudflare. Use cloudflare.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Cloudflare website",
+      "url": "https://cloudflare.com",
+      "snippet": "Manual fallback result for Cloudflare. Use cloudflare.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Cloudflare website",
+      "url": "https://cloudflare.com",
+      "snippet": "Manual fallback result for Cloudflare. Use cloudflare.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Cloudflare docs guess",
+      "url": "https://cloudflare.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Cloudflare docs guess",
+      "url": "https://cloudflare.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Cloudflare docs guess",
+      "url": "https://cloudflare.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Cloudflare docs guess",
+      "url": "https://cloudflare.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 82,
+    "app_name": "Cloudflare",
+    "category": "Infrastructure",
+    "one_line_description": "Cloudflare is a infrastructure product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://cloudflare.com",
+      "https://cloudflare.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

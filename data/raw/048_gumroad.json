@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 48,
+    "app_name": "Gumroad",
+    "category": "Ecommerce",
+    "website_hint": "gumroad.com/api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Gumroad API documentation",
+    "Gumroad developer docs authentication",
+    "Gumroad OAuth API key developer",
+    "Gumroad REST API docs",
+    "Gumroad GraphQL API docs",
+    "Gumroad MCP server",
+    "Gumroad developer account API access pricing",
+    "Gumroad partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Gumroad source 1",
+      "url": "https://gumroad.com/api",
+      "snippet": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Gumroad exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "confidence_score": 0.77,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://gumroad.com/api"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 48,
+    "app_name": "Gumroad",
+    "category": "Ecommerce",
+    "website_hint": "gumroad.com/api",
+    "one_line_description": "Gumroad exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://gumroad.com/api"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

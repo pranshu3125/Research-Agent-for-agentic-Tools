@@ -1,0 +1,122 @@
+{
+  "app": {
+    "id": 83,
+    "app_name": "Binance",
+    "category": "Finance and Fintech",
+    "website_hint": "binance-docs.github.io"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Binance API documentation",
+    "Binance developer docs authentication",
+    "Binance OAuth API key developer",
+    "Binance REST API docs",
+    "Binance GraphQL API docs",
+    "Binance MCP server",
+    "Binance developer account API access pricing",
+    "Binance partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Binance source 1",
+      "url": "https://binance-docs.github.io/",
+      "snippet": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Binance exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "confidence_score": 0.86,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "evidence_urls": [
+      "https://binance-docs.github.io/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 83,
+    "app_name": "Binance",
+    "category": "Finance and Fintech",
+    "website_hint": "binance-docs.github.io",
+    "one_line_description": "Binance exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://binance-docs.github.io/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

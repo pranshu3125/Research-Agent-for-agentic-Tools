@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 49,
+    "app_name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "website_hint": "developer-docs.amazon.com/sp-api"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Amazon Selling Partner API documentation",
+    "Amazon Selling Partner developer docs authentication",
+    "Amazon Selling Partner OAuth API key developer",
+    "Amazon Selling Partner REST API docs",
+    "Amazon Selling Partner GraphQL API docs",
+    "Amazon Selling Partner MCP server",
+    "Amazon Selling Partner developer account API access pricing",
+    "Amazon Selling Partner partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Amazon Selling Partner source 1",
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "snippet": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Amazon Selling Partner exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+    "confidence_score": 0.85,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 49,
+    "app_name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "website_hint": "developer-docs.amazon.com/sp-api",
+    "one_line_description": "Amazon Selling Partner exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api"
+    ],
+    "confidence_score": 0.91,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

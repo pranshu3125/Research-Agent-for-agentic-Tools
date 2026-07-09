@@ -1,0 +1,98 @@
+{
+  "app": {
+    "id": 7,
+    "app_name": "GitHub",
+    "category": "Developer Tools",
+    "website_hint": "github.com"
+  },
+  "queries": [
+    "GitHub API docs auth",
+    "GitHub developer OAuth API key",
+    "GitHub MCP server",
+    "GitHub REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "GitHub developer docs",
+      "url": "https://docs.github.com/en/rest",
+      "snippet": "Developer platform exposing repos, issues, pull requests, checks, and Actions metadata.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GitHub developer docs",
+      "url": "https://docs.github.com/en/rest",
+      "snippet": "Developer platform exposing repos, issues, pull requests, checks, and Actions metadata.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GitHub developer docs",
+      "url": "https://docs.github.com/en/rest",
+      "snippet": "Developer platform exposing repos, issues, pull requests, checks, and Actions metadata.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GitHub developer docs",
+      "url": "https://docs.github.com/en/rest",
+      "snippet": "Developer platform exposing repos, issues, pull requests, checks, and Actions metadata.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "GitHub auth docs",
+      "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+      "snippet": "Permission scopes must be minimized because actions can affect source control state.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "GitHub auth docs",
+      "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+      "snippet": "Permission scopes must be minimized because actions can affect source control state.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "GitHub auth docs",
+      "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+      "snippet": "Permission scopes must be minimized because actions can affect source control state.",
+      "source_type": "api_reference",
+      "score": 0.91
+    },
+    {
+      "title": "GitHub auth docs",
+      "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+      "snippet": "Permission scopes must be minimized because actions can affect source control state.",
+      "source_type": "api_reference",
+      "score": 0.91
+    }
+  ],
+  "result": {
+    "app_id": 7,
+    "app_name": "GitHub",
+    "category": "Developer Tools",
+    "one_line_description": "Developer platform exposing repos, issues, pull requests, checks, and Actions metadata.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "yes",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scopes must be minimized because actions can affect source control state.",
+    "evidence_urls": [
+      "https://docs.github.com/en/rest",
+      "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app"
+    ],
+    "confidence_score": 0.94,
+    "notes": "High-value agent surface with mature docs and clear auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "official-heavy",
+    "demo_data": true
+  }
+}

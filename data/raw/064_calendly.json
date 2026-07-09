@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 64,
+    "app_name": "Calendly",
+    "category": "Scheduling",
+    "website_hint": "calendly.com"
+  },
+  "queries": [
+    "Calendly API docs auth",
+    "Calendly developer OAuth API key",
+    "Calendly MCP server",
+    "Calendly REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "Calendly website",
+      "url": "https://calendly.com",
+      "snippet": "Manual fallback result for Calendly. Use calendly.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Calendly website",
+      "url": "https://calendly.com",
+      "snippet": "Manual fallback result for Calendly. Use calendly.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Calendly website",
+      "url": "https://calendly.com",
+      "snippet": "Manual fallback result for Calendly. Use calendly.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Calendly website",
+      "url": "https://calendly.com",
+      "snippet": "Manual fallback result for Calendly. Use calendly.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "Calendly docs guess",
+      "url": "https://calendly.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Calendly docs guess",
+      "url": "https://calendly.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Calendly docs guess",
+      "url": "https://calendly.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "Calendly docs guess",
+      "url": "https://calendly.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 64,
+    "app_name": "Calendly",
+    "category": "Scheduling",
+    "one_line_description": "Calendly is a scheduling product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://calendly.com",
+      "https://calendly.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

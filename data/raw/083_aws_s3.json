@@ -1,0 +1,96 @@
+{
+  "app": {
+    "id": 83,
+    "app_name": "AWS S3",
+    "category": "Infrastructure",
+    "website_hint": "aws.amazon.com"
+  },
+  "queries": [
+    "AWS S3 API docs auth",
+    "AWS S3 developer OAuth API key",
+    "AWS S3 MCP server",
+    "AWS S3 REST API documentation"
+  ],
+  "documents": [
+    {
+      "title": "AWS S3 website",
+      "url": "https://aws.amazon.com",
+      "snippet": "Manual fallback result for AWS S3. Use aws.amazon.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "AWS S3 website",
+      "url": "https://aws.amazon.com",
+      "snippet": "Manual fallback result for AWS S3. Use aws.amazon.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "AWS S3 website",
+      "url": "https://aws.amazon.com",
+      "snippet": "Manual fallback result for AWS S3. Use aws.amazon.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "AWS S3 website",
+      "url": "https://aws.amazon.com",
+      "snippet": "Manual fallback result for AWS S3. Use aws.amazon.com to locate official product, API, and developer documentation.",
+      "source_type": "manual_hint",
+      "score": 0.2
+    },
+    {
+      "title": "AWS S3 docs guess",
+      "url": "https://aws.amazon.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "AWS S3 docs guess",
+      "url": "https://aws.amazon.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "AWS S3 docs guess",
+      "url": "https://aws.amazon.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    },
+    {
+      "title": "AWS S3 docs guess",
+      "url": "https://aws.amazon.com/developers",
+      "snippet": "Placeholder developer portal guess. This should be replaced by a live search provider in production.",
+      "source_type": "manual_hint",
+      "score": 0.1
+    }
+  ],
+  "result": {
+    "app_id": 83,
+    "app_name": "AWS S3",
+    "category": "Infrastructure",
+    "one_line_description": "AWS S3 is a infrastructure product included for first-pass screening.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "unclear",
+    "existing_mcp": "unclear",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Insufficient official evidence collected in demo mode.",
+    "evidence_urls": [
+      "https://aws.amazon.com",
+      "https://aws.amazon.com"
+    ],
+    "confidence_score": 0.18,
+    "notes": "Generated in manual/demo mode without live search. Official docs should be re-queried before shipping toolkit recommendations.",
+    "last_checked_date": "2026-07-09",
+    "source_quality": "manual_hint_only",
+    "demo_data": true
+  }
+}

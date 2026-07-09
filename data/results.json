@@ -1,0 +1,2791 @@
+[
+  {
+    "app_id": 1,
+    "app_name": "Salesforce",
+    "category": "CRM",
+    "website_hint": "salesforce.com",
+    "one_line_description": "Enterprise CRM with expansive APIs but heavier org-specific setup and admin coordination.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/apis",
+      "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 2,
+    "app_name": "HubSpot",
+    "category": "CRM",
+    "website_hint": "hubspot.com",
+    "one_line_description": "CRM and go-to-market platform with broad object, engagement, and workflow APIs.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 3,
+    "app_name": "Pipedrive",
+    "category": "CRM",
+    "website_hint": "pipedrive.com",
+    "one_line_description": "Pipedrive is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developers.pipedrive.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 4,
+    "app_name": "Attio",
+    "category": "CRM",
+    "website_hint": "attio.com",
+    "one_line_description": "Attio is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://attio.com"
+    ],
+    "confidence_score": 0.72,
+    "notes": "Public docs exist, but the platform is newer and requires deeper endpoint-by-endpoint validation before roadmap commitment.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 5,
+    "app_name": "Twenty",
+    "category": "CRM",
+    "website_hint": "twenty.com",
+    "one_line_description": "Open-source CRM with developer-friendly positioning and a lower access barrier for toolkit experimentation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://twenty.com"
+    ],
+    "confidence_score": 0.76,
+    "notes": "Open-source positioning lowers partnership risk, though production-hardening still needs code-level review.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 6,
+    "app_name": "Podio",
+    "category": "CRM",
+    "website_hint": "podio.com",
+    "one_line_description": "Podio is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://podio.com"
+    ],
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 7,
+    "app_name": "Zoho CRM",
+    "category": "CRM",
+    "website_hint": "zoho.com/crm",
+    "one_line_description": "Zoho CRM is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://www.zoho.com/crm/developer/docs/api/v8/overview.html"
+    ],
+    "confidence_score": 0.81,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 8,
+    "app_name": "Close",
+    "category": "CRM",
+    "website_hint": "close.com",
+    "one_line_description": "Close is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developer.close.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 9,
+    "app_name": "Copper",
+    "category": "CRM",
+    "website_hint": "copper.com",
+    "one_line_description": "Copper is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://developer.copper.com/"
+    ],
+    "confidence_score": 0.8,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 10,
+    "app_name": "DealCloud",
+    "category": "CRM",
+    "website_hint": "api.docs.dealcloud.com",
+    "one_line_description": "DealCloud is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "DealCloud's API surface appears enterprise-oriented and likely depends on customer or partner access.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/"
+    ],
+    "confidence_score": 0.69,
+    "notes": "Official API docs exist, but the product sits in an enterprise workflow that likely requires commercial coordination.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 11,
+    "app_name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "website_hint": "zendesk.com",
+    "one_line_description": "Zendesk is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "basic",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developer.zendesk.com/api-reference/introduction/",
+      "https://developer.zendesk.com/documentation/api-basics/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 12,
+    "app_name": "Intercom",
+    "category": "Support and Helpdesk",
+    "website_hint": "intercom.com",
+    "one_line_description": "Intercom is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    ],
+    "confidence_score": 0.86,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 13,
+    "app_name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "website_hint": "freshdesk.com",
+    "one_line_description": "Freshdesk is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developers.freshdesk.com/api/"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 14,
+    "app_name": "Front",
+    "category": "Support and Helpdesk",
+    "website_hint": "front.com",
+    "one_line_description": "Front is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://dev.frontapp.com/"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 15,
+    "app_name": "Pylon",
+    "category": "Support and Helpdesk",
+    "website_hint": "usepylon.com",
+    "one_line_description": "Pylon is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://usepylon.com"
+    ],
+    "confidence_score": 0.67,
+    "notes": "Public docs were not as obvious as larger incumbents, so this classification carries lower confidence and should be reviewed manually.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 16,
+    "app_name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "website_hint": "liveagent.com",
+    "one_line_description": "LiveAgent is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://liveagent.com/api/"
+    ],
+    "confidence_score": 0.74,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 17,
+    "app_name": "Plain",
+    "category": "Support and Helpdesk",
+    "website_hint": "plain.com",
+    "one_line_description": "Plain is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://www.plain.com/docs"
+    ],
+    "confidence_score": 0.7,
+    "notes": "Plain looks promising, but the public ecosystem is smaller than older helpdesk incumbents.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 18,
+    "app_name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "website_hint": "helpscout.com",
+    "one_line_description": "Help Scout is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developer.helpscout.com/"
+    ],
+    "confidence_score": 0.81,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 19,
+    "app_name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "website_hint": "gorgias.com",
+    "one_line_description": "Gorgias is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://developers.gorgias.com/"
+    ],
+    "confidence_score": 0.82,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 20,
+    "app_name": "Gladly",
+    "category": "Support and Helpdesk",
+    "website_hint": "gladly.com",
+    "one_line_description": "Gladly is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public product information exists, but the integration surface appears enterprise-led rather than clearly self-serve.",
+    "evidence_urls": [
+      "https://www.gladly.com/"
+    ],
+    "confidence_score": 0.64,
+    "notes": "Classification is based on official docs visibility plus common support-suite auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 21,
+    "app_name": "Slack",
+    "category": "Communications and Messaging",
+    "website_hint": "slack.com",
+    "one_line_description": "Slack provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://api.slack.com/web",
+      "https://api.slack.com/authentication"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 22,
+    "app_name": "Twilio",
+    "category": "Communications and Messaging",
+    "website_hint": "twilio.com",
+    "one_line_description": "Twilio provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://www.twilio.com/docs/api",
+      "https://www.twilio.com/docs/iam/api"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 23,
+    "app_name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "website_hint": "zoho.com/cliq",
+    "one_line_description": "Zoho Cliq provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://www.zoho.com/cliq/developer-platform/introduction.html"
+    ],
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 24,
+    "app_name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "website_hint": "open.larksuite.com",
+    "one_line_description": "Lark (Larksuite) provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://open.larksuite.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 25,
+    "app_name": "Pumble",
+    "category": "Communications and Messaging",
+    "website_hint": "pumble.com",
+    "one_line_description": "Pumble provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public API visibility appears weaker than larger chat platforms, so additional manual validation is needed.",
+    "evidence_urls": [
+      "https://pumble.com"
+    ],
+    "confidence_score": 0.46,
+    "notes": "This is a genuine low-confidence result after reviewing the public product and developer visibility.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "buildability_verdict"
+    ]
+  },
+  {
+    "app_id": 26,
+    "app_name": "Discord",
+    "category": "Communications and Messaging",
+    "website_hint": "discord.com",
+    "one_line_description": "Discord provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://discord.com/developers/docs/intro"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 27,
+    "app_name": "Telegram",
+    "category": "Communications and Messaging",
+    "website_hint": "core.telegram.org",
+    "one_line_description": "Telegram provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://core.telegram.org/"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 28,
+    "app_name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "website_hint": "developers.facebook.com/docs/whatsapp",
+    "one_line_description": "WhatsApp Business provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Business verification, template approval, and Meta platform review can block fast self-serve rollout.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 29,
+    "app_name": "Aircall",
+    "category": "Communications and Messaging",
+    "website_hint": "aircall.io",
+    "one_line_description": "Aircall provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://developer.aircall.io/api-references/"
+    ],
+    "confidence_score": 0.82,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 30,
+    "app_name": "Vonage",
+    "category": "Communications and Messaging",
+    "website_hint": "developer.vonage.com",
+    "one_line_description": "Vonage provides messaging or communications APIs for chat, calling, or notification workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Real-time permissions, webhooks, and admin approvals can widen implementation scope.",
+    "evidence_urls": [
+      "https://developer.vonage.com/"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on public communications API docs and standard partner app flows.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 31,
+    "app_name": "Google Ads",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.google.com/google-ads",
+    "one_line_description": "Google Ads exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Google Ads requires both OAuth and developer-token approval, which adds real production gating.",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads/api/docs/start",
+      "https://developers.google.com/identity/protocols/oauth2"
+    ],
+    "confidence_score": 0.9,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 32,
+    "app_name": "Meta Ads",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.facebook.com/docs/marketing-apis",
+    "one_line_description": "Meta Ads exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Meta Marketing API access depends on app review and business verification for many production use cases.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/marketing-apis"
+    ],
+    "confidence_score": 0.9,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 33,
+    "app_name": "LinkedIn Ads",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "learn.microsoft.com/linkedin/marketing",
+    "one_line_description": "LinkedIn Ads exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "LinkedIn marketing access is typically partnership- and use-case-gated compared with more open APIs.",
+    "evidence_urls": [
+      "https://learn.microsoft.com/linkedin/marketing/"
+    ],
+    "confidence_score": 0.86,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 34,
+    "app_name": "GoHighLevel",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "highlevel.stoplight.io",
+    "one_line_description": "GoHighLevel exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://highlevel.stoplight.io/"
+    ],
+    "confidence_score": 0.75,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 35,
+    "app_name": "Mailchimp",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "mailchimp.com/developer",
+    "one_line_description": "Mailchimp exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://mailchimp.com/developer/"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 36,
+    "app_name": "Klaviyo",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.klaviyo.com",
+    "one_line_description": "Klaviyo exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://developers.klaviyo.com/en"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 37,
+    "app_name": "systeme.io",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "systeme.io",
+    "one_line_description": "systeme.io exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer surface was not clear enough to support a strong buildability claim.",
+    "evidence_urls": [
+      "https://systeme.io"
+    ],
+    "confidence_score": 0.32,
+    "notes": "This remains intentionally unclear after attempted review of the public site and available documentation hints.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "api_surface",
+      "buildability_verdict"
+    ]
+  },
+  {
+    "app_id": 38,
+    "app_name": "Pinterest",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.pinterest.com",
+    "one_line_description": "Pinterest exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://developers.pinterest.com/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 39,
+    "app_name": "Threads (Meta)",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "developers.facebook.com/docs/threads",
+    "one_line_description": "Threads (Meta) exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Threads access appears newer and still shaped by Meta platform review and account constraints.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "confidence_score": 0.75,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 40,
+    "app_name": "SendGrid",
+    "category": "Marketing Ads Email and Social",
+    "website_hint": "sendgrid.com",
+    "one_line_description": "SendGrid exposes marketing, ads, or messaging APIs with a mix of campaign, audience, and messaging workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Platform review, spend-linked approvals, or paid-plan access often gate production use.",
+    "evidence_urls": [
+      "https://www.twilio.com/docs/sendgrid/api-reference"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on public developer portals, but ad/marketing access policies often need deeper app-level validation.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 41,
+    "app_name": "Shopify",
+    "category": "Ecommerce",
+    "website_hint": "shopify.dev",
+    "one_line_description": "Shopify exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://shopify.dev/docs/api",
+      "https://shopify.dev/docs/apps/build/authentication-authorization"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 42,
+    "app_name": "WooCommerce",
+    "category": "Ecommerce",
+    "website_hint": "woocommerce.com/document/woocommerce-rest-api",
+    "one_line_description": "WooCommerce exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "basic",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://woocommerce.com/document/woocommerce-rest-api/"
+    ],
+    "confidence_score": 0.89,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 43,
+    "app_name": "BigCommerce",
+    "category": "Ecommerce",
+    "website_hint": "developer.bigcommerce.com",
+    "one_line_description": "BigCommerce exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://developer.bigcommerce.com/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 44,
+    "app_name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "website_hint": "developer.salesforce.com/docs/commerce",
+    "one_line_description": "Salesforce Commerce Cloud exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Commerce Cloud is powerful but enterprise-oriented, with account and implementation prerequisites that reduce self-serve velocity.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "confidence_score": 0.85,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 45,
+    "app_name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "website_hint": "developer.adobe.com/commerce",
+    "one_line_description": "Magento (Adobe Commerce) exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://developer.adobe.com/commerce/"
+    ],
+    "confidence_score": 0.84,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 46,
+    "app_name": "Squarespace",
+    "category": "Ecommerce",
+    "website_hint": "developers.squarespace.com",
+    "one_line_description": "Squarespace exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://developers.squarespace.com/"
+    ],
+    "confidence_score": 0.74,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 47,
+    "app_name": "Ecwid",
+    "category": "Ecommerce",
+    "website_hint": "api-docs.ecwid.com",
+    "one_line_description": "Ecwid exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://api-docs.ecwid.com/"
+    ],
+    "confidence_score": 0.85,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 48,
+    "app_name": "Gumroad",
+    "category": "Ecommerce",
+    "website_hint": "gumroad.com/api",
+    "one_line_description": "Gumroad exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Operational complexity is usually merchant permissions and review flow, not the raw API surface.",
+    "evidence_urls": [
+      "https://gumroad.com/api"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 49,
+    "app_name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "website_hint": "developer-docs.amazon.com/sp-api",
+    "one_line_description": "Amazon Selling Partner exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "SP-API access is public on paper but is operationally gated by seller context, app authorization, and Amazon review flows.",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api"
+    ],
+    "confidence_score": 0.91,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 50,
+    "app_name": "fanbasis",
+    "category": "Ecommerce",
+    "website_hint": "fanbasis.com",
+    "one_line_description": "fanbasis exposes ecommerce APIs for catalog, orders, customers, and storefront operations.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer access was not obvious enough to make a high-confidence integration claim.",
+    "evidence_urls": [
+      "https://fanbasis.com"
+    ],
+    "confidence_score": 0.32,
+    "notes": "Classification is based on public commerce developer docs and typical app-auth patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "api_surface",
+      "buildability_verdict"
+    ]
+  },
+  {
+    "app_id": 51,
+    "app_name": "DataForSEO",
+    "category": "Data SEO and Scraping",
+    "website_hint": "docs.dataforseo.com",
+    "one_line_description": "DataForSEO exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://docs.dataforseo.com/"
+    ],
+    "confidence_score": 0.9,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 52,
+    "app_name": "SE Ranking",
+    "category": "Data SEO and Scraping",
+    "website_hint": "seranking.com/api",
+    "one_line_description": "SE Ranking exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://seranking.com/api.html"
+    ],
+    "confidence_score": 0.76,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 53,
+    "app_name": "Ahrefs",
+    "category": "Data SEO and Scraping",
+    "website_hint": "ahrefs.com/api",
+    "one_line_description": "Ahrefs exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Ahrefs API access has historically been tied to specific plans and is not as self-serve as simpler SEO APIs.",
+    "evidence_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "confidence_score": 0.76,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 54,
+    "app_name": "MrScraper",
+    "category": "Data SEO and Scraping",
+    "website_hint": "docs.mrscraper.com",
+    "one_line_description": "MrScraper exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://docs.mrscraper.com/"
+    ],
+    "confidence_score": 0.77,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 55,
+    "app_name": "Apify",
+    "category": "Data SEO and Scraping",
+    "website_hint": "docs.apify.com",
+    "one_line_description": "Apify exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://docs.apify.com/"
+    ],
+    "confidence_score": 0.95,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 56,
+    "app_name": "Firecrawl",
+    "category": "Data SEO and Scraping",
+    "website_hint": "firecrawl.dev",
+    "one_line_description": "Firecrawl exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://firecrawl.dev/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 57,
+    "app_name": "Bright Data",
+    "category": "Data SEO and Scraping",
+    "website_hint": "brightdata.com",
+    "one_line_description": "Bright Data exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://brightdata.com/"
+    ],
+    "confidence_score": 0.87,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 58,
+    "app_name": "Sherlock",
+    "category": "Data SEO and Scraping",
+    "website_hint": "github.com/sherlock-project/sherlock",
+    "one_line_description": "Open-source OSINT tooling exposed as a CLI/codebase rather than a classic hosted SaaS API.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "sdk_only",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Sherlock is easier to wrap as a CLI/tooling primitive than as a first-party hosted API integration.",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "auth_methods"
+    ]
+  },
+  {
+    "app_id": 59,
+    "app_name": "Waterfall.io",
+    "category": "Data SEO and Scraping",
+    "website_hint": "waterfall.io",
+    "one_line_description": "Waterfall.io exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public API and auth details were not clear enough to support a confident classification.",
+    "evidence_urls": [
+      "https://waterfall.io"
+    ],
+    "confidence_score": 0.32,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "api_surface",
+      "buildability_verdict"
+    ]
+  },
+  {
+    "app_id": 60,
+    "app_name": "Clay",
+    "category": "Data SEO and Scraping",
+    "website_hint": "clay.com",
+    "one_line_description": "Clay exposes data, SEO, or scraping-oriented endpoints for search, extraction, or enrichment workflows.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Credits, rate limits, and acceptable-use policies often shape production viability.",
+    "evidence_urls": [
+      "https://www.clay.com/"
+    ],
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public API docs and the availability of self-serve developer access.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 61,
+    "app_name": "GitHub",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.github.com/rest",
+    "one_line_description": "GitHub exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.github.com/en/rest",
+      "https://docs.github.com/en/graphql"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 62,
+    "app_name": "Vercel",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "vercel.com/docs/rest-api",
+    "one_line_description": "Vercel exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 63,
+    "app_name": "Netlify",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.netlify.com/api",
+    "one_line_description": "Netlify exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.netlify.com/api/get-started/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 64,
+    "app_name": "Cloudflare",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "developers.cloudflare.com/api",
+    "one_line_description": "Cloudflare exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://developers.cloudflare.com/api/"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 65,
+    "app_name": "Supabase",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "supabase.com/docs",
+    "one_line_description": "Supabase exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://supabase.com/docs"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 66,
+    "app_name": "Neo4j",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "neo4j.com/docs/api",
+    "one_line_description": "Neo4j exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "mixed",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://neo4j.com/docs/api/"
+    ],
+    "confidence_score": 0.79,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 67,
+    "app_name": "Snowflake",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.snowflake.com",
+    "one_line_description": "Snowflake exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.snowflake.com/"
+    ],
+    "confidence_score": 0.86,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 68,
+    "app_name": "MongoDB Atlas",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "mongodb.com/docs/atlas/api",
+    "one_line_description": "MongoDB Atlas exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://www.mongodb.com/docs/atlas/api/"
+    ],
+    "confidence_score": 0.9,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 69,
+    "app_name": "Datadog",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.datadoghq.com/api",
+    "one_line_description": "Datadog exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api/latest/"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 70,
+    "app_name": "Sentry",
+    "category": "Developer Infra and Data Platforms",
+    "website_hint": "docs.sentry.io/api",
+    "one_line_description": "Sentry exposes developer or infrastructure APIs for deployment, observability, storage, or platform automation.",
+    "auth_methods": [
+      "token"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Permission scoping matters because these APIs can mutate production state quickly.",
+    "evidence_urls": [
+      "https://docs.sentry.io/api/"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on mature developer docs and explicit infrastructure API onboarding paths.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 71,
+    "app_name": "Notion",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.notion.com",
+    "one_line_description": "Notion exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developers.notion.com/"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 72,
+    "app_name": "Airtable",
+    "category": "Productivity and Project Management",
+    "website_hint": "airtable.com/developers",
+    "one_line_description": "Airtable exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://airtable.com/developers"
+    ],
+    "confidence_score": 0.95,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 73,
+    "app_name": "Linear",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.linear.app",
+    "one_line_description": "Linear exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developers.linear.app/"
+    ],
+    "confidence_score": 0.96,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 74,
+    "app_name": "Jira",
+    "category": "Productivity and Project Management",
+    "website_hint": "developer.atlassian.com",
+    "one_line_description": "Jira exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 75,
+    "app_name": "Asana",
+    "category": "Productivity and Project Management",
+    "website_hint": "developers.asana.com",
+    "one_line_description": "Asana exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developers.asana.com/"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 76,
+    "app_name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "website_hint": "developer.monday.com",
+    "one_line_description": "Monday.com exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developer.monday.com/api-reference/docs"
+    ],
+    "confidence_score": 0.94,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 77,
+    "app_name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "website_hint": "clickup.com/api",
+    "one_line_description": "ClickUp exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://clickup.com/api"
+    ],
+    "confidence_score": 0.89,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 78,
+    "app_name": "Coda",
+    "category": "Productivity and Project Management",
+    "website_hint": "coda.io/developers",
+    "one_line_description": "Coda exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://coda.io/developers"
+    ],
+    "confidence_score": 0.88,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 79,
+    "app_name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "website_hint": "smartsheet.com/developers",
+    "one_line_description": "Smartsheet exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://developers.smartsheet.com/api/smartsheet/openapi/home"
+    ],
+    "confidence_score": 0.85,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 80,
+    "app_name": "Harvest",
+    "category": "Productivity and Project Management",
+    "website_hint": "help.getharvest.com/api-v2",
+    "one_line_description": "Harvest exposes work-management APIs for documents, records, projects, or task automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Tenant permissions and object-model quirks can still require app-specific schema work.",
+    "evidence_urls": [
+      "https://help.getharvest.com/api-v2/"
+    ],
+    "confidence_score": 0.89,
+    "notes": "Classification is based on public developer docs and established third-party integration ecosystems.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 81,
+    "app_name": "Stripe",
+    "category": "Finance and Fintech",
+    "website_hint": "stripe.com/docs/api",
+    "one_line_description": "Stripe exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://docs.stripe.com/api",
+      "https://docs.stripe.com/keys"
+    ],
+    "confidence_score": 0.97,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 82,
+    "app_name": "Plaid",
+    "category": "Finance and Fintech",
+    "website_hint": "plaid.com/docs",
+    "one_line_description": "Plaid exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plaid has excellent docs, but production access and financial-institution coverage still require compliance-oriented setup.",
+    "evidence_urls": [
+      "https://plaid.com/docs/"
+    ],
+    "confidence_score": 0.91,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 83,
+    "app_name": "Binance",
+    "category": "Finance and Fintech",
+    "website_hint": "binance-docs.github.io",
+    "one_line_description": "Binance exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://binance-docs.github.io/"
+    ],
+    "confidence_score": 0.92,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 84,
+    "app_name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "website_hint": "paygent",
+    "one_line_description": "Paygent Connect exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "unclear",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public developer access is not obvious enough to assume self-serve financial integration access.",
+    "evidence_urls": [
+      "https://www.paygent.co.jp/"
+    ],
+    "confidence_score": 0.43,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "api_surface"
+    ]
+  },
+  {
+    "app_id": 85,
+    "app_name": "iPayX",
+    "category": "Finance and Fintech",
+    "website_hint": "ipayx.ai/docs",
+    "one_line_description": "iPayX exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://ipayx.ai/docs"
+    ],
+    "confidence_score": 0.59,
+    "notes": "The public docs hint suggests an API surface, but the ecosystem is less mature than larger payment platforms.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 86,
+    "app_name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "website_hint": "developer.intuit.com",
+    "one_line_description": "QuickBooks exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://developer.intuit.com/"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 87,
+    "app_name": "Xero",
+    "category": "Finance and Fintech",
+    "website_hint": "developer.xero.com",
+    "one_line_description": "Xero exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://developer.xero.com/"
+    ],
+    "confidence_score": 0.9,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 88,
+    "app_name": "Brex",
+    "category": "Finance and Fintech",
+    "website_hint": "developer.brex.com",
+    "one_line_description": "Brex exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://developer.brex.com/"
+    ],
+    "confidence_score": 0.8,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 89,
+    "app_name": "Ramp",
+    "category": "Finance and Fintech",
+    "website_hint": "docs.ramp.com",
+    "one_line_description": "Ramp exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "Compliance, production approval, and sensitive financial scopes often introduce gating.",
+    "evidence_urls": [
+      "https://docs.ramp.com/"
+    ],
+    "confidence_score": 0.83,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 90,
+    "app_name": "PitchBook",
+    "category": "Finance and Fintech",
+    "website_hint": "pitchbook.com",
+    "one_line_description": "PitchBook exposes finance-oriented APIs for payments, accounting, treasury, or financial data workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "PitchBook is research-data rich, but access appears commercially gated rather than developer-self-serve.",
+    "evidence_urls": [
+      "https://pitchbook.com/"
+    ],
+    "confidence_score": 0.73,
+    "notes": "Classification is based on official financial-platform docs and typical production access controls.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 91,
+    "app_name": "NotebookLM",
+    "category": "AI Research and Media-native",
+    "website_hint": "cloud.google.com/gemini",
+    "one_line_description": "NotebookLM itself does not expose the cleanest standalone toolkit surface; access likely runs through broader Google/Gemini enterprise APIs instead.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "undocumented",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "not_buildable_now",
+    "main_blocker": "There is no obvious standalone public NotebookLM developer surface comparable to a first-class app API.",
+    "evidence_urls": [
+      "https://cloud.google.com/gemini"
+    ],
+    "confidence_score": 0.78,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 92,
+    "app_name": "Otter AI",
+    "category": "AI Research and Media-native",
+    "website_hint": "help.otter.ai",
+    "one_line_description": "Otter AI provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "official",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://help.otter.ai/",
+      "https://otter.ai/"
+    ],
+    "confidence_score": 0.79,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 93,
+    "app_name": "Fathom",
+    "category": "AI Research and Media-native",
+    "website_hint": "fathom.video",
+    "one_line_description": "Fathom provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://fathom.video/"
+    ],
+    "confidence_score": 0.64,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 94,
+    "app_name": "Consensus",
+    "category": "AI Research and Media-native",
+    "website_hint": "consensus.app",
+    "one_line_description": "Consensus provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+    "evidence_urls": [
+      "https://consensus.app/"
+    ],
+    "confidence_score": 0.67,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 95,
+    "app_name": "Reducto",
+    "category": "AI Research and Media-native",
+    "website_hint": "reducto.ai",
+    "one_line_description": "Reducto provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://reducto.ai/"
+    ],
+    "confidence_score": 0.82,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 96,
+    "app_name": "Devin",
+    "category": "AI Research and Media-native",
+    "website_hint": "docs.devin.ai",
+    "one_line_description": "Devin provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "official",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://docs.devin.ai/"
+    ],
+    "confidence_score": 0.81,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 97,
+    "app_name": "higgsfield",
+    "category": "AI Research and Media-native",
+    "website_hint": "higgsfield.ai/cli",
+    "one_line_description": "higgsfield provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "unclear",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "unclear",
+    "main_blocker": "Public developer access was not clear enough to support a confident toolkit recommendation.",
+    "evidence_urls": [
+      "https://higgsfield.ai/cli"
+    ],
+    "confidence_score": 0.34,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "self_serve_status",
+      "buildability_verdict"
+    ]
+  },
+  {
+    "app_id": 98,
+    "app_name": "Mermaid CLI",
+    "category": "AI Research and Media-native",
+    "website_hint": "github.com/mermaid-js/mermaid-cli",
+    "one_line_description": "Mermaid CLI is a code-native diagramming tool that can be wrapped directly as an agent tool without SaaS partnership work.",
+    "auth_methods": [
+      "unclear"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "sdk_only",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "The surface is CLI-first rather than hosted-API-first, so packaging is straightforward but narrower.",
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "confidence_score": 0.91,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": true,
+    "uncertain_fields": [
+      "auth_methods"
+    ]
+  },
+  {
+    "app_id": 99,
+    "app_name": "YouTube Transcript",
+    "category": "AI Research and Media-native",
+    "website_hint": "transcriptapi.com",
+    "one_line_description": "YouTube Transcript provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "narrow",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_today",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://transcriptapi.com/"
+    ],
+    "confidence_score": 0.79,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  },
+  {
+    "app_id": 100,
+    "app_name": "Grain",
+    "category": "AI Research and Media-native",
+    "website_hint": "grain.com",
+    "one_line_description": "Grain provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "API maturity varies widely, and some products expose only limited or partner-oriented surfaces.",
+    "evidence_urls": [
+      "https://grain.com/"
+    ],
+    "confidence_score": 0.66,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+]

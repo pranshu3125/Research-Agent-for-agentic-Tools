@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 94,
+    "app_name": "Consensus",
+    "category": "AI Research and Media-native",
+    "website_hint": "consensus.app"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Consensus API documentation",
+    "Consensus developer docs authentication",
+    "Consensus OAuth API key developer",
+    "Consensus REST API docs",
+    "Consensus GraphQL API docs",
+    "Consensus MCP server",
+    "Consensus developer account API access pricing",
+    "Consensus partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Consensus source 1",
+      "url": "https://consensus.app/",
+      "snippet": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Consensus provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+    "confidence_score": 0.61,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "evidence_urls": [
+      "https://consensus.app/"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 94,
+    "app_name": "Consensus",
+    "category": "AI Research and Media-native",
+    "website_hint": "consensus.app",
+    "one_line_description": "Consensus provides AI, meeting, research, or media-native workflows that may expose APIs, MCP servers, or CLI surfaces.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "mixed"
+    ],
+    "self_serve_status": "gated",
+    "api_surface": "mixed",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "needs_outreach",
+    "main_blocker": "Public positioning suggests OAuth/API access exists, but it appears request-driven rather than fully self-serve.",
+    "evidence_urls": [
+      "https://consensus.app/"
+    ],
+    "confidence_score": 0.67,
+    "notes": "Classification is based on public docs availability plus whether the product exposes a direct API, CLI, or MCP surface.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "app": {
+    "id": 1,
+    "app_name": "Salesforce",
+    "category": "CRM",
+    "website_hint": "salesforce.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Salesforce API documentation",
+    "Salesforce developer docs authentication",
+    "Salesforce OAuth API key developer",
+    "Salesforce REST API docs",
+    "Salesforce GraphQL API docs",
+    "Salesforce MCP server",
+    "Salesforce developer account API access pricing",
+    "Salesforce partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 1",
+      "url": "https://developer.salesforce.com/docs/apis",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Salesforce source 2",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    },
+    {
+      "title": "Salesforce source 2",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm",
+      "snippet": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+      "source_type": "auth_docs",
+      "score": 0.87
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Enterprise CRM with expansive APIs but heavier org-specific setup and admin coordination.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+    "confidence_score": 0.87,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/apis",
+      "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 1,
+    "app_name": "Salesforce",
+    "category": "CRM",
+    "website_hint": "salesforce.com",
+    "one_line_description": "Enterprise CRM with expansive APIs but heavier org-specific setup and admin coordination.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "partially_gated",
+    "api_surface": "rest_and_graphql",
+    "api_breadth": "broad",
+    "existing_mcp": "unofficial",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Developer docs are public, but customer org setup and admin approval slow practical onboarding.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/apis",
+      "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"
+    ],
+    "confidence_score": 0.93,
+    "notes": "Classification is based on public developer materials and typical CRM integration patterns.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

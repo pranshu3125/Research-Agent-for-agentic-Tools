@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 4,
+    "app_name": "Attio",
+    "category": "CRM",
+    "website_hint": "attio.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Attio API documentation",
+    "Attio developer docs authentication",
+    "Attio OAuth API key developer",
+    "Attio REST API docs",
+    "Attio GraphQL API docs",
+    "Attio MCP server",
+    "Attio developer account API access pricing",
+    "Attio partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Attio source 1",
+      "url": "https://attio.com",
+      "snippet": "Object-model mapping and tenant permissions still require careful implementation.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Attio is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "confidence_score": 0.66,
+    "notes": "Public docs exist, but the platform is newer and requires deeper endpoint-by-endpoint validation before roadmap commitment.",
+    "evidence_urls": [
+      "https://attio.com"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 4,
+    "app_name": "Attio",
+    "category": "CRM",
+    "website_hint": "attio.com",
+    "one_line_description": "Attio is a CRM platform with documented APIs for contacts, deals, and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "graphql",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Object-model mapping and tenant permissions still require careful implementation.",
+    "evidence_urls": [
+      "https://attio.com"
+    ],
+    "confidence_score": 0.72,
+    "notes": "Public docs exist, but the platform is newer and requires deeper endpoint-by-endpoint validation before roadmap commitment.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}

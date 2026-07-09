@@ -1,0 +1,126 @@
+{
+  "app": {
+    "id": 17,
+    "app_name": "Plain",
+    "category": "Support and Helpdesk",
+    "website_hint": "plain.com"
+  },
+  "mode_requested": "real",
+  "mode_resolved": "real_cached",
+  "queries": [
+    "Plain API documentation",
+    "Plain developer docs authentication",
+    "Plain OAuth API key developer",
+    "Plain REST API docs",
+    "Plain GraphQL API docs",
+    "Plain MCP server",
+    "Plain developer account API access pricing",
+    "Plain partner API access"
+  ],
+  "documents": [
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    },
+    {
+      "title": "Plain source 1",
+      "url": "https://www.plain.com/docs",
+      "snippet": "Plan-tier features and workspace permission models can constrain write actions.",
+      "source_type": "official_docs",
+      "score": 0.95
+    }
+  ],
+  "classification_profile": {
+    "one_line_description": "Plain is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "confidence_score": 0.64,
+    "notes": "Plain looks promising, but the public ecosystem is smaller than older helpdesk incumbents.",
+    "evidence_urls": [
+      "https://www.plain.com/docs"
+    ],
+    "source_quality": "official_docs_cached"
+  },
+  "result": {
+    "app_id": 17,
+    "app_name": "Plain",
+    "category": "Support and Helpdesk",
+    "website_hint": "plain.com",
+    "one_line_description": "Plain is a support platform with APIs for tickets, conversations, contacts, and agent workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token",
+      "mixed"
+    ],
+    "self_serve_status": "self_serve",
+    "api_surface": "rest",
+    "api_breadth": "medium",
+    "existing_mcp": "none_found",
+    "buildability_verdict": "buildable_with_limitations",
+    "main_blocker": "Plan-tier features and workspace permission models can constrain write actions.",
+    "evidence_urls": [
+      "https://www.plain.com/docs"
+    ],
+    "confidence_score": 0.7,
+    "notes": "Plain looks promising, but the public ecosystem is smaller than older helpdesk incumbents.",
+    "last_checked_date": "2026-07-09",
+    "research_mode": "real_cached",
+    "source_quality": "official_docs_cached",
+    "low_confidence": false,
+    "uncertain_fields": []
+  }
+}
